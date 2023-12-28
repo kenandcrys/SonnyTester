@@ -14,35 +14,35 @@ if (process.env.NODE_ENV != 'production' && config_result.error) {
 // const profileRouter = require('./profile/profileRouter');
 // const userRouter = require('./user/userRouter');
 
-const route = express();
+const server = express();
 
 process.on('unhandledRejection', (reason, p) => {
   console.error('Unhandled Rejection at: Promise', p, 'reason:', reason);
   // application specific logging, throwing an error, or other logic here
 });
 
-route.use(helmet());
-route.use(express.json());
-route.use(logger('dev'));
-route.use(express.urlencoded({ extended: false }));
-route.use(cookieParser());
+server.use(helmet());
+server.use(express.json());
+server.use(logger('dev'));
+server.use(express.urlencoded({ extended: false }));
+server.use(cookieParser());
 
 // application routes
 // route.use('/', indexRouter);
 // route.use(['/profile', '/profiles'], profileRouter);
 // route.use(['/user'], userRouter);
 
-route.get("/", (req, res) => {
+server.get("/", (req, res) => {
   res.json({ api: "up" });
 });
 
 // catch 404 and forward to error handler
-route.use(function (err, req, res, next) {
+server.use(function (err, req, res, next) {
   next(createError(404));
 });
 
 // error handler
-route.use(function (err, req, res, next) {
+server.use(function (err, req, res, next) {
   if (err instanceof createError.HttpError) {
     res.locals.message = err.message;
     res.locals.status = err.statusCode;
@@ -62,4 +62,4 @@ route.use(function (err, req, res, next) {
   next(err);
 });
 
-module.exports = route;
+module.exports = server;
