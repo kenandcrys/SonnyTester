@@ -1,7 +1,7 @@
 require('dotenv').config();
 
-const server = require('./api/route.js');
+const route = require('./api/route.js');
 
 const port = process.env.PORT || 8000;
-server.listen(port, () => console.log(`\n** Running on port ${port} **\n`));
-server.timeout = 60 * 10 * 1000;
+route.listen(port, () => console.log(`\n** Running on port ${port} **\n`));
+route.timeout = 60 * 10 * 1000;
