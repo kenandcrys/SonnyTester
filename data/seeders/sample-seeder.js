@@ -9,7 +9,7 @@ exports.seed = function(knex) {
         pricePerBag: 50.0,
         pricePer20: 900.0,
         pricePer40: 1600.0,
-        image: 'cow.jpg'
+        url: 'cow.jpg'
       },
       {
         name: 'Bull',
@@ -17,7 +17,7 @@ exports.seed = function(knex) {
         pricePerBag: 55.0,
         pricePer20: 950.0,
         pricePer40: 1700.0,
-        image: 'bull.jpg'
+        url: 'bull.jpg'
       },
       {
         name: 'Calf',
@@ -25,7 +25,7 @@ exports.seed = function(knex) {
         pricePerBag: 45.0,
         pricePer20: 850.0,
         pricePer40: 1500.0,
-        image: 'calf.jpg'
+        url: 'calf.jpg'
       },
     ]);
 
@@ -38,7 +38,7 @@ exports.seed = function(knex) {
         pricePerBag: 40.0,
         pricePer20: 750.0,
         pricePer40: 1300.0,
-        image: 'pig.jpg'
+        url: 'pig.jpg'
       },
       {
         name: 'Sow',
@@ -46,7 +46,7 @@ exports.seed = function(knex) {
         pricePerBag: 42.0,
         pricePer20: 770.0,
         pricePer40: 1350.0,
-        image: 'sow.jpg'
+        url: 'sow.jpg'
       },
       {
         name: 'Boar',
@@ -54,7 +54,7 @@ exports.seed = function(knex) {
         pricePerBag: 45.0,
         pricePer20: 800.0,
         pricePer40: 1400.0,
-        image: 'boar.jpg'
+        url: 'boar.jpg'
       },
     ]);
 
