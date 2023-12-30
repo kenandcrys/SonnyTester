@@ -1,12 +1,12 @@
 // DO NOT CHANGE THIS FILE
 const express = require('express')
 const router = express.Router()
-const cm = require('../Models/Sample-model')
+const sm = require('../Models/Sample-model')
 
 router.get('/', async (_req, res, next) => {
 
     try {
-        const equine = await cm.getAll();
+        const equine = await sm.getAll();
         res.status(200).json(equine);
     } catch(err) {
         next(err);
@@ -18,7 +18,7 @@ router.get('/:id', async (req, res, next) => {
     try {
         
         const id = req.params.id;
-        const cattleById = await cm.getById(id);
+        const cattleById = await sm.getById(id);
 
         if(cattleById){
             res.status(200).json(cattleById);
@@ -36,20 +36,13 @@ router.get('/:id', async (req, res, next) => {
 router.put("/:id", async (req, res, next) => {
     try {
         const id = req.params.id;
+
         const { name, description, pricePerBag, pricePer20, pricePer40, url } = req.body;
 
-        const result = await cm.updateById(id, { name, description, pricePerBag, pricePer20, pricePer40, url });
+        const result = await sm.updateById(id, { name, description, pricePerBag, pricePer20, pricePer40, url });
 
         res.status(200).json(req.body)
 
-        // if (result > 0) {
-        // res.status(200).json(result);
-        // } else {
-        // res.json({
-        //     status : 400,
-        //     message: "bad Request - Invalid data provided"
-        // })
-        // }
     } catch (err) {
         next(err);
     }
@@ -60,7 +53,7 @@ router.post("/", async (req, res, next) => {
 
 
     const { name, description, pricePerBag, pricePer20, pricePer40, url } = req.body;
-    const newResourceId = await cm.create(name, description, pricePerBag, pricePer20, pricePer40, url);
+    const newResourceId = await sm.create(name, description, pricePerBag, pricePer20, pricePer40, url);
     try {
         
         if (!name || !pricePerBag || !pricePer20 || !pricePer40 || !url) {
@@ -80,7 +73,7 @@ router.delete("/:id", async (req, res, next) => {
     try {
         const id = req.params.id;
 
-        const result = await cm.deleteById(id);
+        const result = await sm.deleteById(id);
 
         if (result > 0) {
             res.json({
