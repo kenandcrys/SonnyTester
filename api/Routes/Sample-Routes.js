@@ -40,16 +40,16 @@ router.put("/:id", async (req, res, next) => {
 
         const result = await cm.updateById(id, { name, description, pricePerBag, pricePer20, pricePer40, url });
 
-        if (result > 0) {
-            res.status(204).json({
-                message: "Updated successfully",
-            });
-        } else {
-        res.json({
-            status : 400,
-            message: "bad Request - Invalid data provided"
-        })
-        }
+        res.status(200).json(req.body)
+
+        // if (result > 0) {
+        // res.status(200).json(result);
+        // } else {
+        // res.json({
+        //     status : 400,
+        //     message: "bad Request - Invalid data provided"
+        // })
+        // }
     } catch (err) {
         next(err);
     }
@@ -57,21 +57,18 @@ router.put("/:id", async (req, res, next) => {
 
 
 router.post("/", async (req, res, next) => {
-    try {
-        const { name, description, pricePerBag, pricePer20, pricePer40, url } = req.body;
 
+
+    const { name, description, pricePerBag, pricePer20, pricePer40, url } = req.body;
+    const newResourceId = await cm.create(name, description, pricePerBag, pricePer20, pricePer40, url);
+    try {
+        
         if (!name || !pricePerBag || !pricePer20 || !pricePer40 || !url) {
             return res.status(400).json({ error: "Missing required data" });
-        }
-
-        const newResourceId = await cm.create(name, description, pricePerBag, pricePer20, pricePer40, url);
-        const newResource = await cm.getById(newResourceId);
-
-        if (newResource) {
-            res.status(201).json(newResource);
         } else {
-            return res.status(500).json({ error: "Failed to create the resource" });
+            res.status(201).json(req.body)
         }
+
     } catch (err) {
         next(err);
     }
