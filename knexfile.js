@@ -5,7 +5,7 @@ const sharedConfig = {
   migrations: {
     directory: './data/migrations',
   },
-  seeders: {
+  seeds: {
     directory: './data/seeders',
   },
   // this enables foreign keys in SQLite
