@@ -7,7 +7,7 @@ const helmet = require('helmet');
 const dotenv = require('dotenv');
 
 // Sample test router
-const SampleRouter = require('./Routes/Sample-Routes')
+const SampleRouter = require('./Routes/Sample/Sample-Routes')
 
 
 const config_result = dotenv.config();
