@@ -1,9 +1,15 @@
 const createError = require('http-errors');
 const express = require('express');
+const cors = require('cors')
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const helmet = require('helmet');
 const dotenv = require('dotenv');
+
+// Sample test router
+const SampleRouter = require('./Routes/Sample-Routes')
+
+
 const config_result = dotenv.config();
 if (process.env.NODE_ENV != 'production' && config_result.error) {
   throw config_result.error;
@@ -22,6 +28,7 @@ process.on('unhandledRejection', (reason, p) => {
 });
 
 server.use(helmet());
+server.use(cors())
 server.use(express.json());
 server.use(logger('dev'));
 server.use(express.urlencoded({ extended: false }));
@@ -32,17 +39,28 @@ server.use(cookieParser());
 // route.use(['/profile', '/profiles'], profileRouter);
 // route.use(['/user'], userRouter);
 
-server.get("/", (req, res) => {
+// Sample test route
+server.use('/api/test', SampleRouter);
+
+
+
+server.get("/", (_req, res) => {
   res.json({ api: "up" });
 });
 
 // catch 404 and forward to error handler
-server.use(function (err, req, res, next) {
+server.use(function (_err, _req, _res, next) {
   next(createError(404));
 });
 
+// Sample Route used only to test for proper function
+
+
+
+
+
 // error handler
-server.use(function (err, req, res, next) {
+server.use(function (err, _req, res, next) {
   if (err instanceof createError.HttpError) {
     res.locals.message = err.message;
     res.locals.status = err.statusCode;
