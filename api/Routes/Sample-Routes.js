@@ -51,7 +51,6 @@ router.put("/:id", async (req, res, next) => {
 
 router.post("/", async (req, res, next) => {
 
-
     const { name, description, pricePerBag, pricePer20, pricePer40, url } = req.body;
     const newResourceId = await sm.create(name, description, pricePerBag, pricePer20, pricePer40, url);
     try {
@@ -81,10 +80,10 @@ router.delete("/:id", async (req, res, next) => {
                 message: "Delete Success"
             });
         } else {
-          res.json({
+        res.json({
             status: 404,
             message: "Item not found"
-          })
+        })
         }
     } catch (err) {
         next(err);
