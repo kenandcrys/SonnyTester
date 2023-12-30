@@ -36,11 +36,11 @@ module.exports = {
       }
     },
     connection: {
-      host: 'dpg-ckgt314ldqrs73f6u3gg-a',
+      host: '',
       port: 5432,
-      database: 'dev_i23c',
-      user: 'dev_i23c_user',
-      password: 'T5ar6BqpN1aovMDS5s0DO2LhLHZrWHCQ',
+      database: '',
+      user: '',
+      password: '',
     }
   }
 };

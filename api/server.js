@@ -40,6 +40,7 @@ server.use(cookieParser());
 // route.use(['/user'], userRouter);
 
 // Sample test route
+// Sample Route used only to test for proper function
 server.use('/api/test', SampleRouter);
 
 
@@ -53,7 +54,7 @@ server.use(function (_err, _req, _res, next) {
   next(createError(404));
 });
 
-// Sample Route used only to test for proper function
+
 
 
 
