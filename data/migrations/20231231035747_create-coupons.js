@@ -25,13 +25,45 @@ exports.up = function(knex) {
     // Conditions for Applicability
     table.json('applicability_conditions'); // Example: {"min_items": 3, "category_required": "electronics"}
     // Visibility
-    table.boolean('is_public').defaultTo(true);
+    // table.boolean('is_public').defaultTo(true);
+    knex.raw(`
+            CREATE TRIGGER set_default_is_public
+            BEFORE INSERT ON your_table_name
+            FOR EACH ROW
+            WHEN NEW.is_public IS NULL
+            BEGIN
+                SELECT true INTO NEW.is_public;
+            END;
+        `);
     // User Restrictions
-    table.boolean('new_users_only').defaultTo(false);
+    // table.boolean('new_users_only').defaultTo(false);
+    knex.raw(`
+    CREATE TRIGGER set_default_new_users_only
+    BEFORE INSERT ON your_table_name
+    FOR EACH ROW
+    WHEN NEW.new_users_only IS NULL
+    BEGIN
+        SELECT false INTO NEW.new_users_only;
+    END;
+`);
+
     // Notes or Descriptions
     table.text('notes');
     // Adding default values for the created_at timestamp only
-    table.timestamps(true, false).defaultTo(knex.fn.now());
+    // table.timestamps(true, false).defaultTo(knex.fn.now());
+    knex.raw(`
+    CREATE TRIGGER set_default_timestamps
+    BEFORE INSERT ON orders
+    FOR EACH ROW
+    WHEN NEW.created_at IS NULL
+    BEGIN
+        SELECT CURRENT_TIMESTAMP INTO NEW.created_at;
+    END,
+    WHEN NEW.updated_at IS NULL
+    BEGIN
+        SELECT CURRENT_TIMESTAMP INTO NEW.updated_at;
+    END;
+`);
   });
 };
 

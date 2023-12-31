@@ -25,7 +25,24 @@ exports.up = function(knex) {
     // Price of the product at the time of the order
     table.decimal('price', 10, 2).notNullable();
     // Adding default values for the created_at timestamp only
-    table.timestamps(true, false).defaultTo(knex.fn.now());
+    // table.timestamps(true, false).defaultTo(knex.fn.now());
+    knex.raw(`
+    CREATE TRIGGER set_default_timestamps
+    BEFORE INSERT ON orders
+    FOR EACH ROW
+    WHEN NEW.created_at IS NULL
+    BEGIN
+        SELECT CURRENT_TIMESTAMP INTO NEW.created_at;
+    END,
+    WHEN NEW.updated_at IS NULL
+    BEGIN
+        SELECT CURRENT_TIMESTAMP INTO NEW.updated_at;
+    END;
+`);
+
+
+
+
   });
 };
 
