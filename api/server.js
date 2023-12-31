@@ -8,7 +8,7 @@ const dotenv = require('dotenv');
 
 // Sample test router
 const SampleRouter = require('./Routes/Sample/Sample-Routes')
-
+const ProductRouter = require('./Routes/ProductRoute/ProductRoute')
 
 const config_result = dotenv.config();
 if (process.env.NODE_ENV != 'production' && config_result.error) {
@@ -42,7 +42,7 @@ server.use(cookieParser());
 // Sample test route
 // Sample Route used only to test for proper function
 server.use('/api/test', SampleRouter);
-
+server.use('/api/products', ProductRouter);
 
 
 server.get("/", (_req, res) => {
