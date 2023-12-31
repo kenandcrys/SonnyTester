@@ -8,7 +8,6 @@ exports.up = function(knex) {
     table.integer('user_id').unsigned().references('id').inTable('users').onDelete('CASCADE');
     table.string('return_reason');
     table.string('status');
-    // ... other return attributes
     table.timestamps(true, true);
   });
 };
