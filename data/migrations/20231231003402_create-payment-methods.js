@@ -16,7 +16,7 @@ exports.up = function(knex) {
     table.date('expiration_date');
     table.string('security_code', 4); //this is heavily regulated by PCI DSS, but putting here if we want to encrypt
     table.boolean('is_expired').defaultTo(false); 
-    table.boolean('is_disabled').defaultTo(false); 
+    table.boolean('is_disabled').defaultTo(false); //not sure if we want to keep this functionality, but kept it in
     table.boolean('is_default_payment_method').defaultTo(false);
     table.boolean('is_billing_same_as_delivery_address').defaultTo(false);
     table.boolean('is_billing_same_as_user_address').defaultTo(false);
