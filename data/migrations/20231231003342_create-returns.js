@@ -19,7 +19,7 @@ exports.up = function(knex) {
     .onDelete('CASCADE');
     table.text('reason').notNullable();
     table.boolean('approved').defaultTo(false);
-    table.text('rejection_reason', 255).nullable();
+    table.text('rejection_reason').nullable();
     table.timestamps(true, true);
   });
 };
