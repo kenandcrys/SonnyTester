@@ -1,0 +1,1 @@
+//add buyer's pages tests here
