@@ -70,10 +70,10 @@ router.put("/:name", async (req, res, next) => {
 });
 
 router.post("/",ValidateNewProduct, async (req, res, next) => {
-    const { type, name, description, price } =
+    const { category, name, description, price } =
       req.body;
     const newProductId = await Product.create(
-        type,
+        category,
         name,
         description,
         price,
