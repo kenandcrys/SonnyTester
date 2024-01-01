@@ -7,7 +7,10 @@
     "install": "npm --prefix Backend install && npm --prefix Frontend install",
     "dev": "concurrently \"npm run backend\" \"sleep 5 && npm run frontend\"",
     "backend": "npm --prefix Backend run dev",
-    "frontend": "npm --prefix Frontend run dev"
+    "frontend": "npm --prefix Frontend run dev",
+    "resetdb": "npm --prefix Backend run resetdb",
+    "migrate": "npm --prefix Backend run migrate",
+    "seed": "npm --prefix Backend run seed"
   },
   "author": "Fish, Jess W., and Michael W.",
   "license": "ISC",
