@@ -33,17 +33,17 @@ router.get('/:id', async (req, res, next) => {
 
 router.get('/:user/:name', async (req, res, next) => {
 
-    try {
-     const name = req.params.name
-     const product = await Product.getByName(name)
-     if (product){
+  try {
+    const name = req.params.name
+    const product = await Product.getByName(name)
+    if (product){
         res.status(200).json(product)
-     } else {
+    } else {
         res.json({
             status: 404,
             message: "Name not found"
         })
-     }
+    }
     } catch (err){
         next(err)
     }
@@ -69,30 +69,30 @@ router.put("/:user/:name", async (req, res, next) => {
     }
 });
 
-router.post("/",ValidateNewProduct, async (req, res, next) => {
-    
+router.post("/:user",ValidateNewProduct, async (req, res, next) => {
+    const { user } = req.params
     const newProduct = await Product.create(
       req.body
     );
     try {
       
         res.status(201).json(newProduct)
-       
+
     } catch (err) {
         next(err)
     }
     
   });
 
-  router.delete("/:name", async (req, res, next) => {
+  router.delete("/:user/:name", async (req, res, next) => {
     try {
-      const name = req.body.name;
-      
+      const name = req.params.name;
+  
       const result = await Product.deleteByName(name);
   
       if (result) {
         res.json({
-          status: 204,
+          status: 202,
           message: "Product has been deleted.",
         });
       } else {
@@ -105,5 +105,6 @@ router.post("/",ValidateNewProduct, async (req, res, next) => {
       next(err);
     }
   });
+  
 
   module.exports = router
