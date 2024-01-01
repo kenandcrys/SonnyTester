@@ -1,0 +1,42 @@
+/**
+ * @param { import("knex").Knex } knex
+ * @returns { Promise<void> }
+ */
+exports.up = function(knex) {
+    return knex.schema.createTable('customers', function(table) {
+    // Customer details
+    table
+    .integer('user_id')
+    .unsigned()
+    .primary()
+    .references('id')
+    .inTable('users')
+    .onDelete('CASCADE');
+    // Associated product (optional, adjust based on your needs)
+    table
+    .integer('order_id')
+    .unsigned()
+    .references('id')
+    .inTable('orders')
+    .onDelete('CASCADE');
+    table.integer('number_of_orders').defaultTo(0);
+    table.integer('customer_since_years');
+    table.integer('total_spending');
+    table.integer('average_order_amount');
+    table.date('first_purchase_date');
+    table.date('last_purchase_date');
+    table.integer('seller_id')
+    .unsigned()
+    .references('id')
+    .inTable('users')
+    .onDelete('CASCADE');
+  });
+};
+
+/**
+ * @param { import("knex").Knex } knex
+ * @returns { Promise<void> }
+ */
+exports.down = function(knex) {
+  return knex.schema.dropTableIfExists('customers');
+};

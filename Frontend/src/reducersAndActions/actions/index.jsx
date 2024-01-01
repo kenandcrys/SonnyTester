@@ -1,0 +1,9 @@
+export const SET_CARTS = 'SET_CARTS'
+export const SET_INPUT = 'SET_INPUT'
+export const SET_CHAR_LONG = 'SET_CHAR_LONG'
+export const SET_BUSINESS_DETAILS = 'setBusinessDetails';
+export const ALL_ORDER = 'ALL_ORDER';
+export const PENDING_ORDER = 'PENDING_ORDER';
+export const SHIPPED_ORDER = 'SHIPPED_ORDER';
+export const DELIVERED_ORDER = 'DELIVERED_ORDER';
+export const ERROR_ORDER = 'ERROR_ORDER';
