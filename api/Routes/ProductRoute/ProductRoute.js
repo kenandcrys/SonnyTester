@@ -16,16 +16,16 @@ router.get('/', async (_req, res, next) => {
 router.get('/:id', async (req, res, next) => {
 
     try {
-     const id = req.params.id
-     const product = await Product.getById(id)
-     if (product){
+      const id = req.params.id
+      const product = await Product.getById(id)
+      if (product){
         res.status(200).json(product)
-     } else {
+      } else {
         res.json({
             status: 404,
             message: "ID not found"
         })
-     }
+      }
     } catch (err){
         next(err)
     }
