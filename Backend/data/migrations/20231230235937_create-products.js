@@ -1,7 +1,3 @@
-/**
- * @param { import("knex").Knex } knex
- * @returns { Promise<void> }
- */
 exports.up = function (knex) {
   return knex.schema.createTable("products", function (table) {
     table.increments("id").primary(); // Auto-incrementing primary key
@@ -20,12 +16,19 @@ exports.up = function (knex) {
     table.decimal("price", 10, 2).notNullable(); // Example: 12345.67
     table.integer("stock_quantity").notNullable().defaultTo(0); // Adds product stock quantity that defaults to 0
     table.timestamps(true, true); // Adds 'created_at' and 'updated_at' timestamp columns
+
+    // Add foreign key constraint
+    table.foreign('user_id').references('users.id').onDelete('CASCADE');
   });
 };
-/**
- * @param { import("knex").Knex } knex
- * @returns { Promise<void> }
- */
+
 exports.down = function (knex) {
-  return knex.schema.dropTable('products');
+  return knex.schema.alterTable('products', function (table) {
+    // Drop the foreign key constraint
+    table.dropForeign('user_id');
+  })
+  .then(() => {
+    // Drop the table in the 'down' function
+    return knex.schema.dropTableIfExists('products');
+  });
 };
