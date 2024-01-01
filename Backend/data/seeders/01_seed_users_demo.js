@@ -6,6 +6,7 @@ exports.seed = function(knex) {
         return knex('users').insert([
           // Admin User
           {
+            id: 1,
             name: 'Admin User',
             email: 'admin@example.com',
             role: 'admin',
@@ -13,6 +14,7 @@ exports.seed = function(knex) {
           },
           // Seller User
           {
+            id: 2,
             name: 'Seller User',
             email: 'seller@example.com',
             role: 'seller',
@@ -24,6 +26,7 @@ exports.seed = function(knex) {
           },
           // Seller with Premier Account
           {
+            id: 3,
             name: 'Premier Seller',
             email: 'premier@example.com',
             role: 'premier_seller',
@@ -40,6 +43,7 @@ exports.seed = function(knex) {
           },
           // Buyer User
           {
+            id: 4,
             name: 'Buyer User',
             email: 'buyer@example.com',
             role: 'buyer',
