@@ -1,7 +1,7 @@
 
 const ProductModel = require('../../Models/NewProduct/Product'); // Replace with the actual path to your Product model
 
-const ValidateNewProduct = async (type, name, description, price) => {
+const ValidateNewProduct = async (category, name, description, price) => {
   // Check if a product with the same name already exists
   const existingProduct = await ProductModel.getByName(name);
 
@@ -12,7 +12,7 @@ const ValidateNewProduct = async (type, name, description, price) => {
     };
   }
 
-  if (!type) {
+  if (!category) {
     return {
       isValid: false,
       message: 'Please enter a category type.',
