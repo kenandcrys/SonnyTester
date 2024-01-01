@@ -10,7 +10,7 @@ exports.up = function(knex) {
         table.string('profile_picture').nullable();
         table.string('email').unique().notNullable();
         table.string('phone').nullable();
-        table.enum('role', ['buyer', 'seller']).defaultTo('buyer'); // Role can be 'buyer' or 'seller'
+        table.enum('role', ['admin', 'buyer', 'seller', 'premier_seller']).defaultTo('buyer'); // Role can be 'buyer' or 'seller'
         table.timestamps(true, true); // Adds 'created_at' and 'updated_at' timestamp columns
         //BUYER ONLY
         table.string('address').nullable();
@@ -27,6 +27,8 @@ exports.up = function(knex) {
         table.string('business_postal_code', 20).nullable();
         table.string('biz_cert_number_ein').nullable();
         table.json('verification_images').nullable();
+        table.string('password').notNullable();
+
     });
 };
 
