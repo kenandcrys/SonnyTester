@@ -5,14 +5,14 @@
   "main": "index.js",
   "scripts": {
     "install": "npm --prefix Backend install && npm --prefix Frontend install",
-    "start": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "dev": "concurrently \"npm run backend\" \"sleep 5 && npm run frontend\"",
     "backend": "npm --prefix Backend run dev",
     "frontend": "npm --prefix Frontend run dev"
   },
-  "author": "Fish, Jess, and Michael",
+  "author": "Fish, Jess W., and Michael W.",
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^6.3.0"
-    
   }
 }
+
