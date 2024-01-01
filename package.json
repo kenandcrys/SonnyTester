@@ -1,5 +1,5 @@
 {
-  "name": "sonnyny-js-be",
+  "name": "sonnyny-js-fullstack",
   "version": "3.0.0",
   "description": "Full Stack SonnyNY",
   "main": "index.js",
@@ -12,7 +12,7 @@
   "author": "Fish, Jess, and Michael",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^6.3.0",
-    "nodemon": "^3.0.2"
+    "concurrently": "^6.3.0"
+    
   }
 }
