@@ -4,6 +4,7 @@
   "description": "Full Stack SonnyNY",
   "main": "index.js",
   "scripts": {
+    "install": "npm --prefix Backend install && npm --prefix Frontend install",
     "start": "concurrently \"npm run backend\" \"npm run frontend\"",
     "backend": "npm --prefix Backend run dev",
     "frontend": "npm --prefix Frontend run dev"
@@ -11,6 +12,7 @@
   "author": "Fish, Jess, and Michael",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^6.3.0"
+    "concurrently": "^6.3.0",
+    "nodemon": "^3.0.2"
   }
 }
