@@ -31,7 +31,7 @@ router.get('/:id', async (req, res, next) => {
     }
 });
 
-router.get('/:name', async (req, res, next) => {
+router.get('/:user/:name', async (req, res, next) => {
 
     try {
      const name = req.params.name
@@ -49,15 +49,15 @@ router.get('/:name', async (req, res, next) => {
     }
 });
 
-router.put("/:name", async (req, res, next) => {
+router.put("/:user/:name", async (req, res, next) => {
     try {
     const productName = req.params.name;
 
-    const { type, name, description, price } =
+    const { category, name, description, price } =
         req.body;
 
     const result = await Product.updateByName(productName, {
-        type,
+        category,
         name,
         description,
         price,
@@ -70,21 +70,14 @@ router.put("/:name", async (req, res, next) => {
 });
 
 router.post("/",ValidateNewProduct, async (req, res, next) => {
-    const { category, name, description, price } =
-      req.body;
-    const newProductId = await Product.create(
-        category,
-        name,
-        description,
-        price,
-    );
     
+    const newProduct = await Product.create(
+      req.body
+    );
     try {
-        res.status(201).json({
-            productId: newProductId,
-            product: req.body,
-            message: 'New product created successfully'
-        })
+      
+        res.status(201).json(newProduct)
+       
     } catch (err) {
         next(err)
     }
@@ -94,7 +87,7 @@ router.post("/",ValidateNewProduct, async (req, res, next) => {
   router.delete("/:name", async (req, res, next) => {
     try {
       const name = req.body.name;
-  
+      
       const result = await Product.deleteByName(name);
   
       if (result) {

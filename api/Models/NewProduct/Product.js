@@ -28,13 +28,13 @@ function updateByName (name,updates) {
 
 
 
-function create(category, name, description, price) {
-    return db("products").insert({
-        name: name,
-        description: description,
-        price: price,
-        category:category,
-    })
+function create (product) {   
+   
+
+        return db("products").insert(product)
+        .then(([id])=>getById(id))
+        
+
 }
 
 module.exports = {
