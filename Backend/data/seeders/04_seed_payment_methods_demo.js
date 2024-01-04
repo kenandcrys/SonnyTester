@@ -24,7 +24,7 @@ exports.seed = function (knex) {
           is_billing_same_as_user_address: faker.random.boolean(),
           billing_address: faker.address.streetAddress(),
           billing_address_line_2: faker.address.secondaryAddress(),
-          billing_address_line_3: faker.address.buildingNumber(),
+          billing_address_line_3: faker.address.secondaryAddress(),
           billing_city: faker.address.city(),
           billing_postal_code: faker.address.zipCode(),
           created_at: faker.date.past(),
