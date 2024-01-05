@@ -1,5 +1,4 @@
 const faker = require("faker");
-const { seed } = require("./09_seed_carts_demo");
 
 exports.seed = function (knex) {
   // Deletes ALL existing entries
