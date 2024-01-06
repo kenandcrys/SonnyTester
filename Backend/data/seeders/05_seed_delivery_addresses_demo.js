@@ -2,10 +2,9 @@ const faker = require('faker');
 
 exports.seed = function (knex) {
   // Deletes ALL existing entries
-  return knex('order_returns').del()
+  return knex('delivery_addresses').del()
     .then(async function () {
       // Inserts seed entries
-      const orderIds = await knex.select('id').from('orders');
       const userIds = await knex.select('id').from('users');
 
       const seedData = [];
@@ -13,11 +12,14 @@ exports.seed = function (knex) {
 
       for (let i = 0; i < numberOfSeeds; i++) {
         const seed = {
-          order_id: faker.random.arrayElement(orderIds).id,
           user_id: faker.random.arrayElement(userIds).id,
-          reason: faker.lorem.sentence(),
-          approved: faker.random.boolean(),
-          rejection_reason: faker.random.boolean() ? faker.lorem.sentence() : null,
+          street_address: faker.address.streetAddress(),
+          address_line_2: faker.address.secondaryAddress(),
+          address_line_3: faker.address.secondaryAddress(),
+          city: faker.address.city(),
+          postal_code: faker.address.zipCode(),
+          contact_number: faker.phone.phoneNumber(),
+          delivery_notes: faker.lorem.sentence(),
           created_at: faker.date.past(),
           updated_at: faker.date.recent(),
         };
@@ -25,6 +27,6 @@ exports.seed = function (knex) {
         seedData.push(seed);
       }
 
-      return knex('order_returns').insert(seedData);
+      return knex('delivery_addresses').insert(seedData);
     });
 };

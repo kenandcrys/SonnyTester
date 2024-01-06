@@ -17,7 +17,7 @@ exports.up = function(knex) {
       table.string('city', 100).notNullable();
       table.string('postal_code', 20).notNullable();
       table.string('contact_number', 255).notNullable();
-      table.string("delivery notes", 128).nullable();
+      table.string("delivery_notes", 128).nullable();
       table.timestamps(true, true);
       });
 };
