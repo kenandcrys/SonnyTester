@@ -6,7 +6,7 @@ function generateCouponCode() {
   let couponCode = "";
 
   for (let i = 0; i < 8; i++) {
-    const randomIndex = faker.random.number({ max: characters.length - 1 });
+    const randomIndex = faker.datatype.number({ max: characters.length - 1 });
     couponCode += characters.charAt(randomIndex);
   }
 

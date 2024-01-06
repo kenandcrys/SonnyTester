@@ -16,8 +16,8 @@ exports.seed = function (knex) {
           order_id: faker.random.arrayElement(orderIds).id,
           user_id: faker.random.arrayElement(userIds).id,
           reason: faker.lorem.sentence(),
-          approved: faker.random.boolean(),
-          rejection_reason: faker.random.boolean() ? faker.lorem.sentence() : null,
+          approved: faker.datatype.boolean(),
+          rejection_reason: faker.datatype.boolean() ? faker.lorem.sentence() : null,
           created_at: faker.date.past(),
           updated_at: faker.date.recent(),
         };

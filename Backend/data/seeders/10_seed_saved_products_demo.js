@@ -12,7 +12,7 @@ exports.seed = function (knex) {
       const seedData = [];
 
       for (let i = 0; i < userIds.length; i++) {
-        const count = faker.random.number({ min: 1, max: productIds.length });
+        const count = faker.datatype.number({ min: 1, max: productIds.length });
         const shuffledProductIds = faker.helpers.shuffle(productIds);
 
         for (let j = 0; j < count; j++) {

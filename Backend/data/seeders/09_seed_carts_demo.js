@@ -12,7 +12,7 @@ exports.seed = function (knex) {
       for (let i = 0; i < userIds.length; i++) {
         const seed = {
           user_id: userIds[i].id,
-          session_id: faker.random.number({ min: 10000, max: 9999999 }).toString(),
+          session_id: faker.datatype.number({ min: 10000, max: 9999999 }).toString(),
         };
 
         seedData.push(seed);
