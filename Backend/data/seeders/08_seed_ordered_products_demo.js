@@ -15,8 +15,8 @@ exports.seed = function (knex) {
         const seed = {
           order_id: faker.random.arrayElement(orderIds).id,
           product_id: faker.random.arrayElement(productIds).id,
-          quantity: faker.random.number({ min: 1, max: 10 }),
-          price: faker.random.number({ min: 10, max: 100, precision: 0.01 }),
+          quantity: faker.datatype.number({ min: 1, max: 10 }),
+          price: faker.datatype.number({ min: 10, max: 100, precision: 0.01 }),
           created_at: faker.date.past(),
           updated_at: faker.date.recent(),
         };

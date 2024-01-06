@@ -16,8 +16,8 @@ exports.seed = function (knex) {
       for (let i = 0; i < numberOfSeeds; i++) {
         const seed = {
           user_id: faker.random.arrayElement(userIds).id,
-          delivery_fee: faker.random.number({ min: 5, max: 20, precision: 0.01 }),
-          total_price: faker.random.number({ min: 50, max: 200, precision: 0.01 }),
+          delivery_fee: faker.datatype.number({ min: 5, max: 20, precision: 0.01 }),
+          total_price: faker.datatype.number({ min: 50, max: 200, precision: 0.01 }),
           billing_address_id: faker.random.arrayElement(billingAddressIds).id,
           delivery_address_id: faker.random.arrayElement(deliveryAddressIds).id,
           payment_method_id: faker.random.arrayElement(paymentMethodIds).id,
