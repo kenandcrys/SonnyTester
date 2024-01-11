@@ -19,7 +19,6 @@ exports.seed = function (knex) {
     .del()
     .then(async function () {
       // Inserts seed entries
-      const userIds = await knex.select("id").from("users");
       const productIds = await knex.select("id").from("products");
 
       const seedData = [];
