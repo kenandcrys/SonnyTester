@@ -1,4 +1,7 @@
 export const SET_CARTS = 'SET_CARTS'
+export const ADD_TO_CART = "ADD_TO_CART";
+export const REMOVE_ITEM_FROM_CART = "REMOVE_ITEM_FROM_CART";
+export const UPDATE_CART = "UPDATE_CART";
 export const SET_INPUT = 'SET_INPUT'
 export const SET_CHAR_LONG = 'SET_CHAR_LONG'
 export const SET_BUSINESS_DETAILS = 'setBusinessDetails';
@@ -7,3 +10,4 @@ export const PENDING_ORDER = 'PENDING_ORDER';
 export const SHIPPED_ORDER = 'SHIPPED_ORDER';
 export const DELIVERED_ORDER = 'DELIVERED_ORDER';
 export const ERROR_ORDER = 'ERROR_ORDER';
+export const SET_PRODUCT = "SET_PRODUCT";

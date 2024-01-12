@@ -45,11 +45,32 @@ const footerSectionsData = [
   
 ];
 
+const footerSectionsDataMobile = [
+    [
+      'Yorkshoppers.com',
+      'Your Lists',
+      'Find a Gift',
+      'Browsing History',
+      'Returns',
+      'Cookie Notice',
+      'Help Center'
+    ],
+  [
+      'Your Orders',
+      'Gift Cards & Registry',
+      'Your Account',
+      'Become a seller',
+      'Terms and Conditions',
+      'Contact Us',
+    ]
+  
+]
+
 const Footer = () => {
   return (
     <>
       {/* Desktop Version */}
-      <div className="hidden px-[30px] py-[50px] items-center  flex-col border-[5px] bg-[#E2EFF6] md:flex gap-10">
+      <div className="hidden px-[30px] py-[50px] items-center  flex-col border-[5px] bg-[#E2EFF6] sm:flex gap-10">
         <div className="flex gap-36">
           {footerSectionsData.map((section, index) => (
             <InfoSection key={index} title={section.title}>
@@ -80,19 +101,16 @@ const Footer = () => {
       </div>
 
       {/* Mobile Version */}
-      <div className="hidden px-6 py-8  justify-center items-center border-[5px] bg-[#E2EFF6] max-md:flex flex-col gap-10">
-        <div className="flex gap-36">
-          {footerSectionsData.map((section, index) => (
+      <div className="hidden px-6 py-8 justify-center items-center border-[5px] bg-[#E2EFF6] max-sm:flex flex-col gap-[72px]">
+        <div className="flex gap-[53px]">
+          {footerSectionsDataMobile.map((section, index) => (
             <div key={index} className="flex flex-col gap-6">
-              {section.items.map((item, i) => (
+              {section.map((item, i) => (
                 <FooterItem key={i} link={""} title={item} />
               ))}
             </div>
           ))}
         </div>
-
-        {/* Add other elements as needed */}
-        <div className="w-full h-0 border border-neutral-400"></div>
 
         <div className="flex flex-col items-center gap-2">
           <div className="flex items-center gap-8">
@@ -114,7 +132,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="w-full h-0 border border-neutral-400"></div>
+        <div className="w-screen h-0 border border-[#CAC5CD]"></div>
 
         <div className="flex flex-col items-center gap-2 text-xs font-[Roboto] font-normal">
           <div className="text-[#2284B6] flex gap-5">

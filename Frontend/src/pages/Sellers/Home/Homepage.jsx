@@ -1,3 +1,4 @@
+
 import{ useState } from 'react'
 import GetVerifiedIcon from '../../../assets/ICONS/GetVerifide.svg'
 import Paid from '../../../assets/ICONS/Paid.svg'
