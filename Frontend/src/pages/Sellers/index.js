@@ -1,3 +1,4 @@
+
 import Homepage from './Home/Homepage'
 import GetVerified from './Home/GetVerified'
 
@@ -11,11 +12,11 @@ import OrderList from './OrderManagement/OrderList'
 import ReturnsAndRefunds from './OrderManagement/ReturnsAndRefunds'
 import Disputes from './OrderManagement/Disputes'
 
-import Overview from '../Analytics/Overview'
-import Payments from '../Analytics/Payments'
-import RatingsAndReviews from '../Analytics/RatingsAndReviews'
+import Overview from './Analytics/Overview'
+import Payments from './Analytics/Payments'
+import RatingsAndReviews from './Analytics/RatingsAndReviews'
 
-export {
+export default {
   Homepage,
   GetVerified,
   ListOfProducts,
@@ -29,4 +30,5 @@ export {
   Overview,
   Payments,
   RatingsAndReviews,
-}
+};
+

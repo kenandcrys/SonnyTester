@@ -12,7 +12,8 @@ exports.seed = function (knex) {
 
       const uniqueUserProductPairs = new Set(); // To track unique user_id and product_id pairs
 
-      outerLoop: for (let i = 0; i < 10; i++) { // Adjust the loop count based on how many entries you want
+      for (let i = 0; i < 10; i++) { // Adjust the loop count based on how many entries you want
+
         let user, product;
 
         // Ensure unique user_id and product_id pair
@@ -20,7 +21,6 @@ exports.seed = function (knex) {
           user = faker.random.arrayElement(users);
           product = faker.random.arrayElement(products);
 
-          if (i >= users.length * products.length) break outerLoop;
         } while (uniqueUserProductPairs.has(`${user.id}-${product.id}`));
 
         uniqueUserProductPairs.add(`${user.id}-${product.id}`);

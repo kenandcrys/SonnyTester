@@ -1,6 +1,7 @@
-import LeftArrow from '../../assets/ICONS/LeftArrow.svg'
-import RightArrow from '../../assets/ICONS/RightArrow.svg'
-import Ratings from '../../assets/ICONS/Ratings.svg'
+
+import LeftArrow from '../../../assets/ICONS/LeftArrow.svg'
+import RightArrow from '../../../assets/ICONS/RightArrow.svg'
+import Ratings from '../../../assets/ICONS/Ratings.svg'
 
 function FeedDetail() {
     return (

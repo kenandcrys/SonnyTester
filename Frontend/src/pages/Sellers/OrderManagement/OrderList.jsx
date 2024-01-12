@@ -1,5 +1,6 @@
+
 import { useEffect, useState } from 'react';
-import RightArrow from '../../assets/ICONS/RightArrow.svg';
+import RightArrow from '../../../assets/ICONS/RightArrow.svg';
 import { DataGrid } from '@mui/x-data-grid';
 import { useDispatch, useSelector } from 'react-redux';
 import {
@@ -8,7 +9,7 @@ import {
   shippedOrder,
   deliveredOrder,
   errorOrder,
-} from '../../../reducersAndActions/actions/';
+} from '../../../reducersAndActions/actions/ordersAction';
 
 function OrderList() {
   const dispatch = useDispatch();
@@ -95,6 +96,7 @@ function OrderList() {
             onClick={handlePending}
           >
             Pending 
+
             ({order.filter((order) => order.status === 'Pending').length})
           </button>
           <button
@@ -145,7 +147,9 @@ function OrderList() {
               Payment Method
             </div>
             <select className="select select-bordered w-full p-5 h-16 mb-0  rounded-md border-solid items-start max-md:pr-5">
+
               <option>All</option>
+
             </select>
           </div>
         </div>

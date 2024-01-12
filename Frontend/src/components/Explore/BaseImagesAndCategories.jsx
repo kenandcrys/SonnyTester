@@ -9,7 +9,7 @@ import electronics from './assets/electronics.png';
 import fashion from './assets/fashion.png'
 import furniture from './assets/furniture.png';
 import groceries from './assets/groceries.png';
-import otherCategories from './assets/otherCategories.png';
+import digital_media from "./assets/digital-media.png";
 import skinCare from './assets/skinCare.png';
 import wristWatches from './assets/wristWatches.png'
 import mensSneakers from './assets/mens_sneakers.png' // Added correct photo
@@ -61,8 +61,8 @@ export const BaseImagesAndCategories = [
     img: bagsAndShoes,
   },
   {
-    category: 'Other',
-    img: otherCategories,
+    category: 'Digital Media',
+    img: digital_media,
   },
   
 ]

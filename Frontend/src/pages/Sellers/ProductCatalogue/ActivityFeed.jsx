@@ -1,14 +1,16 @@
 import { useState } from 'react'
-import SearchIcons from '../../assets/ICONS/SearchIcons.svg'
-import ArrowDown from '../../assets/ICONS/ArrowDown.svg'
-import Filter from '../../assets/ICONS/Filter.svg'
-import Sort from '../../assets/ICONS/Sort.svg'
+import SearchIcons from '../../../assets/ICONS/SearchIcons.svg'
+import ArrowDown from '../../../assets/ICONS/ArrowDown.svg'
+import Filter from '../../../assets/ICONS/Filter.svg'
+import Sort from '../../../assets/ICONS/Sort.svg'
 
 import { Link } from 'react-router-dom';
 
 
-function ActivityFeed() {
+function ActivityFeed() 
+{
   const [products] = useState([]); 
+  
   return (
     <div className="self-center flex w-[967px] max-w-full flex-col items-stretch mt-4 px-5">
       <div className="flex flex-col mt-0 px-0 max-md:max-w-full max-md:px-0">
@@ -115,6 +117,7 @@ function ActivityFeed() {
               </td>
               </tr>)
                 : Array.from({ length: 8 }).map((_product, i) => (
+
                   <tr key={i}>
                     
                     <td className="w-[186px] h-[72px] border-r border-black justify-center text-center">
