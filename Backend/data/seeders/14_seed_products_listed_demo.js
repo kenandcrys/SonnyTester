@@ -1,3 +1,4 @@
+
 const faker = require('faker');
 
 exports.seed = function (knex) {
@@ -11,7 +12,7 @@ exports.seed = function (knex) {
       const productsListed = [];
 
       const uniqueUserProductPairs = new Set(); // To track unique user_id and product_id pairs
-
+    
       for (let i = 0; i < 10; i++) { // Adjust the loop count based on how many entries you want
         let user, product;
 
@@ -19,6 +20,7 @@ exports.seed = function (knex) {
         do {
           user = faker.random.arrayElement(users);
           product = faker.random.arrayElement(products);
+          
         } while (uniqueUserProductPairs.has(`${user.id}-${product.id}`));
 
         uniqueUserProductPairs.add(`${user.id}-${product.id}`);
@@ -30,6 +32,7 @@ exports.seed = function (knex) {
 
         productsListed.push(productListing);
       }
+
 
       return knex('products_listed').insert(productsListed);
     });
