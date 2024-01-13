@@ -1,1 +1,0 @@
-//add seller's pages tests here
