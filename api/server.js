@@ -12,8 +12,6 @@ const yup = require("yup");
 const setupDB = require("../data/db-config");
 setupDB();
 
-// Sample test router
-const SampleRouter = require("./Routes/Sample/Sample-Routes");
 const ProductRouter = require("./Routes/ProductRoute/ProductRoute");
 
 const config_result = dotenv.config();
@@ -45,9 +43,6 @@ server.use(cookieParser());
 // route.use(['/profile', '/profiles'], profileRouter);
 // route.use(['/user'], userRouter);
 
-// Sample test route
-// Sample Route used only to test for proper function
-server.use("/api/test", SampleRouter);
 server.use("/api/products", ProductRouter);
 
 server.get("/", (_req, res) => {
