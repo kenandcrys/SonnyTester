@@ -12,13 +12,6 @@ exports.up = function(knex) {
     .references('id')
     .inTable('users')
     .onDelete('CASCADE');
-    // Associated product (optional, adjust based on your needs)
-    table
-    .integer('order_id')
-    .unsigned()
-    .references('id')
-    .inTable('orders')
-    .onDelete('CASCADE');
     table.integer('number_of_orders').defaultTo(0);
     table.integer('customer_since_years');
     table.integer('total_spending');
