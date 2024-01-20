@@ -17,6 +17,14 @@ class User extends Model {
         from: 'users.id',
         to: 'products.user_id'
       }
+    },
+    reviews: {
+      relation: Model.HasManyRelation,
+      modelClass: Product,
+      join: {
+        from: 'users.id',
+        to: 'reviews.user_id'
+      }
     }
    }
   };
