@@ -8,6 +8,7 @@ class Product extends Model {
   // This is an example of the relation but User Model is not created yet
   static get relationMappings() {
     const User = require("./User");
+    const Review= require("./Review");
 
     return {
       seller: {
@@ -18,6 +19,14 @@ class Product extends Model {
           to: "users.id",
         },
       },
+      reviews: {
+        relation: Model.HasManyRelation,
+        modelClass: Review,
+        join: {
+          from: 'products.id',
+          to: 'reviews.product_id'
+        }
+      }
     };
   }
 
