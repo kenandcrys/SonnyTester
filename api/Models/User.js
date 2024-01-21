@@ -7,12 +7,11 @@ class User extends Model {
   }
 
   static  get relationMappings () {
-    const Product = require("./Product");
-
+ 
    return {
     products: {
       relation: Model.HasManyRelation,
-      modelClass: Product,
+      modelClass: require("./Product"),
       join: {
         from: 'users.id',
         to: 'products.user_id'
@@ -20,10 +19,18 @@ class User extends Model {
     },
     reviews: {
       relation: Model.HasManyRelation,
-      modelClass: Product,
+      modelClass: require('./Review'),
       join: {
         from: 'users.id',
         to: 'reviews.user_id'
+      }
+    },
+    orders: {
+      relation: Model.HasManyRelation,
+      modelClass: require("./Order"),
+      join: {
+        from: 'users.id',
+        to: 'orders.user_id'
       }
     }
    }

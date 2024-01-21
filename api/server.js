@@ -14,6 +14,7 @@ setupDB();
 
 const ProductRouter = require("./Routes/ProductRoute/ProductRoute");
 const ReviewRouter = require("./Routes/ReviewRoute/ReviewRoute");
+const OrderRouter = require("./Routes/OrderRoute/OrderRoute");
 
 
 const config_result = dotenv.config();
@@ -47,6 +48,8 @@ server.use(cookieParser());
 
 server.use("/api/products", ProductRouter);
 server.use("/api/reviews",ReviewRouter);
+server.use("/api/orders",OrderRouter);
+
 
 server.get("/", (_req, res) => {
   res.json({ api: "up" });
