@@ -10,11 +10,6 @@ router.get("/", async (req, res) => {
     res.status(200).json(review);
   });
   
-router.get("/product/:id", async (req, res) => {
-  const id=req.params.id;
-  const review = await Review.relatedQuery('product').for(id);
-  res.status(200).json(review);
-});
 
 
 
