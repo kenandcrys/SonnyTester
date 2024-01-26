@@ -7,7 +7,7 @@ const BuyerValidation = yup
     profile_picture:yup.string('profile_picture').nullable(),
     email:yup.string().email().required(),
     phone:yup.string().nullable(),
-    role:yup.string().oneOf(['admin', 'buyer', 'seller', 'premier_seller']).required(), 
+    role:yup.string().oneOf(['buyer']).required(), 
     address:yup.string().nullable(),
     address_line_2:yup.string().nullable(),
     address_line_3:yup.string().nullable(),
