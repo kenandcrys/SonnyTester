@@ -16,8 +16,7 @@ const ProductRouter = require("./Routes/ProductRoute/ProductRoute");
 const ReviewRouter = require("./Routes/ReviewRoute/ReviewRoute");
 const OrderRouter = require("./Routes/OrderRoute/OrderRoute");
 const BuyerRouter = require("./Routes/BuyerRoute/BuyerRoute");
-
-
+const UserRouter = require("./Routes/UserRoute/UserRoute");
 const config_result = dotenv.config();
 if (process.env.NODE_ENV != "production" && config_result.error) {
   throw config_result.error;
@@ -48,10 +47,10 @@ server.use(cookieParser());
 // route.use(['/user'], userRouter);
 
 server.use("/api/products", ProductRouter);
-server.use("/api/reviews",ReviewRouter);
-server.use("/api/orders",OrderRouter);
-server.use("/api/buyers",BuyerRouter);
-
+server.use("/api/reviews", ReviewRouter);
+server.use("/api/orders", OrderRouter);
+server.use("/api/buyers", BuyerRouter);
+server.use("/api/user", UserRouter);
 
 server.get("/", (_req, res) => {
   res.json({ api: "up" });
