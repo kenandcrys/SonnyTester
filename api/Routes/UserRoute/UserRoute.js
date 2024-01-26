@@ -1,7 +1,9 @@
 const express = require("express");
 const router = express.Router();
 const User = require("../../Models/User");
+
 // returns a user information
+
 router.get("/:id", async (req, res) => {
   const userID = req.params.id;
   try {
@@ -20,14 +22,18 @@ router.get("/:id", async (req, res) => {
   }
 });
 
+//creates new user
+
 router.post("/", async (req, res) => {
   try {
-    await User.query().insert(userData);
+    await User.query().insert(req.body);
     return res.status(201).json({ message: "Created new user" });
   } catch (error) {
     return res.status(500).json({ message: `Internal server error: ${error}` });
   }
 });
+
+// replaces user info
 
 router.put("/:id", async (req, res) => {
   const userID = req.params.id;
@@ -45,10 +51,11 @@ router.put("/:id", async (req, res) => {
   }
 });
 
+//update user info
 router.patch("/:id", async (req, res) => {
   try {
     const userID = req.params.id;
-    const patchedUser = await User.query().patchAndFetchById(userID,req.body);
+    const patchedUser = await User.query().patchAndFetchById(userID, req.body);
     if (patchedUser) {
       return res.status(200).json(patchedUser);
     } else {
@@ -60,6 +67,5 @@ router.patch("/:id", async (req, res) => {
     return res.status(500).json({ message: `Internal server error: ${error}` });
   }
 });
-
 
 module.exports = router;
