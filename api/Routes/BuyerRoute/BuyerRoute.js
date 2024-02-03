@@ -14,6 +14,9 @@ const BuyerValidation = require("../../Middleware/Validation/BuyerValidation");
  *         - email
  *         - role
  *         - password
+ *         - city
+ *         - address
+ *         - postal_code
  *       properties:
  *         id:
  *           type: string
@@ -114,7 +117,7 @@ router.get("/:id", async (req, res) => {
   const buyer = await Buyer.query().findById(id);
   if (!buyer) {
     return res.status(404).json({
-      message: "ID not found",
+      message: "buyer not found",
     });
   }
   res.status(200).json(buyer);

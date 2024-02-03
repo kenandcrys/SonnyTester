@@ -22,6 +22,7 @@ const OrderRouter = require("./Routes/OrderRoute/OrderRoute");
 const BuyerRoute = require("./Routes/BuyerRoute/BuyerRoute");
 const AdminRouter = require("./Routes/AdminRoute/AdminRoute");
 const UserRouter = require("./Routes/UserRoute/UserRoute");
+
 const config_result = dotenv.config();
 if (process.env.NODE_ENV != "production" && config_result.error) {
   throw config_result.error;
@@ -45,10 +46,10 @@ const options = {
   definition: {
     openapi: "3.0.0",
     info: {
-      title: "Rest API Docs",
+      title: "SonnyNY Rest API Documentation",
       version: "1.0.0",
       description:
-        "This is a simple CRUD API application made with Express and documented with Swagger",
+        "This RESTful API is designed for the SonnyNY project",
     
     },
     servers: [
@@ -84,11 +85,11 @@ server.use("/api/products", ProductRouter);
 server.use("/api/reviews", ReviewRouter);
  server.use("/api/orders", OrderRouter);
 server.use("/api/admin", AdminRouter);
-server.use("/api/user", UserRouter);
+server.use("/api/users", UserRouter);
 
-// server.get("/", (_req, res) => {
-//   res.json({ api: "up" });
-// });
+server.get("/", (_req, res) => {
+  res.json({ api: "up" });
+});
 
 // catch 404 and forward to error handler
 server.use(function (_req, _res, next) {

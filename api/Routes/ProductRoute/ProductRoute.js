@@ -209,7 +209,7 @@ router.post("/", ProductValidation, async (req, res) => {
  * @swagger
  * /api/products/{id}:
  *   delete:
- *     summary: Remove the order by id
+ *     summary: Remove the product by id
  *     tags: [Products]
  *     parameters:
  *       - in: path

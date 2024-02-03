@@ -48,31 +48,20 @@ const AdminValidation = require("../../Middleware/Validation/AdminValidation");
  /**
   * @swagger
   * tags:
-  *   name: Admins
+  *   name: Admin
   *   description: The Buyers managing API
   */
 
 
 
-// router.get("/", async (req, res) => {
-//   const admin = await Admin.query().select([
-//     "id",
-//     "name",
-//     "profile_picture",
-//     "email",
-//     "phone",
-//     "role",
-//   ]);
 
-//   res.status(200).json(admin);
-// });
 
 /**
  * @swagger
  * /api/admin/{id}:
  *   get:
  *     summary: Get the admin by id
- *     tags: [Admins]
+ *     tags: [Admin]
  *     parameters:
  *       - in: path
  *         name: id
@@ -111,7 +100,7 @@ router.get("/:id", async (req, res) => {
  * /api/admin/{id}:
  *  put:
  *    summary: Update the admin by the id
- *    tags: [Admins]
+ *    tags: [Admin]
  *    parameters:
  *      - in: path
  *        name: id
