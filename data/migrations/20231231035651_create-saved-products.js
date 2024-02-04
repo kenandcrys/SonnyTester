@@ -7,7 +7,7 @@ exports.up = function(knex) {
     table.increments('id').primary();
     // Buyer who saved the product
     table
-    .integer('buyer_id')
+    .string('buyer_id')
     .unsigned()
     .references('id')
     .inTable('users')
@@ -21,7 +21,7 @@ exports.up = function(knex) {
     .onDelete('CASCADE');
     //Seller who listed the product
     table
-    .integer('seller_id')
+    .string('seller_id')
     .unsigned()
     .references('id')
     .inTable('users')

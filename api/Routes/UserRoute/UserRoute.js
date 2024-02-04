@@ -67,10 +67,9 @@ const User = require("../../Models/User");
  *           type: object
  *           description: JSON object representing  images for business verification.
  *       example:
- *         id: 5
  *         name: Alexander
  *         email: Alexander@gmail.com
- *         password: 123
+ *         password: "123"
  *         role: buyer
  *         address: 456 Elm Street
  *         city: Springfield

@@ -63,7 +63,7 @@ const ProductValidation = require("../../Middleware/Validation/ProductValidation
   * @swagger
   * tags:
   *   name: Products
-  *   description: The Orders managing API
+  *   description: The Products managing API
   */
 
 /**

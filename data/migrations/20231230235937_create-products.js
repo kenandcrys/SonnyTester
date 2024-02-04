@@ -2,7 +2,7 @@ exports.up = function (knex) {
   return knex.schema.createTable("products", function (table) {
     table.increments("id").primary(); // Auto-incrementing primary key
     table
-      .integer('user_id') //foreign key for user id from users table that created the product
+      .string('user_id') //foreign key for user id from users table that created the product
       .unsigned()
       .references('id')
       .inTable('users')

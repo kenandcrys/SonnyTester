@@ -17,7 +17,7 @@ exports.seed = function (knex) {
             price: 89.99,
             status: 'published',
             stock_quantity: 50,
-            user_id: 2
+            user_id: "2"
           },
           {
             id: 2,
@@ -28,7 +28,7 @@ exports.seed = function (knex) {
             price: 129.99,
             status: 'published',
             stock_quantity: 30,
-            user_id: 3
+            user_id: "3"
           },
           {
             id: 3,
@@ -39,7 +39,7 @@ exports.seed = function (knex) {
             price: 699.99,
             status: 'published',
             stock_quantity: 20,
-            user_id: 4
+            user_id: "4"
           },
           {
             id: 4,
@@ -50,7 +50,7 @@ exports.seed = function (knex) {
             price: 1499.99,
             status: 'published',
             stock_quantity: 15,
-            user_id: 2
+            user_id: "2"
           },
           {
             id: 5,
@@ -61,7 +61,7 @@ exports.seed = function (knex) {
             price: 899.99,
             status: 'published',
             stock_quantity: 25,
-            user_id: 3
+            user_id: "3"
           },
           {
             id: 6,
@@ -72,7 +72,7 @@ exports.seed = function (knex) {
             price: 2499.99,
             status: 'published',
             stock_quantity: 10,
-            user_id: 4
+            user_id: "4"
           },
           {
             id: 7,
@@ -83,7 +83,7 @@ exports.seed = function (knex) {
             price: 1299.99,
             status: 'published',
             stock_quantity: 12,
-            user_id: 2
+            user_id: "2"
           },
           {
             id: 8,
@@ -94,7 +94,7 @@ exports.seed = function (knex) {
             price: 129.99,
             status: 'published',
             stock_quantity: 40,
-            user_id: 3
+            user_id: "3"
           },
           {
             id: 9,
@@ -105,7 +105,7 @@ exports.seed = function (knex) {
             price: 39.99,
             status: 'published',
             stock_quantity: 60,
-            user_id: 4
+            user_id: "4"
           },
           {
             id: 10,
@@ -116,7 +116,7 @@ exports.seed = function (knex) {
             price: 199.99,
             status: 'published',
             stock_quantity: 20,
-            user_id: 2
+            user_id: "2"
           },
           {
             id: 11,
@@ -127,7 +127,7 @@ exports.seed = function (knex) {
             price: 49.99,
             status: 'published',
             stock_quantity: 5,
-            user_id: 3
+            user_id: "3"
           },
           {
             id: 12,
@@ -138,7 +138,7 @@ exports.seed = function (knex) {
             price: 129.99,
             status: 'published',
             stock_quantity: 15,
-            user_id: 4
+            user_id: "4"
           },
           {
             id: 13,
@@ -149,7 +149,7 @@ exports.seed = function (knex) {
             price: 19.99,
             status: 'published',
             stock_quantity: 100,
-            user_id: 2
+            user_id: "2"
           },
           // Add other products accordingly
           // ...

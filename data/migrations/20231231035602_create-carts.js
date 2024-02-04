@@ -7,7 +7,7 @@ exports.up = function(knex) {
     table.increments('id').primary();
     // User who owns the cart
     table
-    .integer('user_id')
+    .string('user_id')
     .unsigned()
     .references('id')
     .inTable('users')

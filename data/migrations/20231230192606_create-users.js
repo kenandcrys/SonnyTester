@@ -5,7 +5,7 @@
 exports.up = function(knex) {
       return knex.schema.createTable("users", function(table) {
         //BOTH
-        table.increments('id').primary(); // Auto-incrementing primary key
+        table.string('id').primary(); 
         table.string('name').notNullable();
         table.string('profile_picture').nullable();
         table.string('email').unique().notNullable();

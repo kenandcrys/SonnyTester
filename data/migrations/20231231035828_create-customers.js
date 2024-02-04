@@ -6,7 +6,7 @@ exports.up = function(knex) {
     return knex.schema.createTable('customers', function(table) {
     // Customer details
     table
-    .integer('user_id')
+    .string('user_id')
     .unsigned()
     .primary()
     .references('id')

@@ -1,6 +1,35 @@
-GET 
 
-### 
-POST 
+GET http://localhost:8000/api/users
+###
+post http://localhost:8000/signup
 Content-Type: application/json
 content 
+
+{  
+    "name" : "alex",
+    "profile_picture": null,
+    "email": "seller-authentication16@example.com",
+    "phone": null,
+    "role": "seller",
+    "address": "789 Buyer Lane",
+    "city": "Buyer City",
+    "password": "buyerpassword",
+    "business_name":"ABC",
+    "business_address":"1234",
+    "business_city":"us",
+    "business_postal_code":"1234",
+    "biz_cert_number_ein":"1234"
+  }
+
+### 
+POST http://localhost:8000/api/login
+Content-Type: application/json
+content 
+
+{
+    "email":"buyer-authentication1@example.com",
+    "password":"buyerpassword"
+}
+###
+
+GET http://localhost:8000/api/logout

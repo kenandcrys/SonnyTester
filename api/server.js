@@ -16,6 +16,8 @@ const PORT = process.env.PORT || 9000;
 //Objection db connection
 const setupDB = require("../data/db-config");
 setupDB();
+const AuthenticationMiddleware=require("./Middleware/AuthenticationMiddleware");
+const AuthenticationRoute=require("./Routes/AuthenticationRoute/AuthenticationRoute");
 const ProductRouter = require("./Routes/ProductRoute/ProductRoute");
 const ReviewRouter = require("./Routes/ReviewRoute/ReviewRoute");
 const OrderRouter = require("./Routes/OrderRoute/OrderRoute");
@@ -55,6 +57,19 @@ const options = {
     servers: [
       {
         url: `http://localhost:8000`,
+      },  
+    ],
+    components: {
+      securitySchemes: {
+        bearerAuth: {
+          type: "http",
+          scheme: "bearer",
+        },
+      },
+    },
+    security: [
+      {
+        bearerAuth: [],
       },
     ],
   },
@@ -71,8 +86,6 @@ server.use(express.json());
 server.use(logger("dev"));
 server.use(express.urlencoded({ extended: false }));
 server.use(cookieParser());
-server.use("/api/buyers", BuyerRoute);
-
 
 
 
@@ -80,10 +93,12 @@ server.use("/api/buyers", BuyerRoute);
 // route.use('/', indexRouter);
 // route.use(['/profile', '/profiles'], profileRouter);
 // route.use(['/user'], userRouter);
-
+server.use("/", AuthenticationRoute);
+server.use("/api/*",AuthenticationMiddleware);
+server.use("/api/buyers", BuyerRoute);
 server.use("/api/products", ProductRouter);
 server.use("/api/reviews", ReviewRouter);
- server.use("/api/orders", OrderRouter);
+server.use("/api/orders", OrderRouter);
 server.use("/api/admin", AdminRouter);
 server.use("/api/users", UserRouter);
 
