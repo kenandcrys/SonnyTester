@@ -73,7 +73,7 @@ router.post("/signup",UserValidation,async(req,res) => {
      const salt=await bcrypt.genSalt(10);
      req.body.password= await bcrypt.hash(password,salt);
      await User.query().insert(req.body);
-    res.json({ message:"User registered successfully"});
+    res.status(201).json({ message:"User registered successfully"});
       
     } catch (error) {
         console.log(error);
@@ -82,11 +82,33 @@ router.post("/signup",UserValidation,async(req,res) => {
   
   })
 
+/**
+ * @swagger
+ * /profile:
+ *   get:
+ *     summary: Retrieve user profile information.
+ *     tags: [Authentication]
+ *     responses:
+ *       200:
+ *         description:  Successful retrieval of user profile.
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ *               items:
+ *                 $ref: '#/components/schemas/User'
+ */
 
-
-// router.post('/login',async (req, res) => {
-    
-//   });
+router.get('/profile',AuthenticationMiddleware,async (req, res) => {
+  const id = req.uid;
+  const user = await User.query().findById(id).select(["id", "name", "profile_picture", "email", "phone", "role","address","address_line_2","address_line_3","city","postal_code","business_name","business_address","business_address_line_2","business_address_line_3","business_city","business_postal_code","biz_cert_number_ein","verification_images"]);
+  if (!user) {
+    return res.status(404).json({
+      message: "not found.",
+    });
+  }
+  res.status(200).json(user);
+  });
 
 
 

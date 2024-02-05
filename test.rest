@@ -6,9 +6,9 @@ Content-Type: application/json
 content 
 
 {  
-    "name" : "alex",
+    "name" : "alex-17",
     "profile_picture": null,
-    "email": "seller-authentication16@example.com",
+    "email": "seller-authentication17@example.com",
     "phone": null,
     "role": "seller",
     "address": "789 Buyer Lane",

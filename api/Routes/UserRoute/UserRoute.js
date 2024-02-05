@@ -137,7 +137,7 @@ router.get("/:id", async (req, res) => {
   const user = await User.query().findById(id);
   if (!user) {
     return res.status(404).json({
-      message: "user not found",
+      message: "No user found with provided id",
     });
   }
   res.status(200).json(user);

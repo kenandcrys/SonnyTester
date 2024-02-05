@@ -214,7 +214,7 @@ router.delete("/:id", async (req, res) => {
 
   if (!result) {
     return res.status(404).json({
-      message: "ID not found",
+      message: "No review found with provided id",
     });
   }
 

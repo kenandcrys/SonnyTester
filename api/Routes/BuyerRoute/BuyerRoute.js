@@ -117,7 +117,7 @@ router.get("/:id", async (req, res) => {
   const buyer = await Buyer.query().findById(id);
   if (!buyer) {
     return res.status(404).json({
-      message: "buyer not found",
+      message: "No buyer found with provided id",
     });
   }
   res.status(200).json(buyer);

@@ -122,7 +122,7 @@ router.get("/:id", async (req, res) => {
 
   if (!order) {
     return res.status(404).json({
-      message: "ID not found",
+      message: "No order found with provided id",
     });
   }
 
