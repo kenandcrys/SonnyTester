@@ -7,17 +7,22 @@ const logger = require("morgan");
 const helmet = require("helmet");
 const dotenv = require("dotenv");
 const yup = require("yup");
+const   bodyParser = require("body-parser");
+const swaggerJsdoc = require("swagger-jsdoc");
+const swaggerUi = require("swagger-ui-express");
+
+const PORT = process.env.PORT || 9000;
 
 //Objection db connection
 const setupDB = require("../data/db-config");
 setupDB();
-
 const ProductRouter = require("./Routes/ProductRoute/ProductRoute");
 const ReviewRouter = require("./Routes/ReviewRoute/ReviewRoute");
 const OrderRouter = require("./Routes/OrderRoute/OrderRoute");
-const BuyerRouter = require("./Routes/BuyerRoute/BuyerRoute");
+const BuyerRoute = require("./Routes/BuyerRoute/BuyerRoute");
 const AdminRouter = require("./Routes/AdminRoute/AdminRoute");
 const UserRouter = require("./Routes/UserRoute/UserRoute");
+
 const config_result = dotenv.config();
 if (process.env.NODE_ENV != "production" && config_result.error) {
   throw config_result.error;
@@ -35,12 +40,41 @@ process.on("unhandledRejection", (reason, p) => {
   // application specific logging, throwing an error, or other logic here
 });
 
+
+
+const options = {
+  definition: {
+    openapi: "3.0.0",
+    info: {
+      title: "SonnyNY Rest API Documentation",
+      version: "1.0.0",
+      description:
+        "This RESTful API is designed for the SonnyNY project",
+    
+    },
+    servers: [
+      {
+        url: `http://localhost:8000`,
+      },
+    ],
+  },
+  apis: ["api/Routes/**/*.js"]
+};
+
+const specs = swaggerJsdoc(options);
+server.use("/api-docs",swaggerUi.serve,swaggerUi.setup(specs));
+
+
 server.use(helmet());
 server.use(cors());
 server.use(express.json());
 server.use(logger("dev"));
 server.use(express.urlencoded({ extended: false }));
 server.use(cookieParser());
+server.use("/api/buyers", BuyerRoute);
+
+
+
 
 // application routes
 // route.use('/', indexRouter);
@@ -49,10 +83,9 @@ server.use(cookieParser());
 
 server.use("/api/products", ProductRouter);
 server.use("/api/reviews", ReviewRouter);
-server.use("/api/orders", OrderRouter);
-server.use("/api/buyers", BuyerRouter);
+ server.use("/api/orders", OrderRouter);
 server.use("/api/admin", AdminRouter);
-server.use("/api/user", UserRouter);
+server.use("/api/users", UserRouter);
 
 server.get("/", (_req, res) => {
   res.json({ api: "up" });
@@ -96,5 +129,6 @@ server.use(function (err, _req, res, next) {
   res.status(500).json({ error: err.message }); // We show the error message just while in development
   // res.status(500).json("Something went wrong");
 });
+
 
 module.exports = server;

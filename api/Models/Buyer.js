@@ -1,3 +1,5 @@
+
+
 const { Model } = require("objection");
 
 class Buyer extends Model {
