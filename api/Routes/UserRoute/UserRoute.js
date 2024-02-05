@@ -67,10 +67,9 @@ const User = require("../../Models/User");
  *           type: object
  *           description: JSON object representing  images for business verification.
  *       example:
- *         id: 5
  *         name: Alexander
  *         email: Alexander@gmail.com
- *         password: 123
+ *         password: "123"
  *         role: buyer
  *         address: 456 Elm Street
  *         city: Springfield
@@ -138,7 +137,7 @@ router.get("/:id", async (req, res) => {
   const user = await User.query().findById(id);
   if (!user) {
     return res.status(404).json({
-      message: "user not found",
+      message: "No user found with provided id",
     });
   }
   res.status(200).json(user);

@@ -28,7 +28,7 @@ exports.up = function(knex) {
     table.integer('quantity').notNullable();
     // Seller of the product
     table
-      .integer('seller_id')
+      .string('seller_id')
       .unsigned()
       .references('id')
       .inTable('users')

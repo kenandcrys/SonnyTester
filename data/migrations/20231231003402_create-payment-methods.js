@@ -6,7 +6,7 @@ exports.up = function(knex) {
   return knex.schema.createTable('payment_methods', function (table) {
     table.increments('id').primary();
     table
-    .integer('user_id')
+    .string('user_id')
     .unsigned().references('id')
     .inTable('users')
     .onDelete('CASCADE');

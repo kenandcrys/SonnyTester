@@ -63,7 +63,7 @@ const ProductValidation = require("../../Middleware/Validation/ProductValidation
   * @swagger
   * tags:
   *   name: Products
-  *   description: The Orders managing API
+  *   description: The Products managing API
   */
 
 /**
@@ -119,7 +119,7 @@ router.get("/:id", async (req, res) => {
 
   if (!product) {
     return res.status(404).json({
-      message: "ID not found",
+      message: "No product found with provided id",
     });
   }
 

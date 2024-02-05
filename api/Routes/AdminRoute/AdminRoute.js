@@ -49,7 +49,7 @@ const AdminValidation = require("../../Middleware/Validation/AdminValidation");
   * @swagger
   * tags:
   *   name: Admin
-  *   description: The Buyers managing API
+  *   description: The Admin managing API
   */
 
 

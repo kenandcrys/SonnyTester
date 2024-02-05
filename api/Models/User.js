@@ -5,22 +5,17 @@ class User extends Model {
     return "users";
   }
 
-  static fromDatabaseJson(json) {
+
+static fromDatabaseJson(json) {
     if (json.role == "buyer") {
       const Buyer = require("./Buyer");
       return Model.fromDatabaseJson.call(Buyer, json);
-    }
-
-    if (json.role == "admin") {
+    }else if (json.role == "admin") {
       const Admin = require("./Admin");
       return Model.fromDatabaseJson.call(Admin, json);
+    }else {
+      return Model.fromDatabaseJson.call(User, json)
     }
-
-    if (json.role == "seller") {
-      const Seller = require("./Seller");
-      return Model.fromDatabaseJson.call(Seller, json);
-    }
-  }
 }
 
 module.exports = User;

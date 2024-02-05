@@ -7,7 +7,7 @@ exports.up = function(knex) {
     table.increments('id').primary();
     // User receiving recommendation
     table
-    .integer('user_id')
+    .string('user_id')
     .unsigned()
     .references('id')
     .inTable('users')
