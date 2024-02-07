@@ -6,10 +6,6 @@ const UserValidation =async (req, res, next) => {
     } else if (role === 'seller'){
         const SellerValidation = require("./SellerValidation");
         await  SellerValidation(req,res,next);
-
-    }else{
-        const AdminValidation = require("./AdminValidation");
-        await  AdminValidation(req,res,next);
     }
     
   };
