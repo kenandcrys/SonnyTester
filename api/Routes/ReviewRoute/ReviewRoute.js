@@ -2,6 +2,8 @@ const express = require("express");
 const router = express.Router();
 const Review = require("../../Models/Review");
 const ReviewValidation = require("../../Middleware/Validation/ReviewValidation");
+const VerfieRole = require("../../Middleware/VerifyRoles");
+const {updatePermission,deletePermission,insertPermission} = require("../../Middleware/Permisions/ReviewPermission");
 
 
 
@@ -64,7 +66,7 @@ const ReviewValidation = require("../../Middleware/Validation/ReviewValidation")
  *                 $ref: '#/components/schemas/Review'
  */
 
-router.get("/", async (req, res) => {
+router.get("/",VerfieRole('admin'), async (req, res) => {
     const review = await Review.query();
     res.status(200).json(review);
   });
@@ -93,7 +95,7 @@ router.get("/", async (req, res) => {
  *         description: The review was not found
  */
 
-router.get("/:id", async (req, res) => {
+router.get("/:id",async (req, res) => {
   const id = req.params.id;
   const review = await Review.query().findById(id);
 
@@ -140,7 +142,7 @@ router.get("/:id", async (req, res) => {
  */
 
 
-router.put("/:id", ReviewValidation, async (req, res) => {
+router.put("/:id",VerfieRole('buyer'),updatePermission,ReviewValidation, async (req, res) => {
   const id = req.params.id;
   const review = await Review.query().patchAndFetchById(id, req.body);
 
@@ -177,7 +179,7 @@ router.put("/:id", ReviewValidation, async (req, res) => {
  *         description: Some server error
  */
 
-router.post("/", ReviewValidation, async (req, res) => {
+router.post("/",VerfieRole('buyer'),insertPermission,ReviewValidation, async (req, res) => {
   const review = await Review.query().insert(req.body).returning("*");
 
   res.status(201).json(review);
@@ -207,20 +209,19 @@ router.post("/", ReviewValidation, async (req, res) => {
 
 
 
-router.delete("/:id", async (req, res) => {
+router.delete("/:id",VerfieRole('admin','buyer'), async (req, res) => {
   const id = req.params.id;
-
-  const result = await Review.query().deleteById(id);
-
-  if (!result) {
+   const review =await Review.query().findById(id);
+  if (!review) {
     return res.status(404).json({
       message: "No review found with provided id",
     });
   }
-
-  res.status(202).json({
-    message: "Review has been deleted.",
-  });
+  if(!deletePermission(req.user,review)){
+    return res.status(403).json({error:'you do not have permission to perform this action'});
+  }
+  await Review.query().deleteById(id);
+  res.status(202).json({ message: "Review has been deleted.", });
 });
 
 

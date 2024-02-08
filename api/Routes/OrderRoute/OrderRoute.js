@@ -2,6 +2,9 @@ const express = require("express");
 const router = express.Router();
 const Order = require("../../Models/Order");
 const OrderValidation = require("../../Middleware/Validation/OrderValidation");
+const VerfieRole = require("../../Middleware/VerifyRoles");
+const {updatePermission,readPermission,insertPermission} = require("../../Middleware/Permisions/OrderPermission");
+
 
 /**
  * @swagger
@@ -85,7 +88,7 @@ const OrderValidation = require("../../Middleware/Validation/OrderValidation");
  *                 $ref: '#/components/schemas/Order'
  */
 
-router.get("/", async (req, res) => {
+router.get("/",VerfieRole('admin'), async (req, res) => {
     const order = await Order.query();
     res.status(200).json(order);
   });
@@ -116,7 +119,7 @@ router.get("/", async (req, res) => {
  */
 
 
-router.get("/:id", async (req, res) => {
+router.get("/:id",VerfieRole('admin','buyer'), async (req, res) => {
   const id = req.params.id;
   const order = await Order.query().findById(id);
 
@@ -125,7 +128,9 @@ router.get("/:id", async (req, res) => {
       message: "No order found with provided id",
     });
   }
-
+  if(!readPermission(req.user,order)){
+    return res.status(403).json({error:'you do not have permission to perform this action'});
+  }
   res.status(200).json(order);
 });
 
@@ -164,11 +169,10 @@ router.get("/:id", async (req, res) => {
 
 
 
-router.put("/:id", OrderValidation, async (req, res) => {
+router.put("/:id",VerfieRole('buyer'),updatePermission,OrderValidation, async (req, res) => {
   const id = req.params.id;
   const order = await Order.query().patchAndFetchById(id, req.body);
-
-  if (!review) {
+  if (!order) {
     return res.status(404).json({
       message: "ID not found",
     });
@@ -199,7 +203,7 @@ router.put("/:id", OrderValidation, async (req, res) => {
  *       500:
  *         description: Some server error
  */
-router.post("/", OrderValidation, async (req, res) => {
+router.post("/",VerfieRole('buyer'),insertPermission, OrderValidation, async (req, res) => {
   const order = await Order.query().insert(req.body).returning("*");
 
   res.status(201).json(order);
@@ -228,7 +232,7 @@ router.post("/", OrderValidation, async (req, res) => {
  */
 
 
-router.delete("/:id", async (req, res) => {
+router.delete("/:id",VerfieRole('admin'), async (req, res) => {
   const id = req.params.id;
 
   const result = await Order.query().deleteById(id);

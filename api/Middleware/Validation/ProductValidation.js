@@ -3,6 +3,7 @@ const schemaValidator = require("../SchemaValidator");
 
 const ProductValidation = yup
   .object({
+    user_id:yup.string().required(),
     name: yup.string().required(),
     description: yup.string().required(),
     category: yup.string().required(),

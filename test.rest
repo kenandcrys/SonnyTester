@@ -8,9 +8,9 @@ content
 {  
     "name" : "alex-17",
     "profile_picture": null,
-    "email": "seller-authentication17@example.com",
+    "email": "buyer-authentication17@example.com",
     "phone": null,
-    "role": "seller",
+    "role": "buyer",
     "address": "789 Buyer Lane",
     "city": "Buyer City",
     "password": "buyerpassword",
