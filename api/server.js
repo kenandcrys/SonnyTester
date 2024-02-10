@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 9000;
 //Objection db connection
 const setupDB = require("../data/db-config");
 setupDB();
-const AuthenticationMiddleware=require("./Middleware/AuthenticationMiddleware");
+const AuthenticationUser=require("./Middleware/AuthenticationUser");
 const AuthenticationRoute=require("./Routes/AuthenticationRoute/AuthenticationRoute");
 const ProductRouter = require("./Routes/ProductRoute/ProductRoute");
 const ReviewRouter = require("./Routes/ReviewRoute/ReviewRoute");
@@ -94,7 +94,7 @@ server.use(cookieParser());
 // route.use(['/profile', '/profiles'], profileRouter);
 // route.use(['/user'], userRouter);
 server.use("/", AuthenticationRoute);
-server.use("/api/*",AuthenticationMiddleware);
+server.use("/api/*",AuthenticationUser);
 server.use("/api/buyers", BuyerRoute);
 server.use("/api/products", ProductRouter);
 server.use("/api/reviews", ReviewRouter);

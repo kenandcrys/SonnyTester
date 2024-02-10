@@ -19,4 +19,6 @@ static fromDatabaseJson(json) {
   }
 }
 
+}
+
 module.exports = User;

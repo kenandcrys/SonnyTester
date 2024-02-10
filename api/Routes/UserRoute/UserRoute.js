@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const User = require("../../Models/User");
+const VerfieRole = require("../../Middleware/VerifyRoles");
 
 
 /**
@@ -103,7 +104,7 @@ const User = require("../../Models/User");
  *                 $ref: '#/components/schemas/User'
  */
 
-router.get("/", async (req, res) => {
+router.get("/",VerfieRole('admin'), async (req, res) => {
   const users = await User.query();
   res.status(200).json(users);
 });
@@ -132,7 +133,7 @@ router.get("/", async (req, res) => {
  *         description: The user was not found
  */
 
-router.get("/:id", async (req, res) => {
+router.get("/:id",VerfieRole('admin'), async (req, res) => {
   const id = req.params.id;
   const user = await User.query().findById(id);
   if (!user) {
@@ -165,7 +166,7 @@ router.get("/:id", async (req, res) => {
  */
 
 
-router.delete("/:id", async (req, res) => {
+router.delete("/:id",VerfieRole('admin'), async (req, res) => {
   const id = req.params.id;
 
   const result = await User.query().deleteById(id);

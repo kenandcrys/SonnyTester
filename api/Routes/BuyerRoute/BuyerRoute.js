@@ -2,6 +2,9 @@ const express = require("express");
 const router = express.Router();
 const Buyer = require("../../Models/Buyer");
 const BuyerValidation = require("../../Middleware/Validation/BuyerValidation");
+const VerfieRole = require("../../Middleware/VerifyRoles");
+const {updatePermission,deletePermission,readPermission} = require("../../Middleware/Permisions/BuyerPermission");
+
 
 /**
  * @swagger
@@ -83,9 +86,9 @@ const BuyerValidation = require("../../Middleware/Validation/BuyerValidation");
  *                 $ref: '#/components/schemas/Buyer'
  */
 
-router.get("/", async (req, res) => {
-    const order = await Buyer.query();
-    res.status(200).json(order);
+router.get("/", VerfieRole('admin'),async (req, res) => {
+    const buyer = await Buyer.query();
+    res.status(200).json(buyer);
   });
   
 /**
@@ -112,7 +115,7 @@ router.get("/", async (req, res) => {
  *         description: The buyer was not found
  */
 
-router.get("/:id", async (req, res) => {
+router.get("/:id",VerfieRole('admin','buyer'),readPermission, async (req, res) => {
   const id = req.params.id;
   const buyer = await Buyer.query().findById(id);
   if (!buyer) {
@@ -157,7 +160,7 @@ router.get("/:id", async (req, res) => {
  */
 
 
-router.put("/:id", BuyerValidation, async (req, res) => {
+router.put("/:id",VerfieRole('buyer'),updatePermission,BuyerValidation, async (req, res) => {
   const id = req.params.id;
   const buyer = await Buyer.query().patchAndFetchById(id, req.body);
 
@@ -193,7 +196,7 @@ router.put("/:id", BuyerValidation, async (req, res) => {
  */
 
 
-router.delete("/:id", async (req, res) => {
+router.delete("/:id",VerfieRole('admin','buyer'),deletePermission, async (req, res) => {
     const id = req.params.id;
   
     const result = await Buyer.query().deleteById(id);

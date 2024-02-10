@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const Admin = require("../../Models/Admin");
 const AdminValidation = require("../../Middleware/Validation/AdminValidation");
+const VerfieRole = require("../../Middleware/VerifyRoles");
 
 /**
  * @swagger
@@ -79,7 +80,7 @@ const AdminValidation = require("../../Middleware/Validation/AdminValidation");
  *       404:
  *         description: The admin was not found
  */
-router.get("/:id", async (req, res) => {
+router.get("/:id",VerfieRole('admin'), async (req, res) => {
   const id = req.params.id;
   const admin = await Admin.query()
     .findById(id)
@@ -128,7 +129,7 @@ router.get("/:id", async (req, res) => {
  */
 
 
-router.put("/:id", AdminValidation, async (req, res) => {
+router.put("/:id", VerfieRole('admin'),AdminValidation, async (req, res) => {
   const id = req.params.id;
   const admin = await Admin.query()
     .findOne("id", id)
