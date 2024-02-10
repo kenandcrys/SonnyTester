@@ -16,6 +16,7 @@ static fromDatabaseJson(json) {
     }else {
       return Model.fromDatabaseJson.call(User, json)
     }
+  }
 }
 
 }
