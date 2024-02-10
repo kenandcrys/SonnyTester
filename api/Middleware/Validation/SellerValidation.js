@@ -9,12 +9,12 @@ const SellerValidation = yup
     phone:yup.string().nullable(),
     role:yup.string().oneOf(['seller']).required(), 
     business_name:yup.string().required(),
-    business_address:yup.string().required(),
+    business_address:yup.string().nullable(),
     business_address_line_2:yup.string().nullable(),
     business_address_line_3:yup.string().nullable(),
-    business_city:yup.string().max(100).required(),
-    business_postal_code:yup.string().required(),
-    biz_cert_number_ein:yup.string().required(),
+    business_city:yup.string().max(100).nullable(),
+    business_postal_code:yup.string().nullable(),
+    biz_cert_number_ein:yup.string().nullable(),
     verification_images:yup.mixed().nullable(),
     password:yup.string().required()
   })
