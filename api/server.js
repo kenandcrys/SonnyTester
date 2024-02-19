@@ -92,7 +92,6 @@ server.use(cookieParser());
 // application routes
 // route.use('/', indexRouter);
 // route.use(['/profile', '/profiles'], profileRouter);
-// route.use(['/user'], userRouter);
 server.use("/", AuthenticationRoute);
 server.use("/api/*",AuthenticationUser);
 server.use("/api/buyers", BuyerRoute);
