@@ -18,7 +18,7 @@ if (process.env.NODE_ENV != "production" && config_result.error) {
 }
 
 //###[  Routers ]###
-// const AuthenticationRoute=require("./Routes/AuthenticationRoute/AuthenticationRoute");
+const AuthenticationRoute=require("./Routes/AuthenticationRoute/AuthenticationRoute");
 const AdminRouter = require("./Routes/Admin");
 const BuyerRouter = require("./Routes/Buyer");
 const SellerRouter = require("./Routes/Seller");
@@ -39,7 +39,7 @@ server.use(express.urlencoded({ extended: false }));
 server.use(cookieParser());
 
 // application routes
-// server.use("/api/auth", AuthenticationRoute);
+server.use("/api/auth", AuthenticationRoute);
 server.use("/api", PublicRoutes);
 server.use("/api", BuyerRouter);
 server.use("/api/seller", SellerRouter);
