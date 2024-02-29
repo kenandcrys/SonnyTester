@@ -4,7 +4,7 @@ const router = express.Router();
 const User = require("../../Models/User");
 const admin = require('../../firebase-config');
 const UserValidation = require('../../Middleware/Validation/UserValidation');
-const AuthenticationMiddleware = require("../../Middleware/AuthenticationMiddleware");
+const AuthenticationUser = require("../../Middleware/AuthenticationUser");
 
 /**
  * @swagger
@@ -197,7 +197,7 @@ router.post("/login", async (req, res) => {
  *               items:
  *                 $ref: '#/components/schemas/User'
  */
-router.get('/profile', AuthenticationMiddleware, async (req, res) => {
+router.get('/profile', AuthenticationUser, async (req, res) => {
   const id = req.uid;
   const user = await User.query().findById(id).select(["id", "name", "profile_picture", "email", "phone", "role", "address", "address_line_2", "address_line_3", "city", "postal_code", "business_name", "business_address", "business_address_line_2", "business_address_line_3", "business_city", "business_postal_code", "biz_cert_number_ein", "verification_images"]);
   if (!user) {
