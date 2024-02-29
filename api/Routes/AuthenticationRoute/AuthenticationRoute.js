@@ -4,7 +4,7 @@ const router = express.Router();
 const User = require("../../Models/User");
 const admin = require('../../firebase-config');
 const UserValidation = require('../../Middleware/Validation/UserValidation');
-const AuthenticationUser = require("../../Middleware/AuthenticationUser");
+const AuthenticationUser = require('../../Middleware/AuthenticationUser')
 
 /**
  * @swagger
@@ -28,7 +28,7 @@ const AuthenticationUser = require("../../Middleware/AuthenticationUser");
  *               items:
  *                 $ref: '#/components/schemas/User'
  */
-router.get("/logout",AuthenticationUser,async (req, res) => {
+router.get("/logout", AuthenticationUser, async (req, res) => {
  
     await admin.auth().revokeRefreshTokens(req.user.uid);
     res.json({ message: 'Logout successful' }); 

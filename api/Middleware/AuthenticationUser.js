@@ -8,11 +8,11 @@ const AuthenticationUser = async (req, res, next) => {
     let checkRevoked = true;
     admin.auth().verifyIdToken(idToken,checkRevoked)
     .then((decodedToken) => {
-      const user={
+      const user = {
         uid :decodedToken.uid,
         role:decodedToken.role
       }
-      req.user=user; 
+      req.user = user; 
       next(); 
     })
     .catch((error) => {
