@@ -7,12 +7,15 @@ class Product extends Model {
 
   // This is an example of the relation but User Model is not created yet
   static get relationMappings() {
-    
+    const User = require("./User");
+    const Review = require("./Review");
+    const Order = require("./Order");
+    const Category = require("./Category");
 
     return {
       seller: {
         relation: Model.BelongsToOneRelation,
-        modelClass:require("./User"),
+        modelClass: User,
         join: {
           from: "products.user_id",
           to: "users.id",
@@ -20,7 +23,7 @@ class Product extends Model {
       },
       reviews: {
         relation: Model.HasManyRelation,
-        modelClass: require("./Review"),
+        modelClass: Review,
         join: {
           from: 'products.id',
           to: 'reviews.product_id'
@@ -28,7 +31,7 @@ class Product extends Model {
       },
       orders: {
         relation: Model.ManyToManyRelation,
-        modelClass: require('./Order'),
+        modelClass: Order,
         join: {
           from: 'products.id',
           through: {
@@ -37,7 +40,15 @@ class Product extends Model {
           },
           to: 'orders.id'
         }
-      }
+      },
+      category: { // Define a new relation for category
+        relation: Model.BelongsToOneRelation,
+        modelClass: Category,
+        join: {
+          from: "products.category_id", // Assuming 'category_id' is the foreign key in 'products' table
+          to: "categories.id",
+        },
+      },
     };
   }
 
