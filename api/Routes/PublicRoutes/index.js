@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router()
 
-// Admin routers
+// Public routers
 const ProductRoutes = require('./ProductRoutes');
 const ReviewRoutes = require('./ReviewRoutes');
 
