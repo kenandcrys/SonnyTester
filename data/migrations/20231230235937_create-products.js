@@ -11,6 +11,7 @@ exports.up = function (knex) {
     table.string("name").notNullable();
     table.text("description").notNullable();
     table.text("category").notNullable();
+    table.text("subcategory").notNullable();
     table.json('images'); // store an array of images
     table.text("status").notNullable().defaultTo('unpublished'); // Adds product publish status that defaults to unpublished
     table.decimal("price", 10, 2).notNullable(); // Example: 12345.67

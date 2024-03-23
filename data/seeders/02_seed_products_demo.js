@@ -11,6 +11,7 @@ exports.seed = function (knex) {
           {
             id: 1,
             category: "Women's Fashion",
+            subcategory: "Dresses",
             description: "Beautiful dress for special occasions",
             images: ['https://i.imgur.com/HrLVwF6.png'],
             name: 'Elegant Dress',
@@ -22,6 +23,7 @@ exports.seed = function (knex) {
           {
             id: 2,
             category: "Women's Fasion",
+            subcategory: "Tops",
             description: "A comfortable but stylish T-shirt tied off in a knot",
             images: ['https://i.imgur.com/elyMs5B.png'],
             name: 'Tied T-shirt',
@@ -33,6 +35,7 @@ exports.seed = function (knex) {
           {
             id: 3,
             category: "Women's Fasion",
+            subcategory: "Bottoms",
             description: "Fashionable twill skirt with purple smoke-like pattern",
             images: ['https://i.imgur.com/P6UpEGy.png'],
             name: 'Smokey Print Twill Skirt',
@@ -44,6 +47,7 @@ exports.seed = function (knex) {
           {
             id: 4,
             category: "Women's Fasion",
+            subcategory: "Bottoms",
             description: "Ankle-length skirt in Boho style with a rainbow print",
             images: ['https://i.imgur.com/Y5MxdWx.png'],
             name: 'Rainbow Boho Skirt',
@@ -55,6 +59,7 @@ exports.seed = function (knex) {
           {
             id: 5,
             category: "Women's Fasion",
+            subcategory: "Dresses",
             description: "Shoulderless, white, mini skirt-length sundress with lace fringe",
             images: ['https://i.imgur.com/xAYP9oH.png'],
             name: 'Lace-Fringed Shoulderless Sundress',
@@ -66,6 +71,7 @@ exports.seed = function (knex) {
           {
             id: 6,
             category: "Women's Fasion",
+            subcategory: "Dresses",
             description: "Orange ankle length midi dress with button cuffs",
             images: ['https://i.imgur.com/NuTtO2k.png'],
             name: 'Orange Midi Dress',
@@ -77,6 +83,7 @@ exports.seed = function (knex) {
           {
             id: 7,
             category: "Women's Fasion",
+            subcategory: "Dresses",
             description: "Ankle length floral print sundress with full sleeves",
             images: ['https://i.imgur.com/jBKrBXD.png'],
             name: 'Floral Print Sundress',
@@ -88,6 +95,7 @@ exports.seed = function (knex) {
           {
             id: 8,
             category: "Women's Fasion",
+            subcategory: "Jumpsuits",
             description: "Sleeveless jumpsuit with a starry print",
             images: ['https://i.imgur.com/KbiruMM.png'],
             name: 'Starry Print Jumpsuit',
@@ -99,6 +107,7 @@ exports.seed = function (knex) {
           {
             id: 9,
             category: "Women's Fasion",
+            subcategory: "Jumpsuits",
             description: "Camo print pantsuit with flared collar",
             images: ['https://i.imgur.com/Oop40sP.png'],
             name: 'Camo Pantsuit',
@@ -110,6 +119,7 @@ exports.seed = function (knex) {
           {
             id: 10,
             category: "Women's Fasion",
+            subcategory: "Activewear",
             description: "White sports top/workout top for gym",
             images: ['https://i.imgur.com/E4nEf0v.png'],
             name: 'White spandex sports top',
@@ -121,6 +131,7 @@ exports.seed = function (knex) {
           {
             id: 11,
             category: "Men's Fashion",
+            subcategory: "Clothing",
             description: "Formal suit for men",
             images: ['https://i.imgur.com/A6R2Clh.jpeg'],
             name: 'Classic Suit',
@@ -133,6 +144,7 @@ exports.seed = function (knex) {
             id: 12,
             category:"Men's Fashion ",
             description:"Red Graphic Tee with 'Crazy Man' print",
+            subcategory: "Clothing",
             images: ['https://i.imgur.com/6wkcdLi.jpeg'],
             name: 'Crazy Man Tee',
             price: 29.99,
@@ -143,6 +155,7 @@ exports.seed = function (knex) {
           {
             id: 13,
             category: "Men's Fashion",
+            subcategory: "Clothing",
             description:"Pink pullover sweater with rolled cuffs",
             images: ['https://i.imgur.com/hQNQoiw.jpeg'],
             name: 'Pink Pullover',
@@ -154,6 +167,7 @@ exports.seed = function (knex) {
           {
             id: 14,
             category: "Men's Fashion",
+            subcategory: "Clothing",
             description: "Black T-shirt with skeletal V for victory hand sign",
             images: ['https://i.imgur.com/hQNQoiw.jpeg'],
             name: 'Skeletal Victory Graphic Tee',
@@ -165,6 +179,7 @@ exports.seed = function (knex) {
           {
             id: 15,
             category: "Men's Fashion",
+            subcategory: "Clothing",
             description: "Button-up, short-sleeve shirt with avant-garde print",
             images: ['https://i.imgur.com/2OjPXLE.jpeg'],
             name: 'Avant-Garde Button-Up Tee',
@@ -176,6 +191,7 @@ exports.seed = function (knex) {
           {
             id: 16,
             category: "Men's Fashion",
+            subcategory: "Clothing",
             description: "Button-up dress shirt with diamond pattern print",
             images: ['https://i.imgur.com/gEH6fGV.jpeg'],
             name: 'Diamond Patterned Dress Shirt',
@@ -187,6 +203,7 @@ exports.seed = function (knex) {
           {
             id: 17,
             category: "Men's Fashion",
+            subcategory: "Jackets&Coats",
             description: "Black Leather jacket with waist buckle and collar snaps",
             images: ['https://i.imgur.com/wD3akWe.jpeg'],
             name: 'Black Leather Jacket w/ Buckle',
@@ -198,6 +215,7 @@ exports.seed = function (knex) {
           {
             id: 18,
             category: "Men's Fashion",
+            subcategory: "Jackets&Coats",
             description: "Acid-washed denim jacket with button cuffs",
             images: ['https://i.imgur.com/rh6lDoQ.jpeg'],
             name: 'Acid-washed denim jacket',
@@ -209,6 +227,7 @@ exports.seed = function (knex) {
           {
             id: 19,
             category: "Men's Fashion",
+            subcategory: "Jackets&Coats",
             description: "Taupe overcoat in casmere",
             images: ['https://i.imgur.com/TUDAUo1.jpeg'],
             name: 'Taupe Cashmere Overcoat',
@@ -220,6 +239,7 @@ exports.seed = function (knex) {
           {
             id: 20,
             category: "Men's Fashion",
+            subcategory: "Jackets&Coats",
             description: "Black, puffy jacket with hood and zipper",
             images: ['https://i.imgur.com/TUDAUo1.jpeg'],
             name: 'Puffy Jacket w/ Hood, Black',
