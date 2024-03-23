@@ -121,6 +121,7 @@ exports.seed = function (knex) {
           {
             id: 11,
             category: "Men's Fashion",
+            subcategory: "Clothing",
             description: "Formal suit for men",
             images: ['https://i.imgur.com/A6R2Clh.jpeg'],
             name: 'Classic Suit',
@@ -133,6 +134,7 @@ exports.seed = function (knex) {
             id: 12,
             category:"Men's Fashion ",
             description:"Red Graphic Tee with 'Crazy Man' print",
+            subcategory: "Clothing",
             images: ['https://i.imgur.com/6wkcdLi.jpeg'],
             name: 'Crazy Man Tee',
             price: 29.99,
@@ -143,6 +145,7 @@ exports.seed = function (knex) {
           {
             id: 13,
             category: "Men's Fashion",
+            subcategory: "Clothing",
             description:"Pink pullover sweater with rolled cuffs",
             images: ['https://i.imgur.com/hQNQoiw.jpeg'],
             name: 'Pink Pullover',
@@ -154,6 +157,7 @@ exports.seed = function (knex) {
           {
             id: 14,
             category: "Men's Fashion",
+            subcategory: "Clothing",
             description: "Black T-shirt with skeletal V for victory hand sign",
             images: ['https://i.imgur.com/hQNQoiw.jpeg'],
             name: 'Skeletal Victory Graphic Tee',
@@ -165,6 +169,7 @@ exports.seed = function (knex) {
           {
             id: 15,
             category: "Men's Fashion",
+            subcategory: "Clothing",
             description: "Button-up, short-sleeve shirt with avant-garde print",
             images: ['https://i.imgur.com/2OjPXLE.jpeg'],
             name: 'Avant-Garde Button-Up Tee',
@@ -176,6 +181,7 @@ exports.seed = function (knex) {
           {
             id: 16,
             category: "Men's Fashion",
+            subcategory: "Clothing",
             description: "Button-up dress shirt with diamond pattern print",
             images: ['https://i.imgur.com/gEH6fGV.jpeg'],
             name: 'Diamond Patterned Dress Shirt',
@@ -187,6 +193,7 @@ exports.seed = function (knex) {
           {
             id: 17,
             category: "Men's Fashion",
+            subcategory: "Jackets&Coats",
             description: "Black Leather jacket with waist buckle and collar snaps",
             images: ['https://i.imgur.com/wD3akWe.jpeg'],
             name: 'Black Leather Jacket w/ Buckle',
@@ -198,6 +205,7 @@ exports.seed = function (knex) {
           {
             id: 18,
             category: "Men's Fashion",
+            subcategory: "Jackets&Coats",
             description: "Acid-washed denim jacket with button cuffs",
             images: ['https://i.imgur.com/rh6lDoQ.jpeg'],
             name: 'Acid-washed denim jacket',
@@ -209,6 +217,7 @@ exports.seed = function (knex) {
           {
             id: 19,
             category: "Men's Fashion",
+            subcategory: "Jackets&Coats",
             description: "Taupe overcoat in casmere",
             images: ['https://i.imgur.com/TUDAUo1.jpeg'],
             name: 'Taupe Cashmere Overcoat',
@@ -220,6 +229,7 @@ exports.seed = function (knex) {
           {
             id: 20,
             category: "Men's Fashion",
+            subcategory: "Jackets&Coats",
             description: "Black, puffy jacket with hood and zipper",
             images: ['https://i.imgur.com/TUDAUo1.jpeg'],
             name: 'Puffy Jacket w/ Hood, Black',
