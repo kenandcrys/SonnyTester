@@ -11,6 +11,7 @@ exports.seed = function (knex) {
           {
             id: 1,
             category: "Women's Fashion",
+            subcategory: "Dresses",
             description: "Beautiful dress for special occasions",
             images: ['https://i.imgur.com/HrLVwF6.png'],
             name: 'Elegant Dress',
@@ -22,6 +23,7 @@ exports.seed = function (knex) {
           {
             id: 2,
             category: "Women's Fasion",
+            subcategory: "Tops",
             description: "A comfortable but stylish T-shirt tied off in a knot",
             images: ['https://i.imgur.com/elyMs5B.png'],
             name: 'Tied T-shirt',
@@ -33,6 +35,7 @@ exports.seed = function (knex) {
           {
             id: 3,
             category: "Women's Fasion",
+            subcategory: "Bottoms",
             description: "Fashionable twill skirt with purple smoke-like pattern",
             images: ['https://i.imgur.com/P6UpEGy.png'],
             name: 'Smokey Print Twill Skirt',
@@ -44,6 +47,7 @@ exports.seed = function (knex) {
           {
             id: 4,
             category: "Women's Fasion",
+            subcategory: "Bottoms",
             description: "Ankle-length skirt in Boho style with a rainbow print",
             images: ['https://i.imgur.com/Y5MxdWx.png'],
             name: 'Rainbow Boho Skirt',
@@ -55,6 +59,7 @@ exports.seed = function (knex) {
           {
             id: 5,
             category: "Women's Fasion",
+            subcategory: "Dresses",
             description: "Shoulderless, white, mini skirt-length sundress with lace fringe",
             images: ['https://i.imgur.com/xAYP9oH.png'],
             name: 'Lace-Fringed Shoulderless Sundress',
@@ -66,6 +71,7 @@ exports.seed = function (knex) {
           {
             id: 6,
             category: "Women's Fasion",
+            subcategory: "Dresses",
             description: "Orange ankle length midi dress with button cuffs",
             images: ['https://i.imgur.com/NuTtO2k.png'],
             name: 'Orange Midi Dress',
@@ -77,6 +83,7 @@ exports.seed = function (knex) {
           {
             id: 7,
             category: "Women's Fasion",
+            subcategory: "Dresses",
             description: "Ankle length floral print sundress with full sleeves",
             images: ['https://i.imgur.com/jBKrBXD.png'],
             name: 'Floral Print Sundress',
@@ -88,6 +95,7 @@ exports.seed = function (knex) {
           {
             id: 8,
             category: "Women's Fasion",
+            subcategory: "Jumpsuits",
             description: "Sleeveless jumpsuit with a starry print",
             images: ['https://i.imgur.com/KbiruMM.png'],
             name: 'Starry Print Jumpsuit',
@@ -99,6 +107,7 @@ exports.seed = function (knex) {
           {
             id: 9,
             category: "Women's Fasion",
+            subcategory: "Jumpsuits",
             description: "Camo print pantsuit with flared collar",
             images: ['https://i.imgur.com/Oop40sP.png'],
             name: 'Camo Pantsuit',
@@ -110,6 +119,7 @@ exports.seed = function (knex) {
           {
             id: 10,
             category: "Women's Fasion",
+            subcategory: "Activewear",
             description: "White sports top/workout top for gym",
             images: ['https://i.imgur.com/E4nEf0v.png'],
             name: 'White spandex sports top',
