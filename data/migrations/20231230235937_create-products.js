@@ -1,35 +1,35 @@
 exports.up = function (knex) {
-  return knex.schema.createTable("products", function (table) {
-    table.increments("id").primary(); // Auto-incrementing primary key
-    table
-      .string('user_id') //foreign key for user id from users table that created the product
-      .unsigned()
-      .references('id')
-      .inTable('users')
-      .onDelete('CASCADE')
-      .index(); //Creates an index on the "user_id" column. This improves the speed of queries that involve searching or joining based on this column
-    table.string("name").notNullable();
-    table.text("description").notNullable();
-    table.text("category").notNullable();
-    table.text("subcategory").notNullable();
-    table.json('images'); // store an array of images
-    table.text("status").notNullable().defaultTo('unpublished'); // Adds product publish status that defaults to unpublished
-    table.decimal("price", 10, 2).notNullable(); // Example: 12345.67
-    table.integer("stock_quantity").notNullable().defaultTo(0); // Adds product stock quantity that defaults to 0
-    table.timestamps(true, true); // Adds 'created_at' and 'updated_at' timestamp columns
-
-    // Add foreign key constraint
-    table.foreign('user_id').references('users.id').onDelete('CASCADE');
-  });
+  return knex.schema
+    .createTable("category", (table) => {
+      table.increments();
+      table.string("category_name", 255).notNullable();
+      table.json("image");
+    })
+    .createTable("subcategory", (table) => {
+      table.increments();
+      table.string("subcategory_name", 255).notNullable();
+      table
+        .integer("categoryId")
+        .notNullable()
+        .references("id")
+        .inTable("category");
+    })
+    .createTable("products", (table) => {
+      table.increments();
+      table.string("product_name", 255).notNullable();
+      table.string("product_description", 1000).notNullable();
+      table.string("product_price", 255).notNullable();
+      table
+        .integer("subcategoryId")
+        .notNullable()
+        .references("id")
+        .inTable("subcategory");
+    });
 };
 
 exports.down = function (knex) {
-  return knex.schema.alterTable('products', function (table) {
-    // Drop the foreign key constraint
-    table.dropForeign('user_id');
-  })
-  .then(() => {
-    // Drop the table in the 'down' function
-    return knex.schema.dropTableIfExists('products');
-  });
+  return knex.schema
+    .dropTableIfExists("products")
+    .dropTableIfExists("subcategory")
+    .dropTableIfExists("category");
 };
