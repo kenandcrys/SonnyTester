@@ -371,70 +371,60 @@ exports.seed = function (knex) {
           product_name: "UltraBook Pro",
           product_description: "Sleek design with a 15-inch 4K display and 16GB RAM for professional use",
           product_price: "1200",
-          categoryId: 4,
           subcategoryId: 21
         },
         {
           product_name: "GamerXtreme Laptop",
           product_description: "High-performance gaming laptop with RTX 3080 and 32GB RAM",
           product_price: "2500",
-          categoryId: 4,
           subcategoryId: 21
         },
         {
           product_name: "PortaLight",
           product_description: "Ultra-portable 13-inch laptop with 10-hour battery life, perfect for on-the-go professionals",
           product_price: "900",
-          categoryId: 4,
           subcategoryId: 21
         },
         {
           product_name: "CreatorZ Canvas",
           product_description: "Laptop designed for creators with a touchscreen, stylus support, and powerful graphics",
           product_price: "1800",
-          categoryId: 4,
           subcategoryId: 21
         },
         {
           product_name: "StudyMate Laptop",
           product_description: "Affordable and durable laptop designed for students, with all essential software pre-installed",
           product_price: "500",
-          categoryId: 4,
           subcategoryId: 21
         },
         {
           product_name: "BusinessElite Pro",
           product_description: "Enterprise-level laptop with secure biometric access and enhanced data protection features",
           product_price: "1500",
-          categoryId: 4,
           subcategoryId: 21
         },
         {
           product_name: "FlexiFold 2-in-1",
           product_description: "Convertible laptop with a flexible hinge, can be used as a tablet, comes with a detachable keyboard",
           product_price: "1100",
-          categoryId: 4,
           subcategoryId: 21
         },
         {
           product_name: "EcoFriendly Notebook",
           product_description: "Environmentally friendly laptop made from recycled materials, energy-efficient with a solar charging option",
           product_price: "800",
-          categoryId: 4,
           subcategoryId: 21
         },
         {
           product_name: "UltraSecure Laptop",
           product_description: "Laptop with advanced security features including hardware encryption and a privacy screen",
           product_price: "1700",
-          categoryId: 4,
           subcategoryId: 21
         },
         {
           product_name: "TechieTab Laptop",
           product_description: "Laptop with dual screens for multitasking, AI-powered performance optimization",
           product_price: "2200",
-          categoryId: 4,
           subcategoryId: 21
         },
 
@@ -443,70 +433,60 @@ exports.seed = function (knex) {
           product_name: "PowerStation X",
           product_description: "High-end desktop with liquid cooling and overclocked CPU for extreme performance",
           product_price: "3000",
-          categoryId: 4,
           subcategoryId: 22
         },
         {
           product_name: "CompactHome Office",
           product_description: "Space-saving desktop with integrated speakers and webcam, ideal for home offices",
           product_price: "800",
-          categoryId: 4,
           subcategoryId: 22
         },
         {
           product_name: "GamerCore Tower",
           product_description: "Gaming desktop with customizable RGB lighting and top-tier graphics card",
           product_price: "2100",
-          categoryId: 4,
           subcategoryId: 22
         },
         {
           product_name: "WorkFlex Station",
           product_description: "Modular desktop that can be upgraded easily, with tool-less access to internals",
           product_price: "950",
-          categoryId: 4,
           subcategoryId: 22
         },
         {
           product_name: "EduTech Desktop",
           product_description: "Educational desktop with preloaded learning software and parental controls",
           product_price: "600",
-          categoryId: 4,
           subcategoryId: 22
         },
         {
           product_name: "CreativePro Suite",
           product_description: "Desktop tailored for digital artists and video editors, with a wide-gamut monitor and high-fidelity audio",
           product_price: "2800",
-          categoryId: 4,
           subcategoryId: 22
         },
         {
           product_name: "SilentOperator",
           product_description: "Whisper-quiet desktop with noise-dampening technology, suitable for audio production",
           product_price: "1400",
-          categoryId: 4,
           subcategoryId: 22
         },
         {
           product_name: "NetGiant Server",
           product_description: "Powerful server for small businesses, with robust data management and security features",
           product_price: "4000",
-          categoryId: 4,
           subcategoryId: 22
         },
         {
           product_name: "EcoTech GreenPC",
           product_description: "Energy-efficient desktop with low power consumption components and solar power backup",
           product_price: "1100",
-          categoryId: 4,
           subcategoryId: 22
         },
         {
           product_name: "Visionary VR Desktop",
           product_description: "VR-ready desktop with high refresh rate monitor and VR headset bundle",
           product_price: "2200",
-          categoryId: 4,
           subcategoryId: 22
         },
 
@@ -515,76 +495,65 @@ exports.seed = function (knex) {
           product_name: "ErgoComfort Keyboard",
           product_description: "Ergonomic keyboard with customizable keys and wrist rest for comfort",
           product_price: "100",
-          categoryId: 4,
           subcategoryId: 23
         },
         {
           product_name: "PrecisionPro Mouse",
           product_description: "High-precision mouse with adjustable DPI and programmable buttons for gamers",
           product_price: "70",
-          categoryId: 4,
           subcategoryId: 23
         },
         {
           product_name: "UltraView Monitor",
           product_description: "32-inch 4K monitor with HDR support and minimal bezel for an immersive viewing experience",
           product_price: "400",
-          categoryId: 4,
           subcategoryId: 23
         },
         {
           product_name: "HyperSound Speakers",
           product_description: "Bluetooth speakers with 360-degree sound and deep bass, water-resistant for outdoor use",
           product_price: "150",
-          categoryId: 4,
           subcategoryId: 23
         },
         {
           product_name: "SpeedCharge Dock",
           product_description: "Universal docking station with fast-charging USB ports, HDMI, and Ethernet connectivity",
           product_price: "120",
-          categoryId: 4,
           subcategoryId: 23
         },
         {
           product_name: "CrystalClear Webcam",
           product_description: "1080p webcam with autofocus and built-in microphone, perfect for video conferencing",
           product_price: "80",
-          categoryId: 4,
           subcategoryId: 23
         },
         {
           product_name: "GigaBoost Wi-Fi Adapter",
           product_description: "High-speed USB Wi-Fi adapter with dual-band support and beamforming technology",
           product_price: "50",
-          categoryId: 4,
           subcategoryId: 23
         }, {
           product_name: "TerraDrive External HDD",
           product_description: "Portable 2TB external hard drive with shock resistance and hardware encryption",
           product_price: "120",
-          categoryId: 4,
           subcategoryId: 23
         },
         {
           product_name: "MultiPort USB Hub",
           product_description: "Sleek USB-C hub with multiple USB 3.0 ports, SD card reader, and HDMI output for connectivity expansion",
           product_price: "60",
-          categoryId: 4,
           subcategoryId: 23
         },
         {
           product_name: "VirtualKeyboard Lite",
           product_description: "Laser projection keyboard for mobile devices and tablets, with gesture control",
           product_price: "90",
-          categoryId: 4,
           subcategoryId: 23
         },
         {
           product_name: "SoundBarrier Headphones",
           product_description: "Noise-cancelling headphones with high-fidelity audio, comfortable over-ear design, and Bluetooth connectivity",
           product_price: "200",
-          categoryId: 4,
           subcategoryId: 23
         },
 
@@ -593,70 +562,60 @@ exports.seed = function (knex) {
           product_name: "PrintMaster Pro",
           product_description: "All-in-one printer with high-speed printing, scanning, and copying, suitable for office use",
           product_price: "300",
-          categoryId: 4,
           subcategoryId: 24
         },
         {
           product_name: "ScanSmart 360",
           product_description: "Compact document scanner with auto-feed and cloud integration for efficient digital archiving",
           product_price: "250",
-          categoryId: 4,
           subcategoryId: 24
         },
         {
           product_name: "PhotoLab 4K",
           product_description: "Professional-grade photo printer with 4K resolution and wide color gamut for stunning prints",
           product_price: "600",
-          categoryId: 4,
           subcategoryId: 24
         },
         {
           product_name: "EcoPrint Green",
           product_description: "Eco-friendly printer using sustainable ink and recycled paper, with low power consumption",
           product_price: "220",
-          categoryId: 4,
           subcategoryId: 24
         },
         {
           product_name: "LabelCraft Creator",
           product_description: "High-speed label printer with customizable templates for business and personal use",
           product_price: "150",
-          categoryId: 4,
           subcategoryId: 24
         },
         {
           product_name: "ArchiveXpert",
           product_description: "High-resolution scanner for documents and books, with OCR technology for text recognition",
           product_price: "350",
-          categoryId: 4,
           subcategoryId: 24
         },
         {
           product_name: "WirelessPrint Go",
           product_description: "Portable wireless printer for on-the-go printing from smartphones and laptops",
           product_price: "180",
-          categoryId: 4,
           subcategoryId: 24
         },
         {
           product_name: "ColorSplash 3D",
           product_description: "3D printer with multi-color printing capability, user-friendly interface, and high precision",
           product_price: "1200",
-          categoryId: 4,
           subcategoryId: 24
         },
         {
           product_name: "DocuScan Plus",
           product_description: "Advanced scanner with fast duplex scanning, suitable for high-volume office environments",
           product_price: "400",
-          categoryId: 4,
           subcategoryId: 24
         },
         {
           product_name: "CraftMaker Vinyl Cutter",
           product_description: "Vinyl cutter and plotter for DIY crafts and professional design work, with precision cutting",
           product_price: "700",
-          categoryId: 4,
           subcategoryId: 24
         },
 
@@ -665,70 +624,60 @@ exports.seed = function (knex) {
           product_name: "UltraNet Mesh",
           product_description: "Mesh Wi-Fi system for whole-home coverage, easy setup, and seamless roaming",
           product_price: "350",
-          categoryId: 4,
           subcategoryId: 25
         },
         {
           product_name: "GigaRouter X10",
           product_description: "High-speed wireless router with advanced security features and parental controls",
           product_price: "250",
-          categoryId: 4,
           subcategoryId: 25
         },
         {
           product_name: "LinkMaster Switch",
           product_description: "Gigabit Ethernet switch with 8 ports for high-speed wired network expansion",
           product_price: "100",
-          categoryId: 4,
           subcategoryId: 25
         },
         {
           product_name: "SignalBooster Pro",
           product_description: "Wi-Fi range extender with dual-band support and easy plug-and-play setup",
           product_price: "80",
-          categoryId: 4,
           subcategoryId: 25
         },
         {
           product_name: "NetGuard Firewall",
           product_description: "Hardware firewall device for network security, with VPN support and intrusion detection",
           product_price: "400",
-          categoryId: 4,
           subcategoryId: 25
         },
         {
           product_name: "StreamLine VPN",
           product_description: "VPN router for secure and private internet access, with support for multiple devices",
           product_price: "180",
-          categoryId: 4,
           subcategoryId: 25
         },
         {
           product_name: "CloudConnect Gateway",
           product_description: "Unified gateway device for seamless integration of wired and wireless networks with cloud management",
           product_price: "320",
-          categoryId: 4,
           subcategoryId: 25
         },
         {
           product_name: "QuantumAccess Point",
           product_description: "Wi-Fi access point with quantum encryption for ultra-secure wireless connections",
           product_price: "500",
-          categoryId: 4,
           subcategoryId: 25
         },
         {
           product_name: "DataStream NAS",
           product_description: "Network-attached storage with easy data sharing and backup solutions for small businesses",
           product_price: "600",
-          categoryId: 4,
           subcategoryId: 25
         },
         {
           product_name: "FiberFast Modem",
           product_description: "DOCSIS 3.1 cable modem for ultra-high-speed internet access over fiber optic lines",
           product_price: "150",
-          categoryId: 4,
           subcategoryId: 25
         },
 
@@ -737,70 +686,60 @@ exports.seed = function (knex) {
           product_name: "StackNest File Organizer",
           product_description: "Modular file organizer system for efficient document storage and quick access",
           product_price: "45",
-          categoryId: 4,
           subcategoryId: 26
         },
         {
           product_name: "CableWrap Ties",
           product_description: "Reusable cable ties for organizing and managing cords and cables, with adjustable design",
           product_price: "10",
-          categoryId: 4,
           subcategoryId: 26
         },
         {
           product_name: "SafeKeep Storage Box",
           product_description: "Durable storage boxes with stackable design and label slots for office and home organization",
           product_price: "20",
-          categoryId: 4,
           subcategoryId: 26
         },
         {
           product_name: "DeskMate Organizer",
           product_description: "Desktop organizer with compartments for pens, notepads, and small accessories, keeping your workspace tidy",
           product_price: "30",
-          categoryId: 4,
           subcategoryId: 26
         },
         {
           product_name: "ArchiveVault Filing Cabinet",
           product_description: "Secure filing cabinet with lockable drawersfor confidential documents, featuring fire-resistant construction",
           product_price: "250",
-          categoryId: 4,
           subcategoryId: 26
         },
         {
           product_name: "ClipStack Board",
           product_description: "Magnetic clipboard system for easy document display and organization, perfect for meeting rooms",
           product_price: "35",
-          categoryId: 4,
           subcategoryId: 26
         },
         {
           product_name: "BookBuddy Shelf Divider",
           product_description: "Adjustable shelf dividers for organizing books, binders, and manuals in a customizable layout",
           product_price: "15",
-          categoryId: 4,
           subcategoryId: 26
         },
         {
           product_name: "TechTray Drawer Organizer",
           product_description: "Multi-compartment drawer organizer for tech gadgets, cables, and office supplies",
           product_price: "25",
-          categoryId: 4,
           subcategoryId: 26
         },
         {
           product_name: "RollAway Mobile Cart",
           product_description: "Versatile mobile cart with adjustable shelves for storage and transport of office equipment and supplies",
           product_price: "120",
-          categoryId: 4,
           subcategoryId: 26
         },
         {
           product_name: "LockTight Security Safe",
           product_description: "Compact digital safe for secure storage of valuables and sensitive documents, with tamper alerts",
           product_price: "180",
-          categoryId: 4,
           subcategoryId: 26
         },
 
@@ -809,70 +748,60 @@ exports.seed = function (knex) {
           product_name: "EcoWrite Recycled Pens",
           product_description: "Environmentally friendly ballpoint pens made from recycled materials, with smooth ink flow",
           product_price: "12",
-          categoryId: 4,
           subcategoryId: 27
         },
         {
           product_name: "PrintPerfect Paper Reams",
           product_description: "High-quality printer paper, optimized for jam-free printing and vibrant colors",
           product_price: "30",
-          categoryId: 4,
           subcategoryId: 27
         },
         {
           product_name: "GripTight Binder Clips",
           product_description: "Strong and durable binder clips for securing large stacks of documents, with easy-release handles",
           product_price: "5",
-          categoryId: 4,
           subcategoryId: 27
         },
         {
           product_name: "NoteNest Sticky Notes",
           product_description: "Super sticky notes in a variety of colors for notes and reminders, easily repositionable",
           product_price: "8",
-          categoryId: 4,
           subcategoryId: 27
         },
         {
           product_name: "MarkIt Permanent Markers",
           product_description: "Set of permanent markers with fade-resistant ink, suitable for all surfaces",
           product_price: "10",
-          categoryId: 4,
           subcategoryId: 27
         },
         {
           product_name: "ClearView Presentation Covers",
           product_description: "Transparent presentation covers for professional-looking reports and proposals, compatible with all binding machines",
           product_price: "20",
-          categoryId: 4,
           subcategoryId: 27
         },
         {
           product_name: "SmoothErase Whiteboard Erasers",
           product_description: "Non-abrasive whiteboard erasers for clean and easy erasing, with ergonomic design",
           product_price: "7",
-          categoryId: 4,
           subcategoryId: 27
         },
         {
           product_name: "TackIt Push Pins",
           product_description: "Assorted color push pins for bulletin boards and noticeboards, in a convenient storage case",
           product_price: "4",
-          categoryId: 4,
           subcategoryId: 27
         },
         {
           product_name: "FlexiRuler Flexible Rulers",
           product_description: "Durable and flexible rulers that can bend without breaking, with clear measurement markings",
           product_price: "6",
-          categoryId: 4,
           subcategoryId: 27
         },
         {
           product_name: "ClipEase Paperclips",
           product_description: "Smooth, corrosion-resistant paperclips that glide on and off easily, in assorted sizes",
           product_price: "3",
-          categoryId: 4,
           subcategoryId: 27
         },
 
@@ -881,70 +810,60 @@ exports.seed = function (knex) {
           product_name: "GuardianEye Surveillance Cam",
           product_description: "High-definition surveillance camera with night vision and motion detection for office security",
           product_price: "150",
-          categoryId: 4,
           subcategoryId: 28
         },
         {
           product_name: "SecureEntry Access System",
           product_description: "Advanced access control system with biometric and card entry options for secure office entry",
           product_price: "500",
-          categoryId: 4,
           subcategoryId: 28
         },
         {
           product_name: "AlarmShield Wireless Alarm",
           product_description: "Wireless office alarm system with remote monitoring and control via smartphone app",
           product_price: "250",
-          categoryId: 4,
           subcategoryId: 28
         },
         {
           product_name: "DataGuard VPN Router",
           product_description: "Secure office network router with built-in VPN and firewall to protect sensitive data",
           product_price: "200",
-          categoryId: 4,
           subcategoryId: 28
         },
         {
           product_name: "WatchTower Security Sensors",
           product_description: "Pack of wireless security sensors for doors and windows, with instant alerts to breaches",
           product_price: "100",
-          categoryId: 4,
           subcategoryId: 28
         },
         {
           product_name: "SafeDoc Shredder",
           product_description: "Heavy-duty paper shredder for secure disposal of sensitive documents, with cross-cut shredding",
           product_price: "120",
-          categoryId: 4,
           subcategoryId: 28
         },
         {
           product_name: "KeyCard Proximity Cards",
           product_description: "Proximity cards for secure access control systems, with customizable security levels",
           product_price: "60",
-          categoryId: 4,
           subcategoryId: 28
         },
         {
           product_name: "IntruderAlert Motion Detector",
           product_description: "Motion detector with pet immunity for office spaces, providing accurate intruder detection",
           product_price: "80",
-          categoryId: 4,
           subcategoryId: 28
         },
         {
           product_name: "CyberSecure Firewall Appliance",
           product_description: "Enterprise-grade firewall appliance for protecting office networks from cyber threats",
           product_price: "400",
-          categoryId: 4,
           subcategoryId: 28
         },
         {
           product_name: "LockMaster Security Safe",
           product_description: "High-security safe with biometric lock for storing valuable items and documents in the office",
           product_price: "300",
-          categoryId: 4,
           subcategoryId: 28
         },
 
@@ -953,14 +872,12 @@ exports.seed = function (knex) {
           product_name: "SmartKey Touch Lock",
           product_description: "Smart door lock with fingerprint recognition and smartphone control for convenient access",
           product_price: "250",
-          categoryId: 4,
           subcategoryId: 29
         },
         {
           product_name: "DoorSense Wi-Fi Deadbolt",
           product_description: "Wi-Fi enabled smart deadbolt with remote locking/unlocking and activity monitoring",
           product_price: "200",
-          categoryId: 4,
           subcategoryId: 29
         },
         {
@@ -973,49 +890,42 @@ exports.seed = function (knex) {
           product_name: "GateKeeper Bluetooth Padlock",
           product_description: "Bluetooth enabled padlock with tamper alerts and history log, ideal for securing office cabinets",
           product_price: "70",
-          categoryId: 4,
           subcategoryId: 29
         },
         {
           product_name: "ConnectHub Smart Hub",
           product_description: "Central hub for connecting and managing all your smart locks and security devices in one place",
           product_price: "120",
-          categoryId: 4,
           subcategoryId: 29
         },
         {
           product_name: "SecureLink Doorbell Camera",
           product_description: "Video doorbell with 1080p HD camera, two-way audio, and motion detection for enhanced entrance security",
           product_price: "160",
-          categoryId: 4,
           subcategoryId: 29
         },
         {
           product_name: "AccessMate Keyless Entry",
           product_description: "Keyless entry system with customizable access codes and temporary guest codes",
           product_price: "190",
-          categoryId: 4,
           subcategoryId: 29
         },
         {
           product_name: "SmartShield Window Lock",
           product_description: "Smart window lock with remote control and breach detection for enhanced perimeter security",
           product_price: "150",
-          categoryId: 4,
           subcategoryId: 29
         },
         {
           product_name: "LockSync Smart Intercom",
           product_description: "Smart intercom system with video calling, digital keys, and remote access for office buildings",
           product_price: "300",
-          categoryId: 4,
           subcategoryId: 29
         },
         {
           product_name: "VisionLock Facial Recognition",
           product_description: "Advanced facial recognition door lock for secure and convenient keyless access",
           product_price: "350",
-          categoryId: 4,
           subcategoryId: 29
         },
         // SubcategoryId: 1, Name: Bluetooth Speakers
