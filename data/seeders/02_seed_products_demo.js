@@ -365,7 +365,7 @@ exports.seed = function (knex) {
         { product_name: "Baseball Cap", product_description: "Casual baseball cap with adjustable strap for a comfortable fit.", product_price: "20", subcategoryId: 11 },
         { product_name: "Leather Bracelet", product_description: "Trendy leather bracelet, adding a modern edge to any look.", product_price: "25", subcategoryId: 11 },
         { product_name: "Pocket Square", product_description: "Elegant pocket square to complement your suit and tie.", product_price: "15", subcategoryId: 11 },
-
+      
         // Laptops
         {
           product_name: "UltraBook Pro",
@@ -994,121 +994,61 @@ exports.seed = function (knex) {
           product_name: "PowerPort",
           product_description: "Fast-charging portable charger with dual USB ports",
           product_price: "30",
-          s
+          subcategoryId: 2
         },
         {
           product_name: "CableFlex",
           product_description: "Durable, tangle-free charging cable with lifetime warranty",
           product_price: "15",
-          s
+          subcategoryId: 2
         },
         {
           product_name: "ChargeMate",
           product_description: "Compact wireless charging pad with quick-charge capabilities",
           product_price: "40",
-          s
+          subcategoryId: 2
         },
         {
           product_name: "VoltStream",
           product_description: "Universal charger kit with multiple adapters for all your devices",
           product_price: "50",
-          s
+          subcategoryId: 2
         },
         {
           product_name: "CablePro",
           product_description: "High-speed USB-C cable for fast data transfer and charging",
           product_price: "20",
-          s
+          subcategoryId: 2
         },
         {
           product_name: "EnergyHub",
           product_description: "6-port USB charging station for simultaneous device charging",
           product_price: "60",
-          s
+          subcategoryId: 2
         },
         {
           product_name: "TravelCharge",
           product_description: "Travel-friendly charger with built-in adapters for international use",
           product_price: "35",
-          s
+          subcategoryId: 2
         },
         {
           product_name: "MagneticWire",
           product_description: "Magnetic charging cable with interchangeable connectors",
           product_price: "25",
-          s
+          subcategoryId: 2
         },
         {
           product_name: "SolarJuice",
           product_description: "Eco-friendly solar-powered charger for outdoor enthusiasts",
           product_price: "45",
-          s
+          subcategoryId: 2
         },
         {
           product_name: "FlexiCharge",
           product_description: "Flexible charging cable with 360-degree rotation for easy use",
           product_price: "18",
-          s
-        },
-        // Men's Fashion - Men's Clothing
-        {
-          product_name: "Slim Fit Cotton Shirt",
-          product_description: "High-quality cotton shirt with a slim fit design, perfect for both casual and formal occasions.",
-          product_price: "45",
-          subcategoryId: 7
-        },
-        {
-          product_name: "Classic Denim Jeans",
-          product_description: "Durable and stylish denim jeans, ideal for everyday wear.",
-          product_price: "60", subcategoryId: 7
-        },
-        {
-          product_name: "Graphic Tee",
-          product_description: "Soft, comfortable tee with a unique graphic design.",
-          product_price: "25",
-          subcategoryId: 7
-        },
-        {
-          product_name: "Chino Pants",
-          product_description: "Versatile chino pants with a modern slim fit, suitable for office or leisure.",
-          product_price: "50",
-          subcategoryId: 7
-        },
-        {
-          product_name: "Polo Shirt",
-          product_description: "Classic polo shirt with moisture-wicking fabric, perfect for a smart-casual look.",
-          product_price: "35",
-          subcategoryId: 7
-        },
-        {
-          product_name: "Henley Shirt",
-          product_description: "Casual Henley shirt made from soft, breathable fabric.",
-          product_price: "40",
-          subcategoryId: 7
-        },
-        {
-          product_name: "Cashmere Sweater",
-          product_description: "Luxurious cashmere sweater that offers warmth and comfort.",
-          product_price: "120",
-          subcategoryId: 7
-        },
-        {
-          product_name: "Track Jacket",
-          product_description: "Lightweight track jacket, ideal for workouts or casual outings.",
-          product_price: "55",
-          subcategoryId: 7
-        },
-        {
-          product_name: "Cargo Shorts",
-          product_description: "Relaxed cargo shorts with multiple pockets for practicality.",
-          product_price: "35",
-          subcategoryId: 7
-        },
-        {
-          product_name: "Leather Belt",
-          product_description: "Genuine leather belt with a classic buckle, an essential accessory for any wardrobe.",
-          product_price: "30",
-          subcategoryId: 7
+          subcategoryId: 2
         },
         // SubcategoryId: 3, Name: Earphones
         {
@@ -1860,61 +1800,61 @@ exports.seed = function (knex) {
           product_name: "Statement Necklace",
           product_description: "Eye-catching statement necklace that adds elegance to any outfit",
           product_price: "55",
-          s0
+          subcategoryId: 20
         },
         {
           product_name: "Earrings",
           product_description: "Delicate earrings available in various designs to complement your style",
           product_price: "30",
-          s0
+          subcategoryId: 20
         },
         {
           product_name: "Bracelet",
           product_description: "Chic bracelet that adds a touch of sophistication to any wrist",
           product_price: "40",
-          s0
+          subcategoryId: 20
         },
         {
           product_name: "Watch",
           product_description: "Elegant watch that combines functionality with fashion",
           product_price: "120",
-          s0
+          subcategoryId: 20
         },
         {
           product_name: "Sunglasses",
           product_description: "Trendy sunglasses that offer both style and sun protection",
           product_price: "70",
-          s0
+          subcategoryId: 20
         },
         {
           product_name: "Scarf",
           product_description: "Versatile scarf that can be styled in multiple ways to enhance your outfit",
           product_price: "45",
-          s0
+          subcategoryId: 20
         },
         {
           product_name: "Belt",
           product_description: "Stylish belt that adds a finishing touch to both casual and formal looks",
           product_price: "35",
-          s0
+          subcategoryId: 20
         },
         {
           product_name: "Hat",
           product_description: "Fashionable hat that adds flair and protection from the sun",
           product_price: "50",
-          s0
+          subcategoryId: 20
         },
         {
           product_name: "Hair Accessories",
           product_description: "Assortment of hair accessories to add a playful touch to your hairstyle",
           product_price: "25",
-          s0
+          subcategoryId: 20
         },
         {
           product_name: "Handbag Charm",
           product_description: "Decorative charm to personalize and add flair to your handbag",
           product_price: "20",
-          s0
+          subcategoryId: 20
         },
 
         // Cameras - Subcategory ID: 30
