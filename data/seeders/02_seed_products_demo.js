@@ -1058,7 +1058,7 @@ let data = [
     product_price: "649",
     subcategoryId: 5
   },
-  // SubcategoryId: 6, Name: Smart Watches
+  // Sub Name: Smart Watches
   {
     product_name: "Apple Watch Series 7",
     product_description: "The latest smartwatch with larger display and enhanced durability",
@@ -1936,70 +1936,70 @@ let data = [
   product_name: "Elegant Pearl Set",
   product_description: "A sophisticated set featuring a pearl necklace, bracelet, and earrings, perfect for formal occasions.",
   product_price: 250,
-  categoryId: 6,
+  
   subcategoryId: 37
 },
 {
   product_name: "Vintage Silver Set",
   product_description: "A classic vintage-inspired set with a silver necklace, drop earrings, and a delicate bracelet.",
   product_price: 175,
-  categoryId: 6,
+  
   subcategoryId: 37
 },
 {
   product_name: "Bohemian Chic Set",
   product_description: "A vibrant boho set with a multi-strand necklace, tassel earrings, and a beaded bracelet.",
   product_price: 130,
-  categoryId: 6,
+  
   subcategoryId: 37
 },
 {
   product_name: "Bridal Elegance Set",
   product_description: "An exquisite bridal set with a crystal necklace, matching earrings, and a bracelet for the special day.",
   product_price: 300,
-  categoryId: 6,
+  
   subcategoryId: 37
 },
 {
   product_name: "Minimalist Gold Set",
   product_description: "A sleek and modern set with a thin gold chain, stud earrings, and a simple bangle.",
   product_price: 200,
-  categoryId: 6,
+  
   subcategoryId: 37
 },
 {
   product_name: "Art Deco Inspired Set",
   product_description: "A glamorous set with geometric patterns, featuring a statement necklace, dangle earrings, and a cuff bracelet.",
   product_price: 220,
-  categoryId: 6,
+  
   subcategoryId: 37
 },
 {
   product_name: "Nature Inspired Set",
   product_description: "An earthy set inspired by nature, with a leaf-patterned necklace, earrings, and a wrap bracelet.",
   product_price: 150,
-  categoryId: 6,
+  
   subcategoryId: 37
 },
 {
   product_name: "Contemporary Set",
   product_description: "A modern set with abstract designs, including a pendant necklace, hoop earrings, and a link bracelet.",
   product_price: 190,
-  categoryId: 6,
+  
   subcategoryId: 37
 },
 {
   product_name: "Royal Gemstone Set",
   product_description: "A regal set adorned with gemstones, featuring a bold necklace, chandelier earrings, and a statement bracelet.",
   product_price: 350,
-  categoryId: 6,
+  
   subcategoryId: 37
 },
 {
   product_name: "Classic Diamond Set",
   product_description: "A timeless set with a diamond necklace, solitaire earrings, and a tennis bracelet for a touch of elegance.",
   product_price: 500,
-  categoryId: 6,
+  
   subcategoryId: 37
 },
 //Earrings - Subcategory 38
@@ -2007,70 +2007,70 @@ let data = [
   product_name: "Crystal Drop Earrings",
   product_description: "Elegant drop earrings with sparkling crystals, perfect for evening wear.",
   product_price: 60,
-  categoryId: 6,
+  
   subcategoryId: 38
 },
 {
   product_name: "Stud Earrings Set",
   product_description: "A versatile set of stud earrings in gold, silver, and rose gold finishes.",
   product_price: 40,
-  categoryId: 6,
+  
   subcategoryId: 38
 },
 {
   product_name: "Hoop Earrings Collection",
   product_description: "A fashionable collection of hoop earrings in various sizes and finishes.",
   product_price: 50,
-  categoryId: 6,
+  
   subcategoryId: 38
 },
 {
   product_name: "Tassel Earrings",
   product_description: "Bohemian-inspired tassel earrings in a vibrant range of colors.",
   product_price: 30,
-  categoryId: 6,
+  
   subcategoryId: 38
 },
 {
   product_name: "Pearl Earrings",
   product_description: "Classic pearl earrings, a must-have accessory for every wardrobe.",
   product_price: 70,
-  categoryId: 6,
+  
   subcategoryId: 38
 },
 {
   product_name: "Geometric Earrings",
   product_description: "Contemporary earrings featuring bold geometric shapes.",
   product_price: 45,
-  categoryId: 6,
+  
   subcategoryId: 38
 },
 {
   product_name: "Feather Earrings",
   product_description: "Lightweight feather earrings for a unique, free-spirited look.",
   product_price: 35,
-  categoryId: 6,
+  
   subcategoryId: 38
 },
 {
   product_name: "Diamond Solitaire Earrings",
   product_description: "Elegant solitaire diamond earrings set in 14k gold.",
   product_price: 300,
-  categoryId: 6,
+  
   subcategoryId: 38
 },
 {
   product_name: "Enamel Flower Earrings",
   product_description: "Delicate enamel flower earrings in a variety of pastel shades.",
   product_price: 25,
-  categoryId: 6,
+  
   subcategoryId: 38
 },
 {
   product_name: "Angular Dangle Earrings",
   product_description: "Modern dangle earrings with an angular, abstract design.",
   product_price: 55,
-  categoryId: 6,
+  
   subcategoryId: 38
 },
 //Necklaces - Subcategory 39
@@ -2078,70 +2078,70 @@ let data = [
   product_name: "Silver Pendant Necklace",
   product_description: "A sleek silver pendant necklace, perfect for layering.",
   product_price: 90,
-  categoryId: 6,
+  
   subcategoryId: 39
 },
 {
   product_name: "Gold Chain Necklace",
   product_description: "A classic gold chain necklace, an essential accessory.",
   product_price: 120,
-  categoryId: 6,
+  
   subcategoryId: 39
 },
 {
   product_name: "Layered Boho Necklace",
   product_description: "A trendy layered necklace with boho charms and beads.",
   product_price: 80,
-  categoryId: 6,
+  
   subcategoryId: 39
 },
 {
   product_name: "Choker Necklace Set",
   product_description: "A versatile set of choker necklaces in various styles and materials.",
   product_price: 65,
-  categoryId: 6,
+  
   subcategoryId: 39
 },
 {
   product_name: "Gemstone Bead Necklace",
   product_description: "A colorful necklace made of natural gemstone beads.",
   product_price: 110,
-  categoryId: 6,
+  
   subcategoryId: 39
 },
 {
   product_name: "Statement Bib Necklace",
   product_description: "A bold statement bib necklace with intricate designs.",
   product_price: 130,
-  categoryId: 6,
+  
   subcategoryId: 39
 },
 {
   product_name: "Locket Necklace",
   product_description: "A sentimental locket necklace, perfect for keeping cherished photos close.",
   product_price: 100,
-  categoryId: 6,
+  
   subcategoryId: 39
 },
 {
   product_name: "Infinity Necklace",
   product_description: "A symbolic infinity necklace in sterling silver.",
   product_price: 75,
-  categoryId: 6,
+  
   subcategoryId: 39
 },
 {
   product_name: "Pearl Strand Necklace",
   product_description: "An elegant strand of pearls, a timeless piece for any collection.",
   product_price: 200,
-  categoryId: 6,
+  
   subcategoryId: 39
 },
 {
   product_name: "Baroque Pearl Necklace",
   product_description: "A unique necklace featuring irregularly shaped baroque pearls for a modern twist.",
   product_price: 180,
-  categoryId: 6,
+  
   subcategoryId: 39
 },
 //Pocket Watches - Subcategory 40
@@ -2149,70 +2149,70 @@ let data = [
   product_name: "Classic Pocket Watch",
   product_description: "A timeless pocket watch with intricate engravings and a vintage finish.",
   product_price: 150,
-  categoryId: 6,
+  
   subcategoryId: 40
 },
 {
   product_name: "Skeleton Pocket Watch",
   product_description: "An exquisite skeleton pocket watch revealing the intricate workings within.",
   product_price: 200,
-  categoryId: 6,
+  
   subcategoryId: 40
 },
 {
   product_name: "Railroad Pocket Watch",
   product_description: "A durable and precise pocket watch, reminiscent of the railroad era.",
   product_price: 175,
-  categoryId: 6,
+  
   subcategoryId: 40
 },
 {
   product_name: "Gold-Plated Pocket Watch",
   product_description: "A luxurious gold-plated pocket watch, a symbol of elegance and sophistication.",
   product_price: 250,
-  categoryId: 6,
+  
   subcategoryId: 40
 },
 {
   product_name: "Silver Pocket Watch",
   product_description: "A sleek silver pocket watch, combining classic design with modern style.",
   product_price: 140,
-  categoryId: 6,
+  
   subcategoryId: 40
 },
 {
   product_name: "Engraved Pocket Watch",
   product_description: "A personalized engraved pocket watch, making it the perfect gift.",
   product_price: 160,
-  categoryId: 6,
+  
   subcategoryId: 40
 },
 {
   product_name: "Hunter-Case Pocket Watch",
   product_description: "A traditional hunter-case pocket watch with a protective outer case.",
   product_price: 180,
-  categoryId: 6,
+  
   subcategoryId: 40
 },
 {
   product_name: "Open Face Pocket Watch",
   product_description: "An open face pocket watch with a clear view of the dial, for ease of reading.",
   product_price: 130,
-  categoryId: 6,
+  
   subcategoryId: 40
 },
 {
   product_name: "Antique Style Pocket Watch",
   product_description: "A pocket watch designed with antique styling, perfect for collectors.",
   product_price: 190,
-  categoryId: 6,
+  
   subcategoryId: 40
 },
 {
   product_name: "Mechanical Pocket Watch",
   product_description: "A mechanical pocket watch that showcases the artistry of traditional watchmaking.",
   product_price: 210,
-  categoryId: 6,
+  
   subcategoryId: 40
 },
 //Bracelets - Subcategory 41
@@ -2220,70 +2220,70 @@ let data = [
   product_name: "Charm Bracelet",
   product_description: "A customizable charm bracelet to hold your most cherished memories.",
   product_price: 100,
-  categoryId: 6,
+  
   subcategoryId: 41
 },
 {
   product_name: "Bangle Set",
   product_description: "A set of sleek bangles, perfect for stacking or wearing individually.",
   product_price: 80,
-  categoryId: 6,
+  
   subcategoryId: 41
 },
 {
   product_name: "Leather Wrap Bracelet",
   product_description: "A stylish leather wrap bracelet, offering a blend of rustic and modern looks.",
   product_price: 60,
-  categoryId: 6,
+  
   subcategoryId: 41
 },
 {
   product_name: "Beaded Bracelet",
   product_description: "A colorful beaded bracelet, adding a pop of color to any outfit.",
   product_price: 40,
-  categoryId: 6,
+  
   subcategoryId: 41
 },
 {
   product_name: "Cuff Bracelet",
   product_description: "A statement cuff bracelet, designed to make an impact.",
   product_price: 120,
-  categoryId: 6,
+  
   subcategoryId: 41
 },
 {
   product_name: "Tennis Bracelet",
   product_description: "An elegant tennis bracelet, lined with sparkling diamonds.",
   product_price: 250,
-  categoryId: 6,
+  
   subcategoryId: 41
 },
 {
   product_name: "Infinity Bracelet",
   product_description: "A delicate infinity bracelet, symbolizing eternity and everlasting love.",
   product_price: 70,
-  categoryId: 6,
+  
   subcategoryId: 41
 },
 {
   product_name: "Friendship Bracelet",
   product_description: "A handwoven friendship bracelet, representing the bonds between close friends.",
   product_price: 30,
-  categoryId: 6,
+  
   subcategoryId: 41
 },
 {
   product_name: "Pearl Bracelet",
   product_description: "A classic pearl bracelet, adding a touch of elegance to any wrist.",
   product_price: 90,
-  categoryId: 6,
+  
   subcategoryId: 41
 },
 {
   product_name: "Gold Chain Bracelet",
   product_description: "A simple yet sophisticated gold chain bracelet, perfect for daily wear.",
   product_price: 110,
-  categoryId: 6,
+  
   subcategoryId: 41
 },
 //Rings - Subcategory 42
@@ -2291,70 +2291,70 @@ let data = [
   product_name: "Solitaire Ring",
   product_description: "A stunning solitaire ring featuring a single, brilliant diamond.",
   product_price: 300,
-  categoryId: 6,
+  
   subcategoryId: 42
 },
 {
   product_name: "Eternity Band",
   product_description: "An eternity band, fully encircled with diamonds, symbolizing unending love.",
   product_price: 400,
-  categoryId: 6,
+  
   subcategoryId: 42
 },
 {
   product_name: "Signet Ring",
   product_description: "A classic signet ring, often personalized with initials or a family crest.",
   product_price: 220,
-  categoryId: 6,
+  
   subcategoryId: 42
 },
 {
   product_name: "Stackable Rings",
   product_description: "A set of delicate stackable rings, perfect for mixing and matching.",
   product_price: 150,
-  categoryId: 6,
+  
   subcategoryId: 42
 },
 {
   product_name: "Cocktail Ring",
   product_description: "A bold cocktail ring, designed to be a conversation starter at any party.",
   product_price: 250,
-  categoryId: 6,
+  
   subcategoryId: 42
 },
 {
   product_name: "Claddagh Ring",
   product_description: "A traditional Irish Claddagh ring, representing love, loyalty, and friendship.",
   product_price: 120,
-  categoryId: 6,
+  
   subcategoryId: 42
 },
 {
   product_name: "Turquoise Ring",
   product_description: "A vibrant turquoise ring, set in sterling silver for a southwestern flair.",
   product_price: 100,
-  categoryId: 6,
+  
   subcategoryId: 42
 },
 {
   product_name: "Mood Ring",
   product_description: "A fun and retro mood ring, changing colors with your body temperature.",
   product_price: 50,
-  categoryId: 6,
+  
   subcategoryId: 42
 },
 {
   product_name: "Birthstone Ring",
   product_description: "A personalized ring featuring the birthstone of your choice.",
   product_price: 80,
-  categoryId: 6,
+  
   subcategoryId: 42
 },
 {
   product_name: "Wedding Band Set",
   product_description: "A matching set of wedding bands for the perfect union.",
   product_price: 500,
-  categoryId: 6,
+  
   subcategoryId: 42
 },
 //Wrist Watches - Subcategory 43
@@ -2362,70 +2362,70 @@ let data = [
   product_name: "Minimalist Watch",
   product_description: "A sleek wrist watch with a minimalist design, perfect for everyday wear.",
   product_price: 150,
-  categoryId: 6,
+  
   subcategoryId: 43
 },
 {
   product_name: "Smart Watch",
   product_description: "A high-tech smart watch, keeping you connected and on track with your fitness goals.",
   product_price: 250,
-  categoryId: 6,
+  
   subcategoryId: 43
 },
 {
   product_name: "Diver's Watch",
   product_description: "A rugged diver's watch, water-resistant and built for underwater adventures.",
   product_price: 300,
-  categoryId: 6,
+  
   subcategoryId: 43
 },
 {
   product_name: "Chronograph Watch",
   product_description: "A sophisticated chronograph watch, featuring multiple dials for precise timekeeping.",
   product_price: 350,
-  categoryId: 6,
+  
   subcategoryId: 43
 },
 {
   product_name: "Pilot's Watch",
   product_description: "A durable pilot's watch, designed with features useful for navigation and timing.",
   product_price: 400,
-  categoryId: 6,
+  
   subcategoryId: 43
 },
 {
   product_name: "Fashion Watch",
   product_description: "A stylish fashion watch, available in a variety of trendy designs and colors.",
   product_price: 120,
-  categoryId: 6,
+  
   subcategoryId: 43
 },
 {
   product_name: "Vintage Watch",
   product_description: "A classic vintage watch, bringing timeless elegance to your wrist.",
   product_price: 200,
-  categoryId: 6,
+  
   subcategoryId: 43
 },
 {
   product_name: "Luxury Watch",
   product_description: "An opulent luxury watch, crafted with precision and showcasing exquisite craftsmanship.",
   product_price: 1000,
-  categoryId: 6,
+  
   subcategoryId: 43
 },
 {
   product_name: "Field Watch",
   product_description: "A reliable field watch, designed for durability and readability in outdoor conditions.",
   product_price: 180,
-  categoryId: 6,
+  
   subcategoryId: 43
 },
 {
   product_name: "Dress Watch",
   product_description: "An elegant dress watch, perfect for formal events and occasions.",
   product_price: 220,
-  categoryId: 6,
+  
   subcategoryId: 43
 },
 //Trending - Subcategory 44
@@ -2433,70 +2433,70 @@ let data = [
   product_name: "Geometric Jewelry Set",
   product_description: "A trendy set featuring geometric shapes, including a necklace, earrings, and a bracelet.",
   product_price: 140,
-  categoryId: 6,
+  
   subcategoryId: 44
 },
 {
   product_name: "Layered Chain Necklace",
   product_description: "A fashionable layered chain necklace, making a bold statement.",
   product_price: 100,
-  categoryId: 6,
+  
   subcategoryId: 44
 },
 {
   product_name: "Mismatched Earrings",
   product_description: "A pair of chic mismatched earrings, perfect for a modern, eclectic look.",
   product_price: 70,
-  categoryId: 6,
+  
   subcategoryId: 44
 },
 {
   product_name: "Adjustable Ring Set",
   product_description: "A versatile set of adjustable rings in various designs.",
   product_price: 90,
-  categoryId: 6,
+  
   subcategoryId: 44
 },
 {
   product_name: "Beaded Choker",
   product_description: "A colorful beaded choker, adding a playful touch to your outfit.",
   product_price: 50,
-  categoryId: 6,
+  
   subcategoryId: 44
 },
 {
   product_name: "Wide Cuff Bracelet",
   product_description: "A statement wide cuff bracelet, designed to stand out.",
   product_price: 110,
-  categoryId: 6,
+  
   subcategoryId: 44
 },
 {
   product_name: "Anklet Set",
   product_description: "A set of delicate anklets, perfect for adding a subtle charm to your look.",
   product_price: 60,
-  categoryId: 6,
+  
   subcategoryId: 44
 },
 {
   product_name: "Body Chain",
   product_description: "A seductive body chain, perfect for layering over swimwear or a sleek dress.",
   product_price: 80,
-  categoryId: 6,
+  
   subcategoryId: 44
 },
 {
   product_name: "Statement Ear Cuff",
   product_description: "A bold ear cuff, requiring no piercings, for an edgy look.",
   product_price: 65,
-  categoryId: 6,
+  
   subcategoryId: 44
 },
 {
   product_name: "Textured Metal Bangles",
   product_description: "A set of textured metal bangles, adding a rustic touch to any ensemble.",
   product_price: 75,
-  categoryId: 6,
+  
   subcategoryId: 44
 }, 
   // Kids and Toys: Roll & Explore - Subcategory ID: 45
@@ -2942,70 +2942,70 @@ let data = [
     product_name: "EcoBright LED Bulb",
     product_description: "Energy-efficient LED bulb with a lifespan of 25,000 hours, offering a bright, natural light.",
     product_price: "5.99",
-    categoryId: 8,
+    
     subcategoryId: 52
   },
   {
     product_name: "Orbital Ceiling Fan",
     product_description: "Modern ceiling fan with remote control, featuring energy-efficient operation and silent motor technology.",
     product_price: "150.00",
-    categoryId: 8,
+    
     subcategoryId: 52
   },
   {
     product_name: "Vintage Edison Bulb",
     product_description: "Classic Edison style filament bulb, creating a warm and cozy atmosphere with its soft amber glow.",
     product_price: "10.99",
-    categoryId: 8,
+    
     subcategoryId: 52
   },
   {
     product_name: "Solar Pathway Light",
     product_description: "Outdoor solar-powered light, designed for pathways and gardens, waterproof and durable for all weather conditions.",
     product_price: "20.00",
-    categoryId: 8,
+    
     subcategoryId: 52
   },
   {
     product_name: "Industrial Pendant Light",
     product_description: "Stylish pendant light with an industrial design, perfect for adding a modern touch to any room.",
     product_price: "45.00",
-    categoryId: 8,
+    
     subcategoryId: 52
   },
   {
     product_name: "Retractable Ceiling Fan",
     product_description: "Innovative ceiling fan with retractable blades, includes LED light kit and remote control for easy operation.",
     product_price: "180.00",
-    categoryId: 8,
+    
     subcategoryId: 52
   },
   {
     product_name: "Smart LED Strip",
     product_description: "RGB LED strip lights with smart control, compatible with voice assistants and smartphones for custom lighting scenes.",
     product_price: "25.99",
-    categoryId: 8,
+    
     subcategoryId: 52
   },
   {
     product_name: "Crystal Chandelier",
     product_description: "Elegant crystal chandelier, perfect for adding a touch of luxury to dining rooms or entryways.",
     product_price: "250.00",
-    categoryId: 8,
+    
     subcategoryId: 52
   },
   {
     product_name: "Adjustable Desk Lamp",
     product_description: "Sleek desk lamp with adjustable arm and head, ideal for focused task lighting in offices or study areas.",
     product_price: "35.00",
-    categoryId: 8,
+    
     subcategoryId: 52
   },
   {
     product_name: "Outdoor Wall Lantern",
     product_description: "Traditional wall lantern for outdoor use, constructed from durable materials to withstand the elements.",
     product_price: "60.00",
-    categoryId: 8,
+    
     subcategoryId: 52
   },
   // Subcategory ID: 53
@@ -3013,70 +3013,70 @@ let data = [
     product_name: "Stainless Steel Nails",
     product_description: "High-quality stainless steel nails, ideal for both indoor and outdoor construction projects.",
     product_price: "5.00",
-    categoryId: 8,
+    
     subcategoryId: 53
   },
   {
     product_name: "Brass Door Hinges",
     product_description: "Durable brass door hinges, designed for heavy-duty use with a smooth operation and classic finish.",
     product_price: "12.00",
-    categoryId: 8,
+    
     subcategoryId: 53
   },
   {
     product_name: "Magnetic Cabinet Latch",
     product_description: "Strong magnetic latch for cabinet doors, ensuring secure closure with a simple and clean design.",
     product_price: "3.50",
-    categoryId: 8,
+    
     subcategoryId: 53
   },
   {
     product_name: "Heavy-Duty Anchor Bolts",
     product_description: "Anchor bolts for securing structures to concrete, featuring heavy-duty construction for high load capacity.",
     product_price: "15.00",
-    categoryId: 8,
+    
     subcategoryId: 53
   },
   {
     product_name: "Steel Corner Braces",
     product_description: "Reinforced steel corner braces, designed to provide additional support and stability to furniture and frames.",
     product_price: "8.00",
-    categoryId: 8,
+    
     subcategoryId: 53
   },
   {
     product_name: "Decorative Cabinet Knobs",
     product_description: "Stylish cabinet knobs, available in various designs to complement your home decor.",
     product_price: "4.00",
-    categoryId: 8,
+    
     subcategoryId: 53
   },
   {
     product_name: "Silicone Sealant",
     product_description: "Multipurpose silicone sealant, suitable for waterproof sealing in bathrooms, kitchens, and windows.",
     product_price: "7.00",
-    categoryId: 8,
+    
     subcategoryId: 53
   },
   {
     product_name: "Padlock",
     product_description: "Solid and durable padlock, ideal for securing sheds, gates, and storage units.",
     product_price: "10.00",
-    categoryId: 8,
+    
     subcategoryId: 53
   },
   {
     product_name: "Furniture Sliders",
     product_description: "Easy-to-use furniture sliders, designed to protect floors and make moving heavy furniture effortless.",
     product_price: "6.00",
-    categoryId: 8,
+    
     subcategoryId: 53
   },
   {
     product_name: "Wall Anchors",
     product_description: "Plastic wall anchors for hanging shelves, frames, and decor items securely on drywall.",
     product_price: "2.50",
-    categoryId: 8,
+    
     subcategoryId: 53
   },
   // Subcategory ID: 54
@@ -3084,70 +3084,70 @@ let data = [
     product_name: "Copper Wiring",
     product_description: "High-quality copper wiring for electrical installations, offering excellent conductivity and flexibility.",
     product_price: "50.00",
-    categoryId: 8,
+    
     subcategoryId: 54
   },
   {
     product_name: "Circuit Breaker",
     product_description: "Reliable circuit breaker, designed to protect electrical circuits from overload and short circuits.",
     product_price: "30.00",
-    categoryId: 8,
+    
     subcategoryId: 54
   },
   {
     product_name: "Outlet Surge Protector",
     product_description: "Surge protector with multiple outlets, providing safety and protection for your electronic devices.",
     product_price: "20.00",
-    categoryId: 8,
+    
     subcategoryId: 54
   },
   {
     product_name: "Dimmer Switch",
     product_description: "Adjustable dimmer switch for controlling light levels, compatible with various types of light bulbs.",
     product_price: "15.00",
-    categoryId: 8,
+    
     subcategoryId: 54
   },
   {
     product_name: "Junction Box",
     product_description: "Durable junction box for electrical connections, designed to protect wiring from moisture and dust.",
     product_price: "10.00",
-    categoryId: 8,
+    
     subcategoryId: 54
   },
   {
     product_name: "Electrical Tape",
     product_description: "Insulating electrical tape, essential for safely wrapping and protecting electrical wires.",
     product_price: "3.00",
-    categoryId: 8,
+    
     subcategoryId: 54
   },
   {
     product_name: "Voltage Tester",
     product_description: "Handheld voltage tester, an essential tool for safely checking electrical circuits and outlets.",
     product_price: "12.00",
-    categoryId: 8,
+    
     subcategoryId: 54
   },
   {
     product_name: "Wire Connectors",
     product_description: "Assorted wire connectors for joining and insulating electrical wires in various installations.",
     product_price: "5.00",
-    categoryId: 8,
+    
     subcategoryId: 54
   },
   {
     product_name: "USB Wall Outlet",
     product_description: "Modern wall outlet with built-in USB ports, providing convenient charging for devices without adapters.",
     product_price: "25.00",
-    categoryId: 8,
+    
     subcategoryId: 54
   },
   {
     product_name: "Electric Meter",
     product_description: "Digital electric meter for monitoring energy consumption, featuring an easy-to-read display.",
     product_price: "60.00",
-    categoryId: 8,
+    
     subcategoryId: 54
   },
   // Subcategory ID: 55
@@ -3155,70 +3155,70 @@ let data = [
     product_name: "Acrylic Latex Paint",
     product_description: "Water-based acrylic latex paint, offering excellent coverage and durability for interior walls.",
     product_price: "28.00",
-    categoryId: 8,
+    
     subcategoryId: 55
   },
   {
     product_name: "Oil-Based Primer",
     product_description: "High-quality oil-based primer, ideal for preparing surfaces for painting, enhancing paint adhesion and longevity.",
     product_price: "22.00",
-    categoryId: 8,
+    
     subcategoryId: 55
   },
   {
     product_name: "Spray Paint",
     product_description: "Versatile spray paint, suitable for a wide range of surfaces including metal, wood, and plastic.",
     product_price: "7.99",
-    categoryId: 8,
+    
     subcategoryId: 55
   },
   {
     product_name: "Chalkboard Paint",
     product_description: "Black chalkboard paint, transforming surfaces into writable and erasable chalkboards for creative projects.",
     product_price: "15.00",
-    categoryId: 8,
+    
     subcategoryId: 55
   },
   {
     product_name: "Exterior Paint",
     product_description: "Durable exterior paint, formulated to withstand harsh weather conditions and protect outdoor surfaces.",
     product_price: "35.00",
-    categoryId: 8,
+    
     subcategoryId: 55
   },
   {
     product_name: "Wood Stain",
     product_description: "Premium wood stain, enhancing the natural beauty of wood while providing protection against moisture and wear.",
     product_price: "18.00",
-    categoryId: 8,
+    
     subcategoryId: 55
   },
   {
     product_name: "Ceiling Paint",
     product_description: "Specially formulated ceiling paint, designed to reduce drips and splatters for a smooth, flawless finish.",
     product_price: "25.00",
-    categoryId: 8,
+    
     subcategoryId: 55
   },
   {
     product_name: "Mold Resistant Paint",
     product_description: "Mold resistant paint, ideal for bathrooms, kitchens, and other high-moisture areas to prevent mold growth.",
     product_price: "30.00",
-    categoryId: 8,
+    
     subcategoryId: 55
   },
   {
     product_name: "Glow-in-the-Dark Paint",
     product_description: "Fun glow-in-the-dark paint, perfect for kids' rooms, crafts, and safety markings.",
     product_price: "10.00",
-    categoryId: 8,
+    
     subcategoryId: 55
   },
   {
     product_name: "High-Gloss Enamel",
     product_description: "High-gloss enamel paint, providing a durable and shiny finish for trim, doors, and cabinets.",
     product_price: "20.00",
-    categoryId: 8,
+    
     subcategoryId: 55
   },
   // Subcategory ID: 56
@@ -3226,420 +3226,420 @@ let data = [
     product_name: "Vinyl Wallpaper",
     product_description: "Durable vinyl wallpaper, easy to clean and ideal for high-traffic areas, available in various patterns.",
     product_price: "40.00",
-    categoryId: 8,
+    
     subcategoryId: 56
   },
   {
     product_name: "Non-Woven Wallpaper",
     product_description: "Breathable non-woven wallpaper, easy to install and remove, perfect for creating stylish and modern interiors.",
     product_price: "35.00",
-    categoryId: 8,
+    
     subcategoryId: 56
   },
   {
     product_name: "Textured Wallpaper",
     product_description: "Textured wallpaper, adding depth and dimension to walls with its unique patterns and tactile surface.",
     product_price: "50.00",
-    categoryId: 8,
+    
     subcategoryId: 56
   },
   {
     product_name: "Foil Wallpaper",
     product_description: "Shiny foil wallpaper, creating a luxurious and reflective surface, ideal for feature walls.",
     product_price: "60.00",
-    categoryId: 8,
+    
     subcategoryId: 56
   },
   {
     product_name: "Grasscloth Wallpaper",
     product_description: "Natural grasscloth wallpaper, providing a warm and organic texture, made from renewable resources.",
     product_price: "70.00",
-    categoryId: 8,
+    
     subcategoryId: 56
   },
   {
     product_name: "Geometric Pattern Wallpaper",
     product_description: "Contemporary geometric pattern wallpaper, offering a bold and modern aesthetic for any space.",
     product_price: "45.00",
-    categoryId: 8,
+    
     subcategoryId: 56
   },
   {
     product_name: "Floral Print Wallpaper",
     product_description: "Elegant floral print wallpaper, bringing a touch of nature indoors with its detailed and colorful designs.",
     product_price: "55.00",
-    categoryId: 8,
+    
     subcategoryId: 56
   },
   {
     product_name: "Mural Wallpaper",
     product_description: "Large-scale mural wallpaper, transforming rooms with breathtaking landscapes or artistic designs.",
     product_price: "120.00",
-    categoryId: 8,
+    
     subcategoryId: 56
   },
   {
     product_name: "Children's Wallpaper",
     product_description: "Fun and playful wallpaper for children's rooms, featuring vibrant colors and whimsical patterns.",
     product_price: "30.00",
-    categoryId: 8,
+    
     subcategoryId: 56
   },
   {
     product_name: "Removable Wallpaper",
     product_description: "Easy-to-use removable wallpaper, perfect for renters and temporary decor changes, leaves no residue.",
     product_price: "25.00",
-    categoryId: 8,
+    
     subcategoryId: 56
   },
   {
     product_name: "Laminate Flooring",
     product_description: "Durable laminate flooring, offering the look of hardwood without the maintenance, easy to install.",
     product_price: "2.50",
-    categoryId: 8,
+    
     subcategoryId: 57
   },
   {
     product_name: "Ceramic Floor Tiles",
     product_description: "High-quality ceramic floor tiles, water-resistant and perfect for bathrooms and kitchens.",
     product_price: "1.50",
-    categoryId: 8,
+    
     subcategoryId: 57
   },
   {
     product_name: "Vinyl Plank Flooring",
     product_description: "Waterproof vinyl plank flooring, mimicking the appearance of wood, ideal for high-moisture areas.",
     product_price: "3.00",
-    categoryId: 8,
+    
     subcategoryId: 57
   },
   {
     product_name: "Bamboo Flooring",
     product_description: "Eco-friendly bamboo flooring, known for its durability and unique aesthetic.",
     product_price: "4.00",
-    categoryId: 8,
+    
     subcategoryId: 57
   },
   {
     product_name: "Porcelain Floor Tiles",
     product_description: "Premium porcelain floor tiles, extremely durable and suitable for both indoor and outdoor use.",
     product_price: "4.50",
-    categoryId: 8,
+    
     subcategoryId: 57
   },
   {
     product_name: "Carpet Tiles",
     product_description: "Easy-to-install carpet tiles, offering flexibility in design and comfort underfoot.",
     product_price: "1.00",
-    categoryId: 8,
+    
     subcategoryId: 57
   },
   {
     product_name: "Engineered Hardwood Flooring",
     product_description: "Engineered hardwood flooring, providing the beauty of hardwood with added stability and resistance to moisture.",
     product_price: "5.00",
-    categoryId: 8,
+    
     subcategoryId: 57
   },
   {
     product_name: "Stone Floor Tiles",
     product_description: "Natural stone floor tiles, adding elegance and character to any space with their unique textures.",
     product_price: "6.00",
-    categoryId: 8,
+    
     subcategoryId: 57
   },
   {
     product_name: "Cork Flooring",
     product_description: "Sustainable cork flooring, offering a soft, warm surface that's comfortable to walk on and sound-absorbing.",
     product_price: "3.50",
-    categoryId: 8,
+    
     subcategoryId: 57
   },
   {
     product_name: "Rubber Flooring",
     product_description: "Durable rubber flooring, ideal for gyms, playrooms, and other high-impact areas, easy to clean and maintain.",
     product_price: "2.00",
-    categoryId: 8,
+    
     subcategoryId: 57
   },
   {
     product_name: "Chrome Faucet",
     product_description: "Sleek chrome faucet with a modern design, featuring water-saving technology.",
     product_price: "75.00",
-    categoryId: 8,
+    
     subcategoryId: 58
   },
   {
     product_name: "PVC Piping",
     product_description: "Durable PVC piping, suitable for various plumbing applications, resistant to corrosion and chemicals.",
     product_price: "2.00",
-    categoryId: 8,
+    
     subcategoryId: 58
   },
   {
     product_name: "Dual-Flush Toilet",
     product_description: "High-efficiency dual-flush toilet, saving water with two flush options for liquid or solid waste.",
     product_price: "200.00",
-    categoryId: 8,
+    
     subcategoryId: 58
   },
   {
     product_name: "Shower Head with Filter",
     product_description: "Shower head with built-in filter, reducing chlorine and other impurities for healthier skin and hair.",
     product_price: "50.00",
-    categoryId: 8,
+    
     subcategoryId: 58
   },
   {
     product_name: "Copper Fittings",
     product_description: "High-quality copper fittings for plumbing, ensuring durable and leak-free connections.",
     product_price: "3.00",
-    categoryId: 8,
+    
     subcategoryId: 58
   },
   {
     product_name: "Sump Pump",
     product_description: "Reliable sump pump, designed to prevent basement flooding by removing excess water.",
     product_price: "150.00",
-    categoryId: 8,
+    
     subcategoryId: 58
   },
   {
     product_name: "Tankless Water Heater",
     product_description: "Energy-efficient tankless water heater, providing hot water on demand and reducing energy costs.",
     product_price: "500.00",
-    categoryId: 8,
+    
     subcategoryId: 58
   },
   {
     product_name: "Silicone Caulk",
     product_description: "Flexible silicone caulk, perfect for sealing gaps in bathrooms and kitchens, waterproof and mold-resistant.",
     product_price: "8.00",
-    categoryId: 8,
+    
     subcategoryId: 58
   },
   {
     product_name: "Plumbing Snake",
     product_description: "Handheld plumbing snake, essential for quickly clearing clogs in drains and pipes.",
     product_price: "20.00",
-    categoryId: 8,
+    
     subcategoryId: 58
   },
   {
     product_name: "Water Softener System",
     product_description: "Whole house water softener system, reducing hard water minerals to extend the life of plumbing and appliances.",
     product_price: "600.00",
-    categoryId: 8,
+    
     subcategoryId: 58
   },
   {
     product_name: "Stainless Steel Mailbox",
     product_description: "Durable stainless steel mailbox, weather-resistant with a sleek and modern design.",
     product_price: "45.00",
-    categoryId: 8,
+    
     subcategoryId: 59
   },
   {
     product_name: "Post-Mount Mailbox",
     product_description: "Classic post-mount mailbox, easy to install and comes with a durable, powder-coated finish.",
     product_price: "30.00",
-    categoryId: 8,
+    
     subcategoryId: 59
   },
   {
     product_name: "Wall-Mounted Mailbox",
     product_description: "Space-saving wall-mounted mailbox, perfect for homes with limited outdoor space, includes secure lock.",
     product_price: "35.00",
-    categoryId: 8,
+    
     subcategoryId: 59
   },
   {
     product_name: "Parcel Drop Box",
     product_description: "Secure parcel drop box, ensuring safe delivery of packages, features tamper-proof design.",
     product_price: "120.00",
-    categoryId: 8,
+    
     subcategoryId: 59
   },
   {
     product_name: "Mailbox with Newspaper Holder",
     product_description: "Convenient mailbox with an integrated newspaper holder, keeping your mail and newspapers organized.",
     product_price: "55.00",
-    categoryId: 8,
+    
     subcategoryId: 59
   },
   {
     product_name: "Vintage Mailbox",
     product_description: "Decorative vintage mailbox, adding a charming touch to your home's exterior.",
     product_price: "70.00",
-    categoryId: 8,
+    
     subcategoryId: 59
   },
   {
     product_name: "Locking Mailbox",
     product_description: "Secure locking mailbox, protecting your mail from theft, made from heavy-duty materials.",
     product_price: "65.00",
-    categoryId: 8,
+    
     subcategoryId: 59
   },
   {
     product_name: "Custom Mailbox",
     product_description: "Personalized custom mailbox, designed to match your home's style and colors.",
     product_price: "90.00",
-    categoryId: 8,
+    
     subcategoryId: 59
   },
   {
     product_name: "Mailbox Post",
     product_description: "Durable mailbox post, compatible with most mailboxes, includes mounting hardware for easy installation.",
     product_price: "25.00",
-    categoryId: 8,
+    
     subcategoryId: 59
   },
   {
     product_name: "Reflective Mailbox Numbers",
     product_description: "Easy-to-apply reflective mailbox numbers, ensuring your address is visible even at night.",
     product_price: "10.00",
-    categoryId: 8,
+    
     subcategoryId: 59
   },
   {
     product_name: "Screwdriver Set",
     product_description: "Comprehensive screwdriver set, including various sizes and types for all your DIY needs.",
     product_price: "15.00",
-    categoryId: 8,
+    
     subcategoryId: 60
   },
   {
     product_name: "Hammer",
     product_description: "Durable claw hammer, designed for driving nails and pulling them out with ease.",
     product_price: "10.00",
-    categoryId: 8,
+    
     subcategoryId: 60
   },
   {
     product_name: "Adjustable Wrench",
     product_description: "Versatile adjustable wrench, suitable for a wide range of nuts and bolts.",
     product_price: "12.00",
-    categoryId: 8,
+    
     subcategoryId: 60
   },
   {
     product_name: "Pliers Set",
     product_description: "Assorted pliers set, including needle-nose, slip-joint, and cutting pliers for various tasks.",
     product_price: "20.00",
-    categoryId: 8,
+    
     subcategoryId: 60
   },
   {
     product_name: "Utility Knife",
     product_description: "Sharp and reliable utility knife, essential for cutting through materials with precision.",
     product_price: "7.00",
-    categoryId: 8,
+    
     subcategoryId: 60
   },
   {
     product_name: "Tape Measure",
     product_description: "Compact tape measure, featuring a durable and easy-to-read blade for accurate measurements.",
     product_price: "5.00",
-    categoryId: 8,
+    
     subcategoryId: 60
   },
   {
     product_name: "Level",
     product_description: "High-precision level, ensuring your projects are perfectly aligned and balanced.",
     product_price: "15.00",
-    categoryId: 8,
+    
     subcategoryId: 60
   },
   {
     product_name: "Chisel Set",
     product_description: "Quality chisel set, ideal for woodworking and carving tasks, made from high-carbon steel.",
     product_price: "25.00",
-    categoryId: 8,
+    
     subcategoryId: 60
   },
   {
     product_name: "Allen Wrench Set",
     product_description: "Complete Allen wrench set, covering a range of sizes for assembling furniture and bicycles.",
     product_price: "8.00",
-    categoryId: 8,
+    
     subcategoryId: 60
   },
   {
     product_name: "Soldering Iron",
     product_description: "Precision soldering iron, perfect for electronics repair and crafting, with adjustable temperature control.",
     product_price: "20.00",
-    categoryId: 8,
+    
     subcategoryId: 60
   },
   {
     product_name: "Cordless Drill",
     product_description: "Powerful cordless drill, featuring variable speed control and a long-lasting battery, ideal for a variety of outdoor projects.",
     product_price: "100.00",
-    categoryId: 8,
+    
     subcategoryId: 61
   },
   {
     product_name: "Leaf Blower",
     product_description: "High-efficiency leaf blower, making yard cleanup quick and easy, with multiple speed settings.",
     product_price: "70.00",
-    categoryId: 8,
+    
     subcategoryId: 61
   },
   {
     product_name: "Pressure Washer",
     product_description: "Versatile pressure washer, perfect for cleaning decks, patios, and siding, with adjustable pressure settings.",
     product_price: "150.00",
-    categoryId: 8,
+    
     subcategoryId: 61
   },
   {
     product_name: "Chainsaw",
     product_description: "Robust chainsaw, ideal for cutting through thick branches and trees, features a safety brake.",
     product_price: "120.00",
-    categoryId: 8,
+    
     subcategoryId: 61
   },
   {
     product_name: "Hedge Trimmer",
     product_description: "Cordless hedge trimmer, designed for shaping and maintaining hedges, with long battery life.",
     product_price: "80.00",
-    categoryId: 8,
+    
     subcategoryId: 61
   },
   {
     product_name: "Lawn Mower",
     product_description: "Efficient lawn mower, suitable for various grass types, featuring adjustable cutting heights.",
     product_price: "200.00",
-    categoryId: 8,
+    
     subcategoryId: 61
   },
   {
     product_name: "Garden Tiller",
     product_description: "Compact garden tiller, perfect for preparing soil for planting, easy to maneuver in tight spaces.",
     product_price: "250.00",
-    categoryId: 8,
+    
     subcategoryId: 61
   },
   {
     product_name: "Post Hole Digger",
     product_description: "Manual post hole digger, simplifying the process of digging holes for fencing and planting.",
     product_price: "40.00",
-    categoryId: 8,
+    
     subcategoryId: 61
   },
   {
     product_name: "Wheelbarrow",
     product_description: "Durable wheelbarrow, essential for transporting soil, mulch, and garden waste, with a sturdy construction.",
     product_price: "60.00",
-    categoryId: 8,
+    
     subcategoryId: 61
   },
   {
     product_name: "Outdoor Fire Pit",
     product_description: "Stylish outdoor fire pit, enhancing your backyard ambiance, perfect for gatherings and roasting marshmallows.",
     product_price: "150.00",
-    categoryId: 8,
+    
     subcategoryId: 61
   },          
   // Automotive Subcategory 52: Exterior Accessories
@@ -4140,350 +4140,350 @@ let data = [
     product_name: "Echoes of Tomorrow",
     product_description: "A thrilling sci-fi novel that takes you on a journey through time.",
     product_price: "15",
-    categoryId: 10,
+    
     subcategoryId: 70
   },
   {
     product_name: "The Last Symphony",
     product_description: "A gripping mystery novel set against the backdrop of classical music.",
     product_price: "18",
-    categoryId: 10,
+    
     subcategoryId: 70
   },
   {
     product_name: "Shadows of the Past",
     product_description: "An engaging historical fiction that explores the depth of human emotions.",
     product_price: "20",
-    categoryId: 10,
+    
     subcategoryId: 70
   },
   {
     product_name: "Heart of the Ocean",
     product_description: "A romance novel that tells a poignant story of love and loss at sea.",
     product_price: "16",
-    categoryId: 10,
+    
     subcategoryId: 70
   },
   {
     product_name: "The Quantum Thief",
     product_description: "A cutting-edge science fiction novel exploring the possibilities of quantum technology.",
     product_price: "22",
-    categoryId: 10,
+    
     subcategoryId: 70
   },
   {
     product_name: "Gardens of the Moon",
     product_description: "An epic fantasy novel that begins the tale of the Malazan Book of the Fallen.",
     product_price: "19",
-    categoryId: 10,
+    
     subcategoryId: 70
   },
   {
     product_name: "The Silent Witness",
     product_description: "A captivating crime novel that will keep you guessing till the very end.",
     product_price: "17",
-    categoryId: 10,
+    
     subcategoryId: 70
   },
   {
     product_name: "Whispers in the Dark",
     product_description: "A spine-chilling horror novel that explores the supernatural.",
     product_price: "18",
-    categoryId: 10,
+    
     subcategoryId: 70
   },
   {
     product_name: "Fragments of Tomorrow",
     product_description: "A post-apocalyptic novel that explores the resilience of humanity.",
     product_price: "20",
-    categoryId: 10,
+    
     subcategoryId: 70
   },
   {
     product_name: "Rivers of Time",
     product_description: "A compelling novel that weaves together multiple timelines into a single, mesmerizing story.",
     product_price: "21",
-    categoryId: 10,
+    
     subcategoryId: 70
   },
   {
     product_name: "Cybernetic Dreams",
     product_description: "An anthology of cyberpunk short stories from various acclaimed authors.",
     product_price: "14",
-    categoryId: 10,
+    
     subcategoryId: 71
   },
   {
     product_name: "Tales of the Unknown",
     product_description: "A collection of fantasy stories that transport readers to magical realms.",
     product_price: "16",
-    categoryId: 10,
+    
     subcategoryId: 71
   },
   {
     product_name: "Echoes of the Void",
     product_description: "A space opera that explores the vastness and mysteries of the universe.",
     product_price: "23",
-    categoryId: 10,
+    
     subcategoryId: 71
   },
   {
     product_name: "Underworld Chronicles",
     product_description: "A dark fantasy series that delves into the depths of underworld mythology.",
     product_price: "19",
-    categoryId: 10,
+    
     subcategoryId: 71
   },
   {
     product_name: "Mysteries Unveiled",
     product_description: "A series of detective stories that unravel complex mysteries.",
     product_price: "17",
-    categoryId: 10,
+    
     subcategoryId: 71
   },
   {
     product_name: "Legends Reborn",
     product_description: "A collection of reimagined myths and legends from cultures around the world.",
     product_price: "20",
-    categoryId: 10,
+    
     subcategoryId: 71
   },
   {
     product_name: "Futuristic Visions",
     product_description: "A compendium of science fiction tales that envision the future of humanity.",
     product_price: "22",
-    categoryId: 10,
+    
     subcategoryId: 71
   },
   {
     product_name: "Haunting of the Night",
     product_description: "A collection of ghost stories that explore the paranormal and the unknown.",
     product_price: "15",
-    categoryId: 10,
+    
     subcategoryId: 71
   },
   {
     product_name: "Chronicles of Courage",
     product_description: "Historical fiction that highlights bravery and heroism through the ages.",
     product_price: "18",
-    categoryId: 10,
+    
     subcategoryId: 71
   },
   {
     product_name: "Tales from the Crypt",
     product_description: "An anthology of horror stories that will send shivers down your spine.",
     product_price: "16",
-    categoryId: 10,
+    
     subcategoryId: 71
   },
   {
     product_name: "Mindful Growth",
     product_description: "A guide to personal development and mindfulness for a fulfilling life.",
     product_price: "24",
-    categoryId: 10,
+    
     subcategoryId: 72
   },
   {
     product_name: "Leadership in Action",
     product_description: "Insights from successful leaders on effective leadership and management.",
     product_price: "30",
-    categoryId: 10,
+    
     subcategoryId: 72
   },
   {
     product_name: "Creative Thinking",
     product_description: "Techniques and exercises to enhance creativity and innovative thinking.",
     product_price: "22",
-    categoryId: 10,
+    
     subcategoryId: 72
   },
   {
     product_name: "Financial Wisdom",
     product_description: "Practical advice on managing finances, investing, and building wealth.",
     product_price: "27",
-    categoryId: 10,
+    
     subcategoryId: 72
   },
   {
     product_name: "Healthy Habits",
     product_description: "A comprehensive guide to building a healthy lifestyle through diet and exercise.",
     product_price: "25",
-    categoryId: 10,
+    
     subcategoryId: 72
   },
   {
     product_name: "Digital Mastery",
     product_description: "Skills and strategies for succeeding in the digital age, from social media to online marketing.",
     product_price: "29",
-    categoryId: 10,
+    
     subcategoryId: 72
   },
   {
     product_name: "The Art of Communication",
     product_description: "Mastering the art of effective communication in personal and professional settings.",
     product_price: "26",
-    categoryId: 10,
+    
     subcategoryId: 72
   },
   {
     product_name: "Strategic Thinking",
     product_description: "Developing a strategic mindset for business and personal growth.",
     product_price: "28",
-    categoryId: 10,
+    
     subcategoryId: 72
   },
   {
     product_name: "Cultural Intelligence",
     product_description: "Understanding and navigating diverse cultures for personal and business success.",
     product_price: "23",
-    categoryId: 10,
+    
     subcategoryId: 72
   },
   {
     product_name: "Peak Performance",
     product_description: "Techniques for achieving peak performance in sports, business, and personal life.",
     product_price: "30",
-    categoryId: 10,
+    
     subcategoryId: 72
   },
   {
     product_name: "Magical Adventures",
     product_description: "A collection of enchanting stories for children, filled with magic and wonder.",
     product_price: "12",
-    categoryId: 10,
+    
     subcategoryId: 73
   },
   {
     product_name: "Journey Through Space",
     product_description: "An educational adventure through the cosmos for young astronomers.",
     product_price: "14",
-    categoryId: 10,
+    
     subcategoryId: 73
   },
   {
     product_name: "Fables of the Forest",
     product_description: "Timeless tales of animals and nature that teach valuable life lessons.",
     product_price: "13",
-    categoryId: 10,
+    
     subcategoryId: 73
   },
   {
     product_name: "Pirate's Treasure",
     product_description: "A thrilling tale of adventure on the high seas, perfect for young explorers.",
     product_price: "15",
-    categoryId: 10,
+    
     subcategoryId: 73
   },
   {
     product_name: "Dinosaur World",
     product_description: "Step back in time and explore the world of dinosaurs in this exciting book for kids.",
     product_price: "16",
-    categoryId: 10,
+    
     subcategoryId: 73
   },
   {
     product_name: "The Wizard's Apprentice",
     product_description: "A magical story of a young apprentice learning the secrets of wizardry.",
     product_price: "11",
-    categoryId: 10,
+    
     subcategoryId: 73
   },
   {
     product_name: "Underwater Kingdom",
     product_description: "Discover the mysteries of the deep sea in this captivating story for children.",
     product_price: "14",
-    categoryId: 10,
+    
     subcategoryId: 73
   },
   {
     product_name: "Heroes of Myth",
     product_description: "Epic tales of heroes and gods from ancient myths, adapted for young readers.",
     product_price: "13",
-    categoryId: 10,
+    
     subcategoryId: 73
   },
   {
     product_name: "The Enchanted Forest",
     product_description: "An adventurous journey through a magical forest filled with fantastical creatures.",
     product_price: "12",
-    categoryId: 10,
+    
     subcategoryId: 73
   },
   {
     product_name: "Space Cadets",
     product_description: "Join the Space Cadets on their exciting missions across the galaxy in this adventurous series for kids.",
     product_price: "15",
-    categoryId: 10,
+    
     subcategoryId: 73
   },
   {
     product_name: "Voices of Inspiration",
     product_description: "Motivational stories narrated by famous personalities to inspire and uplift.",
     product_price: "25",
-    categoryId: 10,
+    
     subcategoryId: 74
   },
   {
     product_name: "Starlight Tales",
     product_description: "Fairy tales and bedtime stories brought to life by the soothing voices of celebrities.",
     product_price: "22",
-    categoryId: 10,
+    
     subcategoryId: 74
   },
   {
     product_name: "Legendary Lives",
     product_description: "Biographies of historical figures narrated by renowned actors and actresses.",
     product_price: "30",
-    categoryId: 10,
+    
     subcategoryId: 74
   },
   {
     product_name: "Mysteries Unraveled",
     product_description: "Engrossing mystery novels narrated by award-winning voice actors.",
     product_price: "27",
-    categoryId: 10,
+    
     subcategoryId: 74
   },
   {
     product_name: "Echoes of the Stage",
     product_description: "Famous plays and theatrical works narrated by acclaimed stage actors.",
     product_price: "29",
-    categoryId: 10,
+    
     subcategoryId: 74
   },
   {
     product_name: "Verses of the Stars",
     product_description: "A collection of poetry and prose narrated by well-known poets and celebrities.",
     product_price: "24",
-    categoryId: 10,
+    
     subcategoryId: 74
   },
   {
     product_name: "Cinematic Journeys",
     product_description: "Iconic movie scripts and screenplays narrated by famous film actors.",
     product_price: "28",
-    categoryId: 10,
+    
     subcategoryId: 74
   },
   {
     product_name: "Voices from the Past",
     product_description: "Historical speeches and documents narrated by influential public figures.",
     product_price: "26",
-    categoryId: 10,
+    
     subcategoryId: 74
   },
   {
     product_name: "Melodies of Words",
     product_description: "Music legends narrate their autobiographies, sharing their journey in their own words.",
     product_price: "30",
-    categoryId: 10,
+    
     subcategoryId: 74
   },
   {
     product_name: "Adventures in Voice",
     product_description: "Adventure novels and stories narrated by actors known for their dynamic voice work.",
     product_price: "27",
-    categoryId: 10,
+    
     subcategoryId: 74
   },                                                  
   // Outdoor, Fun, and Sports Subcategory 75: Cycling
@@ -4923,525 +4923,525 @@ let data = [
     product_name: "AquaBliss Showerhead",
     product_description: "High-pressure rainfall shower head with water filtration system for a spa-like experience",
     product_price: "75",
-    categoryId: 12,
+    
     subcategoryId: 82
   },
   {
     product_name: "SoftEmbrace Towels",
     product_description: "Ultra-soft, absorbent bamboo cotton towels in a set of 4, perfect for sensitive skin",
     product_price: "40",
-    categoryId: 12,
+    
     subcategoryId: 82
   },
   {
     product_name: "BathBloom Bath Mat",
     product_description: "Non-slip, microfiber bath mat with memory foam for luxurious comfort",
     product_price: "25",
-    categoryId: 12,
+    
     subcategoryId: 82
   },
   {
     product_name: "EcoSuds Soap Dispenser",
     product_description: "Wall-mounted, touchless soap dispenser with refillable eco-friendly pods",
     product_price: "60",
-    categoryId: 12,
+    
     subcategoryId: 82
   },
   {
     product_name: "SereneCurtain Shower Liner",
     product_description: "Mildew-resistant, waterproof shower curtain liner with weighted hem",
     product_price: "20",
-    categoryId: 12,
+    
     subcategoryId: 82
   },
   {
     product_name: "LuxeRack Towel Warmer",
     product_description: "Freestanding or wall-mounted electric towel warmer with built-in timer",
     product_price: "120",
-    categoryId: 12,
+    
     subcategoryId: 82
   },
   {
     product_name: "VanityGlow LED Mirror",
     product_description: "Illuminated bathroom mirror with adjustable LED lights and touch sensor",
     product_price: "150",
-    categoryId: 12,
+    
     subcategoryId: 82
   },
   {
     product_name: "ZenSpa Bathtub Caddy",
     product_description: "Expandable bamboo bathtub caddy with book holder, wine glass slot, and soap dish",
     product_price: "45",
-    categoryId: 12,
+    
     subcategoryId: 82
   },
   {
     product_name: "FreshFragrance Bath Bombs",
     product_description: "Set of 6 handmade, organic bath bombs with essential oils for relaxation",
     product_price: "30",
-    categoryId: 12,
+    
     subcategoryId: 82
   },
   {
     product_name: "ClearView Shower Squeegee",
     product_description: "Ergonomic shower squeegee with silicone blade and suction cup hanger for glass cleaning",
     product_price: "15",
-    categoryId: 12,
+    
     subcategoryId: 82
   },
   {
     product_name: "DreamWeave Comforter Set",
     product_description: "Luxury microfiber comforter set with pillow shams and bed skirt, hypoallergenic",
     product_price: "90",
-    categoryId: 12,
+    
     subcategoryId: 83
   },
   {
     product_name: "SleepTight Memory Foam Pillow",
     product_description: "Ergonomic memory foam pillow with cooling gel layer for optimal neck support",
     product_price: "50",
-    categoryId: 12,
+    
     subcategoryId: 83
   },
   {
     product_name: "CozyNest Weighted Blanket",
     product_description: "Premium weighted blanket for improved sleep, made with non-toxic glass beads",
     product_price: "100",
-    categoryId: 12,
+    
     subcategoryId: 83
   },
   {
     product_name: "SilkSerenity Pillowcase Set",
     product_description: "Set of 2 pure mulberry silk pillowcases, hypoallergenic and hair-friendly",
     product_price: "70",
-    categoryId: 12,
+    
     subcategoryId: 83
   },
   {
     product_name: "BedFramePro Adjustable Base",
     product_description: "Electric adjustable bed base with wireless remote, USB ports, and massage feature",
     product_price: "800",
-    categoryId: 12,
+    
     subcategoryId: 83
   },
   {
     product_name: "SheetHaven Luxury Set",
     product_description: "Egyptian cotton sheet set with deep pockets and a sateen weave, 800 thread count",
     product_price: "120",
-    categoryId: 12,
+    
     subcategoryId: 83
   },
   {
     product_name: "MattressMax Memory Foam",
     product_description: "10-inch gel-infused memory foam mattress with adaptive support layers, queen size",
     product_price: "400",
-    categoryId: 12,
+    
     subcategoryId: 83
   },
   {
     product_name: "NightGlow Bedside Lamp",
     product_description: "Touch-activated bedside lamp with dimmable warm light and minimalist design",
     product_price: "35",
-    categoryId: 12,
+    
     subcategoryId: 83
   },
   {
     product_name: "QuiltCrafters Heirloom Quilt",
     product_description: "Hand-stitched cotton quilt with vintage patchwork design, king size",
     product_price: "200",
-    categoryId: 12,
+    
     subcategoryId: 83
   },
   {
     product_name: "UnderBed Smart Storage",
     product_description: "Roll-out under-bed storage solution with smart compartments and dust protection",
     product_price: "60",
-    categoryId: 12,
+    
     subcategoryId: 83
   },
   {
     product_name: "ComfyLounge Recliner",
     product_description: "Ergonomic recliner chair with leather upholstery and built-in lumbar support",
     product_price: "350",
-    categoryId: 12,
+    
     subcategoryId: 84
   },
   {
     product_name: "SpaceSaver Foldable Desk",
     product_description: "Compact foldable desk ideal for small spaces, with built-in storage compartments",
     product_price: "100",
-    categoryId: 12,
+    
     subcategoryId: 84
   },
   {
     product_name: "ModernArt Coffee Table",
     product_description: "Contemporary glass coffee table with artistic metal frame, center piece for any living room",
     product_price: "250",
-    categoryId: 12,
+    
     subcategoryId: 84
   },
   {
     product_name: "EcoWood Dining Set",
     product_description: "Sustainable solid wood dining set including table and 6 chairs, with a natural finish",
     product_price: "600",
-    categoryId: 12,
+    
     subcategoryId: 84
   },
   {
     product_name: "SofaKing Convertible Couch",
     product_description: "Multi-functional convertible sofa that turns into a bed, with additional storage space",
     product_price: "500",
-    categoryId: 12,
+    
     subcategoryId: 84
   },
   {
     product_name: "BookNook Wall Shelf",
     product_description: "Wall-mounted bookshelf with creative geometric design, in solid oak",
     product_price: "150",
-    categoryId: 12,
+    
     subcategoryId: 84
   },
   {
     product_name: "RusticCharm Wardrobe",
     product_description: "Vintage-style solid pine wardrobe with ample storage and a distressed finish",
     product_price: "450",
-    categoryId: 12,
+    
     subcategoryId: 84
   },
   {
     product_name: "UltraModern TV Stand",
     product_description: "Sleek TV stand with LED lighting and glass shelves, supports up to 65 inch screens",
     product_price: "200",
-    categoryId: 12,
+    
     subcategoryId: 84
   },
   {
     product_name: "PatioPerfection Outdoor Set",
     product_description: "All-weather outdoor furniture set with rattan sofa, chairs, and glass top table",
     product_price: "700",
-    categoryId: 12,
+    
     subcategoryId: 84
   },
   {
     product_name: "SleepyHollow Rocking Chair",
     product_description: "Traditional wooden rocking chair with hand-carved details and comfortable cushioning",
     product_price: "180",
-    categoryId: 12,
+    
     subcategoryId: 84
   },
   {
     product_name: "WorkSmart Standing Desk",
     product_description: "Adjustable standing desk with electronic controls and memory settings for optimal ergonomics",
     product_price: "300",
-    categoryId: 12,
+    
     subcategoryId: 84
   },
   {
     product_name: "FrostFree Refrigerator",
     product_description: "Energy-efficient, frost-free refrigerator with smart temperature controls and spacious interior",
     product_price: "1200",
-    categoryId: 12,
+    
     subcategoryId: 85
   },
   {
     product_name: "QuickWash Dishwasher",
     product_description: "Ultra-quiet dishwasher with advanced wash cycles and energy-saving features",
     product_price: "700",
-    categoryId: 12,
+    
     subcategoryId: 85
   },
   {
     product_name: "AirPure Smart Purifier",
     product_description: "Smart air purifier with HEPA filters and real-time air quality monitoring",
     product_price: "300",
-    categoryId: 12,
+    
     subcategoryId: 85
   },
   {
     product_name: "BakeMaster Convection Oven",
     product_description: "Digital convection oven with multiple cooking modes and precise temperature control",
     product_price: "500",
-    categoryId: 12,
+    
     subcategoryId: 85
   },
   {
     product_name: "BlendPro Kitchen Blender",
     product_description: "High-power kitchen blender with multiple speed settings and durable glass jar",
     product_price: "150",
-    categoryId: 12,
+    
     subcategoryId: 85
   },
   {
     product_name: "EspressoElite Coffee Maker",
     product_description: "Barista-grade espresso machine with customizable settings and milk frother",
     product_price: "400",
-    categoryId: 12,
+    
     subcategoryId: 85
   },
   {
     product_name: "SteamGenie Garment Steamer",
     product_description: "Handheld garment steamer for quick and efficient wrinkle removal, with multiple attachments",
     product_price: "80",
-    categoryId: 12,
+    
     subcategoryId: 85
   },
   {
     product_name: "SonicClean Vacuum Cleaner",
     product_description: "Powerful bagless vacuum cleaner with sonic cleaning technology for deep cleaning",
     product_price: "250",
-    categoryId: 12,
+    
     subcategoryId: 85
   },
   {
     product_name: "RoboMop Floor Cleaner",
     product_description: "Autonomous floor cleaning robot with smart navigation and mop function",
     product_price: "300",
-    categoryId: 12,
+    
     subcategoryId: 85
   },
   {
     product_name: "ToastTastic Toaster",
     product_description: "4-slice toaster with wide slots, bagel function, and removable crumb tray",
     product_price: "60",
-    categoryId: 12,
+    
     subcategoryId: 85
   },
   {
     product_name: "IronFast Steam Iron",
     product_description: "Advanced steam iron with ceramic soleplate and precision tip for easy wrinkle removal",
     product_price: "50",
-    categoryId: 12,
+    
     subcategoryId: 85
   },
   {
     product_name: "ElegantVase Decor Set",
     product_description: "Set of 3 decorative vases in varying sizes, perfect for modern and traditional spaces",
     product_price: "80",
-    categoryId: 12,
+    
     subcategoryId: 86
   },
   {
     product_name: "WallWhisper Art Prints",
     product_description: "Gallery-quality art prints set, featuring abstract and contemporary designs",
     product_price: "120",
-    categoryId: 12,
+    
     subcategoryId: 86
   },
   {
     product_name: "GlowLantern LED Lights",
     product_description: "Set of wireless, rechargeable LED lanterns with adjustable brightness, for indoor/outdoor use",
     product_price: "70",
-    categoryId: 12,
+    
     subcategoryId: 86
   },
   {
     product_name: "ScentHarmony Diffuser",
     product_description: "Ultrasonic aroma diffuser with color-changing LED lights and timer settings",
     product_price: "40",
-    categoryId: 12,
+    
     subcategoryId: 86
   },
   {
     product_name: "FrameFiesta Picture Frames",
     product_description: "Assorted set of picture frames in various sizes and finishes for a personalized gallery wall",
     product_price: "60",
-    categoryId: 12,
+    
     subcategoryId: 86
   },
   {
     product_name: "TimeTeller Wall Clock",
     product_description: "Minimalist wall clock with silent movement and modern design, available in multiple colors",
     product_price: "30",
-    categoryId: 12,
+    
     subcategoryId: 86
   },
   {
     product_name: "CozyThrow Blanket",
     product_description: "Ultra-soft, knitted throw blanket in a variety of colors, perfect for any living space",
     product_price: "50",
-    categoryId: 12,
+    
     subcategoryId: 86
   },
   {
     product_name: "ZenGarden Indoor Fountain",
     product_description: "Tabletop indoor fountain with natural river rocks and calming water sound for relaxation",
     product_price: "90",
-    categoryId: 12,
+    
     subcategoryId: 86
   },
   {
     product_name: "MoodGlow Candle Set",
     product_description: "Set of scented candles in glass jars, with long burn time and soothing fragrances",
     product_price: "35",
-    categoryId: 12,
+    
     subcategoryId: 86
   },
   {
     product_name: "RetroRecord Vinyl Player",
     product_description: "Vintage-style vinyl record player with modern features like Bluetooth connectivity",
     product_price: "150",
-    categoryId: 12,
+    
     subcategoryId: 86
   },
   {
     product_name: "SoftStep Rug",
     product_description: "Luxury area rug with high pile and soft texture, ideal for living rooms and bedrooms",
     product_price: "200",
-    categoryId: 12,
+    
     subcategoryId: 86
   },
   {
     product_name: "ChefMate Knife Set",
     product_description: "Professional-grade stainless steel knife set with ergonomic handles and wooden block",
     product_price: "150",
-    categoryId: 12,
+    
     subcategoryId: 87
   },
   {
     product_name: "CulinaryPro Cast Iron Skillet",
     product_description: "Pre-seasoned cast iron skillet, perfect for frying, baking, grilling, and more",
     product_price: "40",
-    categoryId: 12,
+    
     subcategoryId: 87
   },
   {
     product_name: "DineElegance Dinnerware Set",
     product_description: "Porcelain dinnerware set for 8, with dinner plates, salad plates, bowls, and mugs",
     product_price: "200",
-    categoryId: 12,
+    
     subcategoryId: 87
   },
   {
     product_name: "BakeWizard Baking Mats",
     product_description: "Set of 2 non-stick silicone baking mats, durable and reusable for all your baking needs",
     product_price: "20",
-    categoryId: 12,
+    
     subcategoryId: 87
   },
   {
     product_name: "MixMaster Stand Mixer",
     product_description: "Powerful stand mixer with multiple attachments for mixing, kneading, and whipping",
     product_price: "300",
-    categoryId: 12,
+    
     subcategoryId: 87
   },
   {
     product_name: "PreservePro Vacuum Sealer",
     product_description: "Advanced vacuum sealer for food preservation, with multiple sealing modes and starter kit",
     product_price: "120",
-    categoryId: 12,
+    
     subcategoryId: 87
   },
   {
     product_name: "GlassGenius Storage Containers",
     product_description: "Set of glass food storage containers with airtight lids, microwave and freezer safe",
     product_price: "50",
-    categoryId: 12,
+    
     subcategoryId: 87
   },
   {
     product_name: "GrillMaster BBQ Set",
     product_description: "Complete BBQ tool set with stainless steel utensils and aluminum storage case",
     product_price: "80",
-    categoryId: 12,
+    
     subcategoryId: 87
   },
   {
     product_name: "SipSavvy Wine Glasses",
     product_description: "Set of 6 crystal wine glasses, elegantly designed for red and white wines",
     product_price: "60",
-    categoryId: 12,
+    
     subcategoryId: 87
   },
   {
     product_name: "CafeBrew French Press",
     product_description: "Stainless steel French press coffee maker with double-wall construction for heat retention",
     product_price: "40",
-    categoryId: 12,
+    
     subcategoryId: 87
   },
   {
     product_name: "SpiceSavant Rack",
     product_description: "Rotating spice rack with 16 pre-filled spice jars and labels for easy organization",
     product_price: "70",
-    categoryId: 12,
+    
     subcategoryId: 87
   },
   {
     product_name: "PetPal Interactive Feeder",
     product_description: "Smart pet feeder with remote control and programmable feeding schedule for dogs and cats",
     product_price: "150",
-    categoryId: 12,
+    
     subcategoryId: 88
   },
   {
     product_name: "FurryFriend Bed",
     product_description: "Orthopedic pet bed with memory foam and removable, washable cover for ultimate comfort",
     product_price: "100",
-    categoryId: 12,
+    
     subcategoryId: 88
   },
   {
     product_name: "WhiskerWand Cat Tree",
     product_description: "Multi-level cat tree with scratching posts, hammock, and play area for indoor cats",
     product_price: "200",
-    categoryId: 12,
+    
     subcategoryId: 88
   },
   {
     product_name: "BarkBuddy Dog Harness",
     product_description: "No-pull dog harness with adjustable straps and reflective stitching for safe walks",
     product_price: "30",
-    categoryId: 12,
+    
     subcategoryId: 88
   },
   {
     product_name: "AquaMate Aquarium Kit",
     product_description: "Complete aquarium starter kit with filter, LED lighting, and water conditioner, 20 gallons",
     product_price: "120",
-    categoryId: 12,
+    
     subcategoryId: 88
   },
   {
     product_name: "FeatherFun Bird Cage",
     product_description: "Spacious bird cage with perches, feeders, and swing, suitable for small to medium birds",
     product_price: "150",
-    categoryId: 12,
+    
     subcategoryId: 88
   },
   {
     product_name: "CritterCave Hamster Habitat",
     product_description: "Expandable hamster habitat with tunnels, wheel, and lookout areas for enrichment",
     product_price: "80",
-    categoryId: 12,
+    
     subcategoryId: 88
   },
   {
     product_name: "ReptiHome Terrarium",
     product_description: "Glass terrarium with screen top and front opening doors for reptiles and amphibians",
     product_price: "200",
-    categoryId: 12,
+    
     subcategoryId: 88
   },
   {
     product_name: "FlutterFly Butterfly Garden",
     product_description: "Live butterfly garden kit with caterpillars, habitat, and food for educational fun",
     product_price: "30",
-    categoryId: 12,
+    
     subcategoryId: 88
   },
   {
     product_name: "SqueakJoy Plush Toys",
     product_description: "Set of durable plush dog toys with squeakers, perfect for interactive play and dental health",
     product_price: "25",
-    categoryId: 12,
+    
     subcategoryId: 88
   },
   {
     product_name: "ChewChampion Bones",
     product_description: "Natural, long-lasting chew bones for dogs, promoting dental health and satisfying chew instincts",
     product_price: "20",
-    categoryId: 12,
+    
     subcategoryId: 88
   }
   
