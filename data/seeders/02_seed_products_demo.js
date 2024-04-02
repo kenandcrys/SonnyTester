@@ -130,15 +130,16 @@ exports.seed = function (knex) {
       ]);
     })
     .then(function () {
-      const chunkSize = 100; // Adjust as needed
+      const chunkSize = 7; // Adjust as needed
       // Create chunks of data to insert
       const chunkedData = [];
+      count = 0
       for (let i = 0; i < data.length; i += chunkSize) {
-        chunkedData.push(data.slice(i, i + chunkSize));
+        count++
+        chunkedData.push(knex("products").insert(data.slice(i, i + chunkSize)));
       }
-      return Promise.all(chunkedData.map(chunk => {
-        knex("products").insert(chunk)
-      }))
+      console.log(count)
+      return Promise.all(chunkedData)
       .then(() => {
         console.log('Batch insert completed successfully.');
       })
