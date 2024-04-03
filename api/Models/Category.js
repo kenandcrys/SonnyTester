@@ -1,13 +1,15 @@
-// const { Model } = require("objection")
+const { Model } = require("objection")
 
-// class Category extends Model {
-//     static get tableName(){
-//         return "category";
-//     }
+class Category extends Model {
+    static get tableName(){
+        return "category";
+    }
 
-//     static get realtionMappings() {
-//         return {
+    static get relationMappings() {
+        return {
             
-//         }
-//     }
-// }
+        }
+    }
+}
+
+module.exports = Category;
