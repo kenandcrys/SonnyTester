@@ -11,7 +11,7 @@ class Product extends Model {
     const Review = require("./Review");
     const Order = require("./Order");
     const Category = require("./Category");
-
+    const Subcategory = require("./Subcategory");
     return {
       seller: {
         relation: Model.BelongsToOneRelation,
@@ -41,14 +41,18 @@ class Product extends Model {
           to: 'orders.id'
         }
       },
-      category: { // Define a new relation for category
+      subcategory: { // define relation for subcategory
         relation: Model.BelongsToOneRelation,
-        modelClass: Category,
+        modelClass: Subcategory,
         join: {
-          from: "products.category_id", // Assuming 'category_id' is the foreign key in 'products' table
-          to: "categories.id",
+          from: "products.subcategoryId",
+          to: "subcategories.id"
         },
-      },
+        modify: query => {
+          query.select('subcategories.*', 'c.name as categoryName')
+               .join('categories as c', 'subcategories.categoryId', 'c.id');
+        }
+      }
     };
   }
 
