@@ -5,7 +5,7 @@ const Category = require("../../Models/Category");
 // GET route to populate products when invoked
 router.get("/", async (req, res) => {
   const category = await Category.query();
-  res.status(200).json(product);
+  res.status(200).json(category);
 });
 // GET route to populate a certain product by ID when invoked
 router.get("/:id", async (req, res) => {
