@@ -8,16 +8,16 @@ class Category extends Model {
     static get relationMappings() {
         const Subcategory = require("./Subcategory")
         return {
-            subcategory_name: {
-                relation: Model.BelongsToOneRelation,
+            subcategories: { // 'subcategories' relation represents all subcategories under a category
+                relation: Model.HasManyRelation, // A Category has many Subcategories
                 modelClass: Subcategory,
-            },
-            subcategory_image: {
-                relation: Model.BelongsToOneRelation,
-                modelClass: Subcategory,
+                join: {
+                    from: 'categories.id', // Assuming 'categories.id' is the primary key of categories
+                    to: 'subcategories.categoryId' // Assuming 'subcategories.categoryId' is the foreign key in subcategories
+                }
             }
         }
     }
-}
+};
 
 module.exports = Category;
