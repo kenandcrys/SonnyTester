@@ -5,9 +5,13 @@ class Subcategory extends Model {
     return "subcategory";
   }
   static get relationMappings() {
+    const Product = require("./Product")
     return {
-        
-        }
+      product_name: {
+        relation: Model.BelongsToOneRelation,
+        modelClass: Product,
+      }
     }
+  }
 }
 module.exports = Subcategory;

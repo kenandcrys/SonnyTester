@@ -6,8 +6,16 @@ class Category extends Model {
     }
 
     static get relationMappings() {
+        const Subcategory = require("./Subcategory")
         return {
-            
+            subcategory_name: {
+                relation: Model.BelongsToOneRelation,
+                modelClass: Subcategory,
+            },
+            subcategory_image: {
+                relation: Model.BelongsToOneRelation,
+                modelClass: Subcategory,
+            }
         }
     }
 }
