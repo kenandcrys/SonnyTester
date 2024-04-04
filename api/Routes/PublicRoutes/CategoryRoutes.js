@@ -9,6 +9,7 @@ router.get("/", async (req, res) => {
     res.status(200).json(categories);
   } catch (error) {
     res.status(500).json({ message: "Error fetching categories", error });
+    console.log(error)
   }
 });
 

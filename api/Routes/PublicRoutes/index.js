@@ -9,7 +9,7 @@ const SubcategoryRoutes = require('./SubcategoryRoutes');
 
 router.use('/products', ProductRoutes)
 router.use('/reviews', ReviewRoutes)
-router.use('./categories', CategoryRoutes)
-router.use('./subcategories', SubcategoryRoutes)
+router.use('/categories', CategoryRoutes)
+router.use('/subcategories', SubcategoryRoutes)
 
 module.exports = router

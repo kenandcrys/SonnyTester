@@ -12,8 +12,8 @@ class Category extends Model {
                 relation: Model.HasManyRelation, // A Category has many Subcategories
                 modelClass: Subcategory,
                 join: {
-                    from: 'categories.id', // Assuming 'categories.id' is the primary key of categories
-                    to: 'subcategories.categoryId' // Assuming 'subcategories.categoryId' is the foreign key in subcategories
+                    from: 'category.id', // Assuming 'categories.id' is the primary key of categories
+                    to: 'subcategory.categoryId' // Assuming 'subcategories.categoryId' is the foreign key in subcategories
                 }
             }
         }
