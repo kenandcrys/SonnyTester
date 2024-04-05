@@ -72,5 +72,6 @@ exports.up = function(knex) {
  * @returns { Promise<void> }
  */
 exports.down = function(knex) {
-  return knex.schema.dropTableIfExists('coupons');
+    return knex.schema.dropTableIfExists('coupons_applied')
+    .then(() => knex.schema.dropTableIfExists('coupons'));
 };
