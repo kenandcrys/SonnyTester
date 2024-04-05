@@ -7,14 +7,12 @@ exports.up = function (knex) {
     })
     .createTable("subcategory", (table) => {
       table.increments("id").primary();
-      table.string("subcategory_name", 255).notNullable();
       table
-        .integer("categoryId")
-        .unsigned()
-        .notNullable()
-        .references("id")
-        .inTable("category")
-        .onDelete("CASCADE");
+      .integer("categoryId")
+      .unsigned()
+      .references("id")
+      .inTable("category")
+      table.string("subcategory_name", 255).notNullable();
     })
     .createTable("products", (table) => {
       table.increments("id").primary();
