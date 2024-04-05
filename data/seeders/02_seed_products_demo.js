@@ -56,8 +56,9 @@ exports.seed = async function (knex) {
                 },
             ]);
         })
-        .then(async  (trx) => {
-          await trx("subcategory").insert([
+      },
+        knex.transaction(async (trx) => {
+          await trx("cubcategory").insert([
                 //Phones and Accessories
                 { subcategory_name: "Bluetooth Speakers", categoryId: 1 },
                 { subcategory_name: "Chargers and Cables", categoryId: 1 },
@@ -182,8 +183,8 @@ exports.seed = async function (knex) {
                 .catch((error) => {
                     console.error("Error performing batch insert:", error);
                 });
-        });
-});
+        }))
+};
 
 let data = [
   {
@@ -5446,5 +5447,4 @@ let data = [
     subcategoryId: 88
   }
   
-]
-};
+];
