@@ -37,12 +37,7 @@ exports.up = function(knex) {
  * @returns { Promise<void> }
  */
 exports.down = function(knex) {
-  // Drop foreign key constraints
-  return knex.schema.table('recommendations', function(table) {
-    table.dropForeign('user_id');
-  })
   // Drop the 'users' table
-  .then(() => knex.schema.dropTableIfExists('users'));
+  return knex.schema.dropTableIfExists('users');
 };
-
 
