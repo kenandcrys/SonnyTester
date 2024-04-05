@@ -3,7 +3,6 @@ exports.up = function (knex) {
     .createTable("category", (table) => {
       table.increments('id').primary();
       table.string("category_name", 255).notNullable();
-      table.json('image').notNullable();
     })
     .createTable("subcategory", (table) => {
       table.increments();
