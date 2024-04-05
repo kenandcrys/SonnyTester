@@ -8,6 +8,7 @@ exports.up = function(knex) {
     table
     .string('user_id')
     .unsigned()
+    .alter()
     .primary()
     .references('id')
     .inTable('users')
