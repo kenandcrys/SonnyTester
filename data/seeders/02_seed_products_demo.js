@@ -166,7 +166,7 @@ exports.seed = function (knex) {
             ]);
         })
         .then(function () {
-          const chunkSize = 7; // Adjust as needed
+          const chunkSize = 10; // Adjust as needed
           // Create chunks of data to insert
           const chunkedData = [];
           for (let i = 0; i < data.length; i += chunkSize) {
