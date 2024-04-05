@@ -1,67 +1,54 @@
-const faker = require("faker");
-
 function generateCouponCode() {
   const characters =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
   let couponCode = "";
 
   for (let i = 0; i < 8; i++) {
-    const randomIndex = faker.datatype.number({ max: characters.length - 1 });
+    const randomIndex = Math.floor(Math.random() * characters.length);
     couponCode += characters.charAt(randomIndex);
   }
 
   return couponCode;
 }
 
-exports.seed = function (knex) {
+exports.seed = async function (knex) {
   // Deletes ALL existing entries
-  return knex("coupons")
-    .del()
-    .then(async function () {
-      // Inserts seed entries
-      const productIds = await knex.select("id").from("products");
+  await knex("coupons").del();
 
-      const seedData = [];
+  const productIds = await knex.select("id").from("products");
 
-      for (let i = 0; i < 10; i++) {
-        const coupon = generateCouponCode();
+  const seedData = [];
 
-        const seed = {
-          code: coupon,
-          discount_amount: faker.datatype.number({
-            min: 0,
-            max: 999999.99,
-            precision: 0.01,
-          }),
-          expiration_date: faker.date.future(),
-          usage_limit: faker.datatype.number({ min: 1, max: 100 }),
-          usage_limit_per_user: faker.datatype.number({ min: 1, max: 10 }),
-          min_purchase_amount: faker.datatype.number({
-            min: 10,
-            max: 1000,
-            precision: 0.01,
-          }),
-          applicable_products: JSON.stringify([
-            faker.random.arrayElement(productIds),
-            faker.random.arrayElement(productIds),
-            faker.random.arrayElement(productIds),
-          ]),
-          applicable_categories: JSON.stringify([
-            faker.random.arrayElement(productIds),
-            faker.random.arrayElement(productIds),
-            faker.random.arrayElement(productIds),
-          ]),
-          start_date: faker.date.past(),
-          usage_count: faker.datatype.number({ min: 0, max: 100 }),
-          applicability_conditions: JSON.stringify({
-            min_items: faker.datatype.number({ min: 1, max: 5 }),
-            category_required: faker.lorem.word(), 
-          }),
-        };
+  for (let i = 0; i < 10; i++) {
+    const coupon = generateCouponCode();
 
-        seedData.push(seed);
-      }
+    const seed = {
+      code: coupon,
+      discount_amount: Math.random() * (999999.99 - 0) + 0,
+      expiration_date: new Date(Date.now() + Math.random() * 1000 * 60 * 60 * 24 * 30), // Random date in the future month
+      usage_limit: Math.floor(Math.random() * (100 - 1 + 1)) + 1,
+      usage_limit_per_user: Math.floor(Math.random() * (10 - 1 + 1)) + 1,
+      min_purchase_amount: Math.random() * (1000 - 10) + 10,
+      applicable_products: JSON.stringify([
+        Math.floor(Math.random() * productIds.length),
+        Math.floor(Math.random() * productIds.length),
+        Math.floor(Math.random() * productIds.length),
+      ]),
+      applicable_categories: JSON.stringify([
+        Math.floor(Math.random() * productIds.length),
+        Math.floor(Math.random() * productIds.length),
+        Math.floor(Math.random() * productIds.length),
+      ]),
+      start_date: new Date(Date.now() - Math.random() * 1000 * 60 * 60 * 24 * 30), // Random date in the past month
+      usage_count: Math.floor(Math.random() * (100 - 0 + 1)) + 0,
+      applicability_conditions: JSON.stringify({
+        min_items: Math.floor(Math.random() * (5 - 1 + 1)) + 1,
+        category_required: "Random category",
+      }),
+    };
 
-      return knex("coupons").insert(seedData);
-    });
+    seedData.push(seed);
+  }
+
+  return knex("coupons").insert(seedData);
 };

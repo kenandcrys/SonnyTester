@@ -1,40 +1,33 @@
-const faker = require('faker');
-
-exports.seed = function (knex) {
+exports.seed = async function (knex) {
   // Deletes ALL existing entries
-  return knex('recommendations').del()
-    .then(async function () {
-      // Insert seed entries
-      const users = await knex.select('id').from('users');
-      const products = await knex.select('id').from('products');
+  await knex('recommendations').del();
 
-      const recommendations = [];
+  const users = await knex.select('id').from('users');
+  const products = await knex.select('id').from('products');
 
-      const uniqueUserProductPairs = new Set(); // To track unique user_id and product_id pairs
+  const recommendations = [];
+  const uniqueUserProductPairs = new Set();
 
-      for (let i = 0; i < 10; i++) { // Adjust the loop count based on how many entries you want
+  for (let i = 0; i < 10; i++) {
+    let user, product;
 
-        let user, product;
+    // Generate unique user_id and product_id pair
+    do {
+      user = users[Math.floor(Math.random() * users.length)];
+      product = products[Math.floor(Math.random() * products.length)];
+    } while (uniqueUserProductPairs.has(`${user.id}-${product.id}`));
 
-        // Ensure unique user_id and product_id pair
-        do {
-          user = faker.random.arrayElement(users);
-          product = faker.random.arrayElement(products);
+    uniqueUserProductPairs.add(`${user.id}-${product.id}`);
 
-        } while (uniqueUserProductPairs.has(`${user.id}-${product.id}`));
+    const recommendation = {
+      user_id: user.id,
+      product_id: product.id,
+      created_at: new Date(new Date().getTime() - Math.random() * 10000000000), // Random date in the past 10000000000 milliseconds (about 115 days)
+      updated_at: new Date(), // Current date and time
+    };
 
-        uniqueUserProductPairs.add(`${user.id}-${product.id}`);
+    recommendations.push(recommendation);
+  }
 
-        const recommendation = {
-          user_id: user.id,
-          product_id: product.id,
-          created_at: faker.date.past(),
-          updated_at: faker.date.recent(),
-        };
-
-        recommendations.push(recommendation);
-      }
-
-      return knex('recommendations').insert(recommendations);
-    });
+  await knex('recommendations').insert(recommendations);
 };

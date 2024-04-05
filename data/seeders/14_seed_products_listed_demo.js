@@ -1,39 +1,31 @@
-
-const faker = require('faker');
-
-exports.seed = function (knex) {
+exports.seed = async function (knex) {
   // Deletes ALL existing entries
-  return knex('products_listed').del()
-    .then(async function () {
-      // Insert seed entries
-      const users = await knex.select('id').from('users');
-      const products = await knex.select('id').from('products');
+  await knex('products_listed').del();
 
-      const productsListed = [];
+  const users = await knex.select('id').from('users');
+  const products = await knex.select('id').from('products');
 
-      const uniqueUserProductPairs = new Set(); // To track unique user_id and product_id pairs
-    
-      for (let i = 0; i < 10; i++) { // Adjust the loop count based on how many entries you want
-        let user, product;
+  const productsListed = [];
+  const uniqueUserProductPairs = new Set();
 
-        // Ensure unique user_id and product_id pair
-        do {
-          user = faker.random.arrayElement(users);
-          product = faker.random.arrayElement(products);
-          
-        } while (uniqueUserProductPairs.has(`${user.id}-${product.id}`));
+  for (let i = 0; i < 10; i++) {
+    let user, product;
 
-        uniqueUserProductPairs.add(`${user.id}-${product.id}`);
+    // Generate unique user_id and product_id pair
+    do {
+      user = users[Math.floor(Math.random() * users.length)];
+      product = products[Math.floor(Math.random() * products.length)];
+    } while (uniqueUserProductPairs.has(`${user.id}-${product.id}`));
 
-        const productListing = {
-          user_id: user.id,
-          product_id: product.id,
-        };
+    uniqueUserProductPairs.add(`${user.id}-${product.id}`);
 
-        productsListed.push(productListing);
-      }
+    const productListing = {
+      user_id: user.id,
+      product_id: product.id,
+    };
 
+    productsListed.push(productListing);
+  }
 
-      return knex('products_listed').insert(productsListed);
-    });
+  await knex('products_listed').insert(productsListed);
 };

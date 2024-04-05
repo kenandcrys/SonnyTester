@@ -1,29 +1,44 @@
-const faker = require('faker');
-
-exports.seed = function (knex) {
+exports.seed = async function (knex) {
   // Deletes ALL existing entries
-  return knex('ordered_products').del()
-    .then(async function () {
-      // Inserts seed entries
-      const orderIds = await knex.select('id').from('orders');
-      const productIds = await knex.select('id').from('products');
+  await knex('ordered_products').del();
 
-      const seedData = [];
-      const numberOfSeeds = 20; // Adjust as needed
+  // Get all order and product IDs
+  const orderIds = await knex.select('id').from('orders');
+  const productIds = await knex.select('id').from('products');
 
-      for (let i = 0; i < numberOfSeeds; i++) {
-        const seed = {
-          order_id: faker.random.arrayElement(orderIds).id,
-          product_id: faker.random.arrayElement(productIds).id,
-          quantity: faker.datatype.number({ min: 1, max: 10 }),
-          price: faker.datatype.number({ min: 10, max: 100, precision: 0.01 }),
-          created_at: faker.date.past(),
-          updated_at: faker.date.recent(),
-        };
+  const seedData = [];
+  const numberOfSeeds = 20; // Adjust as needed
 
-        seedData.push(seed);
-      }
+  for (let i = 0; i < numberOfSeeds; i++) {
+    const seed = {
+      order_id: getRandomElement(orderIds).id,
+      product_id: getRandomElement(productIds).id,
+      quantity: getRandomNumber(1, 10),
+      price: getRandomNumber(10, 100, 2),
+      created_at: getRandomDate(),
+      updated_at: getRandomDate(),
+    };
 
-      return knex('ordered_products').insert(seedData);
-    });
+    seedData.push(seed);
+  }
+
+  return knex('ordered_products').insert(seedData);
 };
+
+// Helper function to get a random element from an array
+function getRandomElement(array) {
+  return array[Math.floor(Math.random() * array.length)];
+}
+
+// Helper function to generate a random number between min and max (inclusive) with a specified precision
+function getRandomNumber(min, max, precision = 0) {
+  return parseFloat((Math.random() * (max - min) + min).toFixed(precision));
+}
+
+// Helper function to generate a random date between now and 7 days ago
+function getRandomDate() {
+  const currentDate = new Date();
+  const randomOffset = Math.floor(Math.random() * 7);
+  const randomDate = new Date(currentDate.setDate(currentDate.getDate() - randomOffset));
+  return randomDate.toISOString();
+}
