@@ -44,16 +44,15 @@ exports.up = function(knex) {
 };
 
 
-/**
- * @param { import("knex").Knex } knex
- * @returns { Promise<void> }
- */
 exports.down = function(knex) {
-  // Drop foreign key constraint
-  return knex.schema.table('recommendations', function(table) {
-    table.dropForeign('product_id');
+  // Drop foreign key constraint on 'subcategoryId' column in 'products' table
+  return knex.schema.table('products', function(table) {
+    table.dropForeign('subcategoryId');
   })
   // Drop the 'products' table
-  .then(() => knex.schema.dropTableIfExists('products'));
+  .then(() => knex.schema.dropTableIfExists('products'))
+  // Drop the 'subcategory' table
+  .then(() => knex.schema.dropTableIfExists('subcategory'))
+  // Drop the 'category' table
+  .then(() => knex.schema.dropTableIfExists('category'));
 };
-
