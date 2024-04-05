@@ -1,9 +1,9 @@
 exports.up = function (knex) {
   return knex.schema
     .createTable("category", (table) => {
-      table.increments();
+      table.increments('id').primary();
       table.string("category_name", 255).notNullable();
-      table.json("image");
+      table.json('image').notNullable();
     })
     .createTable("subcategory", (table) => {
       table.increments();
