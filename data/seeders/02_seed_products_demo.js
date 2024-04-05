@@ -11,18 +11,18 @@ exports.seed = function (knex) {
         .then(function () {
             // Inserts seed entries
             return knex("category").insert([
-              { category_name: "Phones & Accessories" },
-              { category_name: "Women" },
-              { category_name: "Men" },
-              { category_name: "Computer, Office & Security" },
-              { category_name: "Electronics" },
-              { category_name: "Jewelry" },
-              { category_name: "Kids & Toys" },
-              { category_name: "Tools & Home Improvement" },
-              { category_name: "Automotive" },
-              { category_name: "Digital Media" },
-              { category_name: "Outdoor, Fun & Sports" },
-              { category_name: "Home, Pets & Appliances" },
+              { id: 1, category_name: "Phones & Accessories" },
+              { id: 2, category_name: "Women" },
+              { id: 3, category_name: "Men" },
+              { id: 4, category_name: "Computer, Office & Security" },
+              { id: 5, category_name: "Electronics" },
+              { id: 6, category_name: "Jewelry" },
+              { id: 7, category_name: "Kids & Toys" },
+              { id: 8, category_name: "Tools & Home Improvement" },
+              { id: 9, category_name: "Automotive" },
+              { id: 10, category_name: "Digital Media" },
+              { id: 11, category_name: "Outdoor, Fun & Sports" },
+              { id: 12, category_name: "Home, Pets & Appliances" },
           ]);
         })
         .then(function () {
