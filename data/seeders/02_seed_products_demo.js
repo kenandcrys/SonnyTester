@@ -252,7 +252,7 @@ exports.seed = function (knex) {
                 const productName = chunk.product_name || 'Unknown Product';
                 const productDescription = chunk.product_description || 'No description available';
                 const productPrice = chunk.product_price || 0;
-                const subcategoryId = chunk.subcategoryId || 1; // Assuming 1 is a valid subcategoryId
+                const subcategoryId = chunk.subcategoryId || null; // Set to null or a valid subcategoryId
         
                 return trx("products")
                     .insert({
@@ -272,7 +272,6 @@ exports.seed = function (knex) {
                     throw error;
                 });
         });
-        
       });
 };
 
