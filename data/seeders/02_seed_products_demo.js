@@ -249,26 +249,12 @@ exports.seed = function (knex) {
       
           return knex.transaction((trx) => {
             const promises = chunkedData.map((chunk) => {
-                return trx("subcategory")
-                    .select("id")
-                    .where("subcategory_name", chunk.subcategory_name)
-                    .first()
-                    .then((subcategory) => {
-                        if (!subcategory) {
-                            // If subcategory does not exist, insert it
-                            return trx("subcategory")
-                                .insert({ category_id: chunk.category_id, subcategory_name: chunk.subcategory_name })
-                                .returning("id");
-                        }
-                        return subcategory.id;
-                    })
-                    .then((subcategoryId) => {
-                        return trx("products").insert({
-                            product_description: chunk.product_description,
-                            product_name: chunk.product_name,
-                            product_price: chunk.product_price,
-                            subcategoryId: subcategoryId,
-                        });
+                return trx("products")
+                    .insert({
+                        product_description: chunk.product_description,
+                        product_name: chunk.product_name,
+                        product_price: chunk.product_price,
+                        subcategoryId: chunk.subcategoryId, // Use the correct column name here
                     });
             });
         
