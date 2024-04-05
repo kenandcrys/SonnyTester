@@ -6,8 +6,8 @@ exports.seed = function (knex) {
     // Deletes ALL existing entries
     return knex("products")
         .del()
-        .then(() => knex("subcategory").del())
         .then(() => knex("category").del())
+        .then(() => knex("subcategory").del())
         .then(function () {
             // Inserts seed entries
             return knex("category").insert([
