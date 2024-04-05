@@ -1,4 +1,4 @@
-exports.up = function (knex) {
+exports.up = function(knex) {
   return knex.schema
     .createTable("category", (table) => {
       table.increments().primary();
@@ -11,7 +11,8 @@ exports.up = function (knex) {
         .integer("categoryId")
         .notNullable()
         .references("id")
-        .inTable("category");
+        .inTable("category")
+        .onDelete("CASCADE"); // Add this line to delete subcategories when a category is deleted
     })
     .createTable("products", (table) => {
       table.increments();
@@ -20,13 +21,14 @@ exports.up = function (knex) {
       table.string("product_price", 255).notNullable();
       table
         .integer("subcategoryId")
-        .nullable() // Change this line
+        .nullable()
         .references("id")
-        .inTable("subcategory");
+        .inTable("subcategory")
+        .onDelete("CASCADE"); // Add this line to delete products when a subcategory is deleted
     });
 };
 
-exports.down = function (knex) {
+exports.down = function(knex) {
   return knex.schema
     .dropTableIfExists("products")
     .dropTableIfExists("subcategory")

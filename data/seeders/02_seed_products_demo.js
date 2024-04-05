@@ -13,45 +13,45 @@ exports.seed = function (knex) {
           return knex("category").insert([
               {
                   category_name: "Phones & Accessories",
-                  image: { url: "electronics_image_url" },
+                
               },
               {
                   category_name: "Women",
-                  image: { url: "clothing_image_url" },
+                  
               },
-              { category_name: "Men", image: { url: "books_image_url" } },
+              { category_name: "Men", },
               {
                   category_name: "Computer, Office & Security",
-                  image: { url: "books_image_url" },
+                  
               },
               {
                   category_name: "Electronics",
-                  image: { url: "books_image_url" },
+        
               },
-              { category_name: "Jewelry", image: { url: "books_image_url" } },
+              { category_name: "Jewelry", },
               {
                   category_name: "Kids & Toys",
-                  image: { url: "books_image_url" },
+                  
               },
               {
                   category_name: "Tools & Home Improvement",
-                  image: { url: "books_image_url" },
+                  
               },
               {
                   category_name: "Automotive",
-                  image: { url: "books_image_url" },
+                 
               },
               {
                   category_name: "Digital Media",
-                  image: { url: "books_image_url" },
+                 
               },
               {
                   category_name: "Outdoor, Fun & Sports",
-                  image: { url: "books_image_url" },
+                 
               },
               {
                   category_name: "Home, Pets & Appliances",
-                  image: { url: "books_image_url" },
+                  
               },
           ]);
       })
