@@ -27,7 +27,17 @@ exports.seed = async function (knex) {
                 date_saved: new Date(), // Use current date for simplicity
             }));
 
-            seedData.push(...products);
+            // Check if the combination already exists
+            for (const product of products) {
+                const existing = seedData.find(
+                    (item) =>
+                        item.buyer_id === product.buyer_id &&
+                        item.product_id === product.product_id
+                );
+                if (!existing) {
+                    seedData.push(product);
+                }
+            }
         }
     }
 
@@ -64,4 +74,3 @@ function chunkArray(array, size) {
     }
     return chunkedArray;
 }
-

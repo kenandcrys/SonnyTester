@@ -1,3 +1,5 @@
+const faker = require('faker');
+
 function generateRandomPaymentMethod(userId) {
   const cardTypes = ['Visa', 'MasterCard', 'Amex'];
   const expirationDate = new Date(new Date().getFullYear() + Math.floor(Math.random() * 5), Math.floor(Math.random() * 12), 1); // Random future expiration date within the next 5 years
