@@ -166,22 +166,28 @@ exports.seed = function (knex) {
             ]);
         })
         .then(function () {
-            const chunkSize = 7; // Adjust as needed
-            // Create chunks of data to insert
-            const chunkedData = [];
-            for (let i = 0; i < data.length; i += chunkSize) {
-                chunkedData.push(
-                    knex("products").insert(data.slice(i, i + chunkSize))
-                );
-            }
-            return Promise.all(chunkedData)
-                .then(() => {
-                    console.log("Batch insert completed successfully.");
-                })
-                .catch((error) => {
-                    console.error("Error performing batch insert:", error);
-                });
-        });
+          const chunkSize = 7; // Adjust as needed
+          // Create chunks of data to insert
+          const chunkedData = [];
+          for (let i = 0; i < data.length; i += chunkSize) {
+              chunkedData.push(data.slice(i, i + chunkSize));
+          }
+      
+          return knex.transaction((trx) => {
+              const promises = chunkedData.map((chunk) => {
+                  return trx("products").insert(chunk);
+              });
+      
+              return Promise.all(promises)
+                  .then(() => {
+                      console.log("Batch insert completed successfully.");
+                  })
+                  .catch((error) => {
+                      console.error("Error performing batch insert:", error);
+                      throw error; // Rollback the transaction
+                  });
+          });
+      });
 };
 
 let data = [
