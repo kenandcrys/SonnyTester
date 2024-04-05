@@ -16,7 +16,7 @@ exports.up = function (knex) {
       table.string("product_name", 255).notNullable();
       table.string("product_description", 1000).notNullable();
       table.string("product_price", 255).notNullable();
-      table.integer("subcategoryId").unsigned().notNullable();
+      // table.integer("subcategoryId").unsigned().notNullable();
       table.foreign("subcategoryId").references("id").inTable("subcategory").onDelete("CASCADE");
     });
 };
