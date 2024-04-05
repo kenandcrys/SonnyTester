@@ -252,12 +252,13 @@ exports.seed = function (knex) {
                 // Check if product_name or product_description is null, set default values if they are
                 const productName = chunk.product_name || 'Unknown Product';
                 const productDescription = chunk.product_description || 'No description available';
+                const productPrice = chunk.product_price || 0; // Set default price to 0 if null
         
                 return trx("products")
                     .insert({
                         product_description: productDescription,
                         product_name: productName,
-                        product_price: chunk.product_price,
+                        product_price: productPrice,
                         subcategoryId: chunk.subcategoryId,
                     });
             });
