@@ -11,19 +11,19 @@ exports.seed = function (knex) {
         .then(function () {
             // Inserts seed entries
             return knex("category").insert([
-                { category_name: "Phones & Accessories", image: "electronics_image_url" },
-                { category_name: "Women", image: "clothing_image_url" },
-                { category_name: "Men", image: "books_image_url" },
-                { category_name: "Computer, Office & Security", image: "books_image_url" },
-                { category_name: "Electronics", image: "books_image_url" },
-                { category_name: "Jewelry", image: "books_image_url" },
-                { category_name: "Kids & Toys", image: "books_image_url" },
-                { category_name: "Tools & Home Improvement", image: "books_image_url" },
-                { category_name: "Automotive", image: "books_image_url" },
-                { category_name: "Digital Media", image: "books_image_url" },
-                { category_name: "Outdoor, Fun & Sports", image: "books_image_url" },
-                { category_name: "Home, Pets & Appliances", image: "books_image_url" },
-            ]);
+              { category_name: "Phones & Accessories" },
+              { category_name: "Women" },
+              { category_name: "Men" },
+              { category_name: "Computer, Office & Security" },
+              { category_name: "Electronics" },
+              { category_name: "Jewelry" },
+              { category_name: "Kids & Toys" },
+              { category_name: "Tools & Home Improvement" },
+              { category_name: "Automotive" },
+              { category_name: "Digital Media" },
+              { category_name: "Outdoor, Fun & Sports" },
+              { category_name: "Home, Pets & Appliances" },
+          ]);
         })
         .then(function () {
             return knex("subcategory").insert([
@@ -1784,7 +1784,7 @@ let data = [
   },
   {
     product_name: "ZoomFrame Digital",
-    product_description: "Digital camera with powerful optical zoom and image stabilization",
+    product_description: "Digital camera with powerful optical zoom and  stabilization",
     product_price: "500",
     subcategoryId: 30
   },
@@ -1814,7 +1814,7 @@ let data = [
   },
   {
     product_name: "FocusFrame Studio",
-    product_description: "Professional studio camera with large sensor for exceptional image quality",
+    product_description: "Professional studio camera with large sensor for exceptional  quality",
     product_price: "3000",
     subcategoryId: 30
   },
