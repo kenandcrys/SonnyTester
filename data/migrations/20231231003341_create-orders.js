@@ -73,17 +73,22 @@ exports.up = function(knex) {
 * @returns { Promise<void> }
 */
 exports.down = function(knex) {
-    // Remove foreign key constraint
-    return knex.schema.table('coupons', function(table) {
-      table.dropForeign('order_id');
+    // Drop the foreign key constraint if it exists
+    return knex.schema.hasColumn('coupons', 'order_id').then((exists) => {
+        if (exists) {
+            return knex.schema.table('coupons', function(table) {
+                table.dropForeign('order_id');
+            });
+        }
     })
-    // Drop the table
+    // Drop the 'orders' table
     .then(() => knex.schema.dropTableIfExists('orders'))
-    // Re-add foreign key constraint
+    // Re-add the foreign key constraint
     .then(() => {
-      return knex.schema.table('coupons', function(table) {
-        table.foreign('order_id').references('orders.id');
-      });
+        return knex.schema.table('coupons', function(table) {
+            table.foreign('order_id').references('orders.id');
+        });
     });
-  };
+};
+
   
