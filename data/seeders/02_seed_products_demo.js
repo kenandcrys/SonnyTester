@@ -249,12 +249,15 @@ exports.seed = function (knex) {
       
           return knex.transaction((trx) => {
             const promises = chunkedData.map((chunk) => {
+                // Check if product_name is null, set a default value if it is
+                const productName = chunk.product_name || 'Unknown Product';
+        
                 return trx("products")
                     .insert({
                         product_description: chunk.product_description,
-                        product_name: chunk.product_name,
+                        product_name: productName,
                         product_price: chunk.product_price,
-                        subcategoryId: chunk.subcategoryId, // Use the correct column name here
+                        subcategoryId: chunk.subcategoryId,
                     });
             });
         
