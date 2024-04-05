@@ -248,19 +248,39 @@ exports.seed = function (knex) {
           }
       
           return knex.transaction((trx) => {
-              const promises = chunkedData.map((chunk) => {
-                  return trx("products").insert(chunk);
-              });
-      
-              return Promise.all(promises)
-                  .then(() => {
-                      console.log("Batch insert completed successfully.");
-                  })
-                  .catch((error) => {
-                      console.error("Error performing batch insert:", error);
-                      throw error; // Rollback the transaction
-                  });
-          });
+            const promises = chunkedData.map((chunk) => {
+                return trx("subcategory")
+                    .select("id")
+                    .where("subcategory_name", chunk.subcategory_name)
+                    .first()
+                    .then((subcategory) => {
+                        if (!subcategory) {
+                            // If subcategory does not exist, insert it
+                            return trx("subcategory")
+                                .insert({ category_id: chunk.category_id, subcategory_name: chunk.subcategory_name })
+                                .returning("id");
+                        }
+                        return subcategory.id;
+                    })
+                    .then((subcategoryId) => {
+                        return trx("products").insert({
+                            product_description: chunk.product_description,
+                            product_name: chunk.product_name,
+                            product_price: chunk.product_price,
+                            subcategoryId: subcategoryId,
+                        });
+                    });
+            });
+        
+            return Promise.all(promises)
+                .then(() => {
+                    console.log("Batch insert completed successfully.");
+                })
+                .catch((error) => {
+                    console.error("Error performing batch insert:", error);
+                    throw error; // Rollback the transaction
+                });
+        });
       });
 };
 
