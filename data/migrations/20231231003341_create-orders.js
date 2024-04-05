@@ -84,13 +84,16 @@ exports.up = function(knex) {
   * @returns { Promise<void> }
   */
   exports.down = function(knex) {
-    // Remove foreign key constraint
-    return knex.schema.table('coupons', function(table) {
-      table.dropForeign('order_id');
-    })
-    // Drop the 'coupons' table
-    .then(() => knex.schema.dropTableIfExists('coupons'))
-    // Drop the 'orders' table
-    .then(() => knex.schema.dropTableIfExists('orders'));
+    // Check if the 'coupons' table exists before attempting to drop the foreign key constraint
+    return knex.schema.hasTable('coupons').then((exists) => {
+      if (exists) {
+        return knex.schema.table('coupons', function(table) {
+          table.dropForeign('order_id');
+        })
+        // Drop the 'coupons' table
+        .then(() => knex.schema.dropTableIfExists('coupons'))
+        // Drop the 'orders' table
+        .then(() => knex.schema.dropTableIfExists('orders'));
+      }
+    });
   };
-  
