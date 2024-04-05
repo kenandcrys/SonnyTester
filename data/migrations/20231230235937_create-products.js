@@ -7,7 +7,7 @@ exports.up = function (knex) {
     })
     .createTable("subcategory", (table) => {
       table.increments("id").primary();
-      table.integer("categoryId").unsigned().notNullable();
+      // table.integer("categoryId").unsigned().notNullable();
       table.string("subcategory_name", 255).notNullable();
       table.foreign("categoryId").references("id").inTable("category");
     })
