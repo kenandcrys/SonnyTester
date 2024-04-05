@@ -3,6 +3,7 @@
  * @returns { Promise<void> }
  */
 exports.up = function(knex) {
+    // Create the 'orders' table
     return knex.schema.createTable('orders', function(table) {
         table.increments('id').primary();
         // User who placed the order
@@ -45,6 +46,16 @@ exports.up = function(knex) {
         table.timestamps(true, true);
     })
     .then(() => {
+        // Create the 'coupons' table
+        return knex.schema.createTable('coupons', function(table) {
+          table.increments('id').primary();
+          // Define columns for the 'coupons' table here
+  
+          // Add foreign key constraint
+          table.integer('order_id').unsigned().references('id').inTable('orders').onDelete('CASCADE');
+        });
+    })
+    .then(() => {
         // SQLite triggers for setting default values
         knex.raw(`
             CREATE TRIGGER set_default_status
@@ -73,21 +84,13 @@ exports.up = function(knex) {
   * @returns { Promise<void> }
   */
   exports.down = function(knex) {
-      // Drop the foreign key constraint if it exists
-      return knex.schema.hasColumn('coupons', 'order_id').then((exists) => {
-          if (exists) {
-              return knex.schema.table('coupons', function(table) {
-                  table.dropForeign('order_id');
-              });
-          }
-      })
-      // Drop the 'orders' table
-      .then(() => knex.schema.dropTableIfExists('orders'))
-      // Re-add the foreign key constraint
-      .then(() => {
-          return knex.schema.table('coupons', function(table) {
-              table.foreign('order_id').references('orders.id');
-          });
-      });
+    // Remove foreign key constraint
+    return knex.schema.table('coupons', function(table) {
+      table.dropForeign('order_id');
+    })
+    // Drop the 'coupons' table
+    .then(() => knex.schema.dropTableIfExists('coupons'))
+    // Drop the 'orders' table
+    .then(() => knex.schema.dropTableIfExists('orders'));
   };
   
