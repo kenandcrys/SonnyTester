@@ -28,9 +28,16 @@ exports.up = function(knex) {
     });
 };
 
+/**
+ * @param { import("knex").Knex } knex
+ * @returns { Promise<void> }
+ */
 exports.down = function(knex) {
-  return knex.schema
-    .dropTableIfExists("products")
-    .dropTableIfExists("subcategory")
-    .dropTableIfExists("category");
+  // Drop foreign key constraint
+  return knex.schema.table('recommendations', function(table) {
+    table.dropForeign('product_id');
+  })
+  // Drop the 'products' table
+  .then(() => knex.schema.dropTableIfExists('products'));
 };
+
