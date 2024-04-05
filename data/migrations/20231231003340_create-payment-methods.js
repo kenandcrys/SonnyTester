@@ -34,11 +34,7 @@ exports.up = function(knex) {
  * @returns { Promise<void> }
  */
 exports.down = function(knex) {
-  // Drop foreign key constraints
-  return knex.schema.table('orders', function(table) {
-    table.dropForeign('billing_address_id');
-    table.dropForeign('payment_method_id');
-  })
   // Drop the 'payment_methods' table
-  .then(() => knex.schema.dropTableIfExists('payment_methods'));
+  return knex.schema.dropTableIfExists('payment_methods');
 };
+
