@@ -249,11 +249,11 @@ exports.seed = function (knex) {
       
           return knex.transaction((trx) => {
             const promises = chunkedData.map((chunk) => {
-                // Check if product_name or product_description is null, set default values if they are
                 const productName = chunk.product_name || 'Unknown Product';
                 const productDescription = chunk.product_description || 'No description available';
-                const productPrice = chunk.product_price || 0; // Set default price to 0 if null
-                const subcategoryId = chunk.subcategoryId || 1;
+                const productPrice = chunk.product_price || 0;
+                const subcategoryId = chunk.subcategoryId || 1; // Assuming 1 is a valid subcategoryId
+        
                 return trx("products")
                     .insert({
                         product_description: productDescription,
@@ -269,7 +269,7 @@ exports.seed = function (knex) {
                 })
                 .catch((error) => {
                     console.error("Error performing batch insert:", error);
-                    throw error; // Rollback the transaction
+                    throw error;
                 });
         });
         
