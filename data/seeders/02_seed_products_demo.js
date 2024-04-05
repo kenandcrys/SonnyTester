@@ -56,7 +56,7 @@ exports.seed = async function (knex) {
                 },
             ]);
         })
-        .then(async function () {
+        .then(async  (trx) => {
           await trx("subcategory").insert([
                 //Phones and Accessories
                 { subcategory_name: "Bluetooth Speakers", categoryId: 1 },
