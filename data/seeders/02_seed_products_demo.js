@@ -253,13 +253,13 @@ exports.seed = function (knex) {
                 const productName = chunk.product_name || 'Unknown Product';
                 const productDescription = chunk.product_description || 'No description available';
                 const productPrice = chunk.product_price || 0; // Set default price to 0 if null
-        
+                const subcategoryId = chunk.subcategoryId || 1;
                 return trx("products")
                     .insert({
                         product_description: productDescription,
                         product_name: productName,
                         product_price: productPrice,
-                        subcategoryId: chunk.subcategoryId,
+                        subcategoryId: subcategoryId,
                     });
             });
         
