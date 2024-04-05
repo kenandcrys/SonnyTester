@@ -58,7 +58,7 @@ exports.seed = async function (knex) {
         })
       },
         knex.transaction(async (trx) => {
-          await trx("cubcategory").insert([
+          await trx("subcategory").insert([
                 //Phones and Accessories
                 { subcategory_name: "Bluetooth Speakers", categoryId: 1 },
                 { subcategory_name: "Chargers and Cables", categoryId: 1 },
