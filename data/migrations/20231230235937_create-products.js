@@ -7,25 +7,17 @@ exports.up = function (knex) {
     })
     .createTable("subcategory", (table) => {
       table.increments("id").primary();
-      table
-      .integer("categoryId")
-      .unsigned()
-      .references("id")
-      .inTable("category")
+      table.integer("categoryId").unsigned().notNullable();
       table.string("subcategory_name", 255).notNullable();
+      table.foreign("categoryId").references("id").inTable("category");
     })
     .createTable("products", (table) => {
       table.increments("id").primary();
       table.string("product_name", 255).notNullable();
       table.string("product_description", 1000).notNullable();
       table.string("product_price", 255).notNullable();
-      table
-        .integer("subcategoryId")
-        .unsigned()
-        .notNullable()
-        .references("id")
-        .inTable("subcategory")
-        .onDelete("CASCADE");
+      table.integer("subcategoryId").unsigned().notNullable();
+      table.foreign("subcategoryId").references("id").inTable("subcategory").onDelete("CASCADE");
     });
 };
 
