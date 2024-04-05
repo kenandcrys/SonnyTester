@@ -42,6 +42,7 @@ module.exports = {
             database: "sonny_xd3j",
             user: "sonny_xd3j_user",
             password: "h2UQbvJXOKjPsS4kDg82jNRGz73IFosI",
+            ssl: true,
         },
         seeds: {
             directory: "./data/seeders",
