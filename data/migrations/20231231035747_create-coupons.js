@@ -25,11 +25,12 @@ exports.up = function(knex) {
           // Notes or Descriptions
           table.text('notes');
           // Adding default values for the created_at timestamp only
-          table.timestamps(true, false).defaultTo(knex.fn.now());
+          table.timestamps(true, false);
         });
       }
     });
   };
+
 
 /**
  * @param { import("knex").Knex } knex
