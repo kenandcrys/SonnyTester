@@ -46,6 +46,9 @@ module.exports = {
         seeds: {
             directory: "./data/seeders",
         },
+        migrations: {
+            directory: "./data/migrations",
+        },
         ...knexSnakeCaseMappers,
     },
 };
