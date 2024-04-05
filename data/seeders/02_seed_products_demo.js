@@ -2,16 +2,15 @@
  * @param { import("knex").Knex } knex
  * @returns { Promise<void> }
  */
-exports.seed = async function (knex) {
+exports.seed = function (knex) {
     // Deletes ALL existing entries
     return knex("products")
         .del()
-        .then(() => knex("category").del())
         .then(() => knex("subcategory").del())
+        .then(() => knex("category").del())
         .then(function () {
             // Inserts seed entries
-            return knex.transaction(async (trx) => {
-              await trx("category").insert([
+            return knex("category").insert([
                 {
                     category_name: "Phones & Accessories",
                     image: { url: "electronics_image_url" },
@@ -56,9 +55,8 @@ exports.seed = async function (knex) {
                 },
             ]);
         })
-      },
-        knex.transaction(async (trx) => {
-          await trx("subcategory").insert([
+        .then(function () {
+            return knex("subcategory").insert([
                 //Phones and Accessories
                 { subcategory_name: "Bluetooth Speakers", categoryId: 1 },
                 { subcategory_name: "Chargers and Cables", categoryId: 1 },
@@ -183,7 +181,7 @@ exports.seed = async function (knex) {
                 .catch((error) => {
                     console.error("Error performing batch insert:", error);
                 });
-        }))
+        });
 };
 
 let data = [
