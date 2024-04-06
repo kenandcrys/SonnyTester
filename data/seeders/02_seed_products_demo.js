@@ -1120,6 +1120,369 @@ let data = [
     subcategoryId: 6
   },
 
+  // Men's Fashion
+  // Subcategory 7 - Men's Shirts
+  {
+    product_name: "Urban Edge Tee",
+    product_description: "A soft, cotton blend T-shirt designed for everyday comfort and style, featuring a minimalist urban design.",
+    product_price: "25",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 7
+  },
+  {
+    product_name: "Classic Denim Jeans",
+    product_description: "Premium quality denim tailored for a comfortable fit, perfect for casual outings and versatile styling.",
+    product_price: "60",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 7
+  },
+  {
+    product_name: "Sleek Chinos",
+    product_description: "Slim-fit chinos crafted from lightweight, breathable fabric, ideal for both office and leisure.",
+    product_price: "45",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 7
+  },
+  {
+    product_name: "Vintage Henley Shirt",
+    product_description: "Soft, pre-washed Henley shirt with a vintage feel, bringing classic style to your wardrobe.",
+    product_price: "35",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 7
+  },
+  {
+    product_name: "Active Flex Shorts",
+    product_description: "Athletic shorts with flexible fabric for maximum movement, equipped with moisture-wicking technology.",
+    product_price: "30",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 7
+  },
+  {
+    product_name: "Signature Polo",
+    product_description: "Elegant and versatile polo shirt made from premium, breathable pique cotton, suitable for various occasions.",
+    product_price: "40",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 7
+  },
+  {
+    product_name: "Graphic Sweatshirt",
+    product_description: "Comfortable, cotton-blend sweatshirt with a bold graphic design, perfect for a relaxed, stylish look.",
+    product_price: "50",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 7
+  },
+  {
+    product_name: "Linen Button-Up Shirt",
+    product_description: "Lightweight, airy linen shirt with a relaxed fit, ideal for warm weather and beachside outings.",
+    product_price: "55",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 7
+  },
+  {
+    product_name: "Cargo Tactical Pants",
+    product_description: "Durable, multi-pocket cargo pants designed for functionality and rugged use, with a modern tactical look.",
+    product_price: "70",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 7
+  },
+  {
+    product_name: "Performance Joggers",
+    product_description: "Soft, stretchy joggers with a tailored fit, designed for both athletic activities and casual wear.",
+    product_price: "40",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 7
+  },
+
+  //Subcategory 8 - Men's Bags
+
+  {
+    product_name: "Urban Commuter Backpack",
+    product_description: "Durable, water-resistant backpack with multiple compartments, designed for the urban commuter.",
+    product_price: "80",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 8
+  },
+  {
+    product_name: "Classic Leather Briefcase",
+    product_description: "Elegant, full-grain leather briefcase with spacious compartments, perfect for the professional on the move.",
+    product_price: "150",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 8
+  },
+  {
+    product_name: "Travel Duffel Bag",
+    product_description: "High-capacity, sturdy duffel bag made for travelers, with dedicated pockets for organized packing.",
+    product_price: "90",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 8
+  },
+  {
+    product_name: "Minimalist Cardholder",
+    product_description: "Slim, efficient cardholder crafted from premium leather, designed to hold essentials in a minimal space.",
+    product_price: "25",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 8
+  },
+  {
+    product_name: "Adventure Hiking Pack",
+    product_description: "Robust backpack with ergonomic design, built to withstand the rigors of hiking and outdoor adventures.",
+    product_price: "120",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 8
+  },
+  {
+    product_name: "Tactical Messenger Bag",
+    product_description: "Versatile messenger bag with modular compartments, tailored for tactical use and everyday carry.",
+    product_price: "75",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 8
+  },
+  {
+    product_name: "Vintage Canvas Satchel",
+    product_description: "Retro-inspired canvas satchel with leather accents, offering a timeless look and ample storage.",
+    product_price: "65",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 8
+  },
+  {
+    product_name: "Compact Travel Kit",
+    product_description: "Essential travel kit bag with smart organization features, designed to keep your toiletries in check.",
+    product_price: "35",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 8
+  },
+  {
+    product_name: "Executive Laptop Sleeve",
+    product_description: "Sleek, protective laptop sleeve with a luxurious feel, ensuring your tech is safe in style.",
+    product_price: "50",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 8
+  },
+  {
+    product_name: "Crossbody Utility Pouch",
+    product_description: "Convenient, lightweight pouch for essentials, with an adjustable strap for crossbody wear.",
+    product_price: "30",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 8
+  },
+  
+  //Subcategory 9 - Men's Shoes
+  {
+    product_name: "Classic Leather Oxfords",
+    product_description: "Timelessly styled leather Oxfords, handcrafted for elegance and durability.",
+    product_price: "120",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 9
+  },
+  {
+    product_name: "Performance Running Sneakers",
+    product_description: "High-tech running shoes with advanced cushioning and support, designed for peak athletic performance.",
+    product_price: "100",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 9
+  },
+  {
+    product_name: "Casual Canvas Slip-Ons",
+    product_description: "Lightweight, breathable canvas slip-ons, perfect for relaxed weekend wear.",
+    product_price: "50",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 9
+  },
+  {
+    product_name: "Rugged Hiking Boots",
+    product_description: "Durable, waterproof hiking boots built to tackle any terrain and keep your feet protected.",
+    product_price: "140",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 9
+  },
+  {
+    product_name: "Suede Desert Boots",
+    product_description: "Stylish, versatile desert boots in soft suede, ideal for casual outings and smart-casual looks.",
+    product_price: "90",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 9
+  },
+  {
+    product_name: "Urban Sneakers",
+    product_description: "Trendy sneakers with a sleek design and comfortable fit, suitable for everyday urban adventures.",
+    product_price: "80",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 9
+  },
+  {
+    product_name: "Leather Loafers",
+    product_description: "Elegant loafers crafted from premium leather, offering a blend of comfort and sophistication.",
+    product_price: "110",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 9
+  },
+  {
+    product_name: "Athletic Training Shoes",
+    product_description: "Versatile training shoes engineered for a variety of workouts, providing stability and support.",
+    product_price: "85",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 9
+  },
+  {
+    product_name: "Beach Flip-Flops",
+    product_description: "Comfortable, durable flip-flops designed for beachwear and relaxed summer days.",
+    product_price: "20",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 9
+  },
+  {
+    product_name: "Formal Dress Shoes",
+    product_description: "Sophisticated dress shoes with a glossy finish, perfect for formal events and business settings.",
+    product_price: "130",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 9
+  },
+
+  //Subcategory 10 - Men's Jackets and Coats
+  {
+    product_name: "Classic Trench Coat",
+    product_description: "Iconic, weather-resistant trench coat with a timeless design, providing both style and function.",
+    product_price: "200",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 10
+  },
+  {
+    product_name: "Leather Biker Jacket",
+    product_description: "Edgy, genuine leather biker jacket, featuring durable construction and classic styling.",
+    product_price: "250",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 10
+  },
+  {
+    product_name: "Utility Field Jacket",
+    product_description: "Versatile field jacket with multiple pockets, ideal for outdoor activities and casual wear.",
+    product_price: "150",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 10
+  },
+  {
+    product_name: "Down Puffer Jacket",
+    product_description: "Warm, lightweight puffer jacket filled with quality down, designed for cold weather comfort.",
+    product_price: "180",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 10
+  },
+  {
+    product_name: "Wool Peacoat",
+    product_description: "Classic double-breasted peacoat in fine wool, offering warmth and sophistication for the winter season.",
+    product_price: "220",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 10
+  },
+  {
+    product_name: "Denim Trucker Jacket",
+    product_description: "Casual, rugged denim jacket with a vintage wash, a staple piece for any wardrobe.",
+    product_price: "90",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 10
+  },
+  {
+    product_name: "Windbreaker Jacket",
+    product_description: "Lightweight, water-repellent windbreaker, perfect for transitional weather and outdoor activities.",
+    product_price: "70",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 10
+  },
+  {
+    product_name: "Softshell Tactical Jacket",
+    product_description: "High-performance softshell jacket designed for tactical use, offering durability and flexibility.",
+    product_price: "160",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 10
+  },
+  {
+    product_name: "Varsity Bomber Jacket",
+    product_description: "Stylish bomber jacket with a varsity design, combining comfort with a sporty aesthetic.",
+    product_price: "110",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 10
+  },
+  {
+    product_name: "Quilted Vest",
+    product_description: "Sleek, insulated vest with a quilted design, perfect for layering in cooler weather.",
+    product_price: "60",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 10
+  },
+
+  //Subcategory 11 - Men's Accessories
+  {
+    product_name: "Classic Aviator Sunglasses",
+    product_description: "Timeless aviator sunglasses with UV protection, combining style with functionality.",
+    product_price: "90",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 11
+  },
+  {
+    product_name: "Leather Belt",
+    product_description: "Durable, genuine leather belt with a sleek, modern buckle, essential for any outfit.",
+    product_price: "35",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 11
+  },
+  {
+    product_name: "Minimalist Watch",
+    product_description: "Elegant watch with a minimalist design, featuring a stainless steel case and leather strap.",
+    product_price: "120",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 11
+  },
+  {
+    product_name: "Beanie Hat",
+    product_description: "Soft, knit beanie hat for warmth and style during the colder months.",
+    product_price: "20",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 11
+  },
+  {
+    product_name: "Silk Necktie",
+    product_description: "Premium silk necktie available in various colors, perfect for formal occasions and office wear.",
+    product_price: "50",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 11
+  },
+  {
+    product_name: "Cufflinks Set",
+    product_description: "Elegant cufflinks set, adding a touch of sophistication to any formal shirt.",
+    product_price: "40",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 11
+  },
+  {
+    product_name: "Leather Wallet",
+    product_description: "Compact, high-quality leather wallet with multiple card slots and a secure coin pocket.",
+    product_price: "55",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 11
+  },
+  {
+    product_name: "Sports Cap",
+    product_description: "Adjustable sports cap made from breathable fabric, ideal for outdoor activities and casual wear.",
+    product_price: "25",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 11
+  },
+  {
+    product_name: "Tactical Gloves",
+    product_description: "Durable gloves designed for tactical use, offering protection and enhanced grip.",
+    product_price: "45",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 11
+  },
+  {
+    product_name: "Scarf",
+    product_description: "Luxurious, soft scarf made from fine materials, providing warmth and elegance.",
+    product_price: "35",
+    product_images: ["put url here", "put url here", "put url here"],
+    subcategoryId: 11
+  },
+  
+
   // Women's Fashion Women's Tops - Subcategory ID: 12
   {
     product_name: "Silk Blouse",
