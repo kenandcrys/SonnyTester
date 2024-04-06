@@ -185,6 +185,175 @@ exports.seed = function (knex) {
 };
 
 let data = [
+    // Bluetooth Speakers
+  {
+    product_name: "SoundWave Mini",
+    product_description: "Compact Bluetooth speaker offering vibrant sound and deep bass.",
+    product_price: "45",
+    subcategoryId: 1
+  },
+  {
+    product_name: "AquaTunes Waterproof Speaker",
+    product_description: "Waterproof Bluetooth speaker for all your adventures, rain or shine.",
+    product_price: "60",
+    subcategoryId: 1
+  },
+  {
+    product_name: "BoomBox Retro",
+    product_description: "Retro-style Bluetooth speaker with modern sound quality.",
+    product_price: "75",
+    subcategoryId: 1
+  },
+  {
+    product_name: "PocketBlast Ultra",
+    product_description: "Ultra-portable speaker with powerful sound and a durable exterior.",
+    product_price: "50",
+    subcategoryId: 1
+  },
+  {
+    product_name: "BassKing LX",
+    product_description: "Bluetooth speaker with exceptional bass and 24-hour battery life.",
+    product_price: "85",
+    subcategoryId: 1
+  },
+  {
+    product_name: "EchoSphere 360",
+    product_description: "360-degree sound experience in a sleek, sophisticated design.",
+    product_price: "120",
+    subcategoryId: 1
+  },
+  {
+    product_name: "NightBeat LED",
+    product_description: "Bluetooth speaker with LED lights that sync to your music.",
+    product_price: "65",
+    subcategoryId: 1
+  },
+  {
+    product_name: "HarmonyHub Mini",
+    product_description: "Compact speaker with smart hub capabilities and premium sound.",
+    product_price: "80",
+    subcategoryId: 1
+  },
+  {
+    product_name: "SonicPulse Gen2",
+    product_description: "Next-gen Bluetooth speaker with touch controls and immersive sound.",
+    product_price: "70",
+    subcategoryId: 1
+  },
+
+  // Wireless Earphones
+  {
+    product_name: "AirTunes Pro",
+    product_description: "High-fidelity wireless earphones with noise cancellation.",
+    product_price: "150",
+    subcategoryId: 1
+  },
+  {
+    roduct_name: "BeatSync Sport",
+    product_description: "Sweatproof wireless earphones designed for athletes.",
+    product_price: "130",
+    subcategoryId: 1
+  },
+  {
+    product_name: "ClearSound Air",
+    product_description: "Wireless earphones with crystal-clear sound and comfortable fit.",
+    product_price: "110",
+    subcategoryId: 1
+  },
+  {
+    product_name: "EchoBuds Lite",
+    product_description: "Lightweight earphones with dynamic sound and voice assistant support.",
+    product_price: "99",
+    subcategoryId: 1
+  },
+  {
+    product_name: "SonicSeal Active",
+    product_description: "Wireless earphones with secure fit and waterproof design.",
+    product_price: "140",
+    subcategoryId: 1
+  },
+  {
+    product_name: "VibeTones Studio",
+    product_description: "Studio-quality sound in wireless earphones with long battery life.",
+    product_price: "165",
+    subcategoryId: 1
+  },
+  {
+    product_name: "RhythmX Plus",
+    product_description: "Enhanced bass and clarity with these premium wireless earphones.",
+    product_price: "175",
+    subcategoryId: 1
+  },
+  {
+    product_name: "MelodyMate TrueWireless",
+    product_description: "True wireless earphones offering seamless connectivity and rich audio.",
+    product_price: "200",
+    subcategoryId: 1
+  },
+  {
+    product_name: "HarmonyAir X2",
+    product_description: "Ergonomic wireless earphones with adaptive sound technology.",
+    product_price: "160",
+    subcategoryId: 1
+  },
+
+  // Phone Case
+  {
+    product_name: "UltraArmor Case",
+    product_description: "Heavy-duty protection in a slim profile for your smartphone.",
+    product_price: "40",
+    subcategoryId: 1
+  },
+  {
+    product_name: "CrystalClear Shell",
+    product_description: "Show off your phone's design with this transparent, protective case.",
+    product_price: "25",
+    subcategoryId: 1
+  },
+  {
+    product_name: "EcoGuard Bamboo Case",
+    product_description: "Eco-friendly phone case made from sustainable bamboo.",
+    product_price: "50",
+    subcategoryId: 1
+  },
+  {
+    product_name: "PocketShield Pro",
+    product_description: "Premium phone case with built-in wallet features for convenience.",
+    product_price: "55",
+    subcategoryId: 1
+  },
+  {
+    product_name: "FlexFit Gel Case",
+    product_description: "Soft, flexible case for shock absorption and easy grip.",
+    product_price: "20",
+    subcategoryId: 1
+  },
+  {
+    product_name: "ArtSeries Decor Case",
+    product_description: "Turn your phone into a masterpiece with these artistically designed cases.",
+    product_price: "30",
+    subcategoryId: 1
+  },
+  {
+    product_name: "StealthCover Privacy Case",
+    product_description: "Phone case with a built-in privacy screen protector.",
+    product_price: "45",
+    subcategoryId: 1
+  },
+  {
+    product_name: "CoolTech Thermal Case",
+    product_description: "Regulate your phone's temperature with this innovative case design.",
+    product_price: "60",
+    subcategoryId: 1
+  },
+  {
+    product_name: "GlamShell Sparkle Case",
+    product_description: "Add some sparkle and protection to your phone with this glamorous case.",
+    product_price: "35",
+    subcategoryId: 1
+  },
+
+  //Laptops
   {
     product_name: "UltraBook Pro",
     product_description: "Sleek design with a 15-inch 4K display and 16GB RAM for professional use",
