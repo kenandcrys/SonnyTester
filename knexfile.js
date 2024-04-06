@@ -37,11 +37,11 @@ module.exports = {
             },
         },
         connection: {
-            host: "dpg-cnv7815a73kc73c7fk90-a.ohio-postgres.render.com",
-            port: 5432,
-            database: "sonny_xd3j",
-            user: "sonny_xd3j_user",
-            password: "h2UQbvJXOKjPsS4kDg82jNRGz73IFosI",
+            host: process.env.HOST,
+            port: process.env.DB_PORT,
+            database: process.env.DATABASE_NAME,
+            user: process.env.USER,
+            password: process.env.PASSWORD,
             ssl: true,
         },
         seeds: {
