@@ -1440,70 +1440,90 @@ let data = [
     product_name: "Classic Leather Oxfords",
     product_description: "Timelessly styled leather Oxfords, handcrafted for elegance and durability.",
     product_price: "120",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://media.istockphoto.com/id/1358047344/photo/a-oxford-black-shoe-isolated-on-a-white-background-in-a-lateral-view.jpg?s=612x612&w=0&k=20&c=9f9QM0D3Bs4J44RuPZOUjcvN8SnYy0WGqQfc-LAE8ug=",
+    "https://media.istockphoto.com/id/688233968/photo/classy-shoes.jpg?s=612x612&w=0&k=20&c=RBR4mNcSTBdP5omaN-t-tvCzwh0kpfF50r3ZQ4tu1PY=",
+    "https://media.istockphoto.com/id/1573561512/photo/businessman-black-leather-shoes.jpg?s=612x612&w=0&k=20&c=bHS86SCGBVRk47ErZXoX0mMxzI9DJJVOBAAhuCfL7VM="],
     subcategoryId: 9
   },
   {
     product_name: "Performance Running Sneakers",
     product_description: "High-tech running shoes with advanced cushioning and support, designed for peak athletic performance.",
     product_price: "100",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://media.istockphoto.com/id/1249496770/photo/running-shoes.jpg?s=612x612&w=0&k=20&c=b4MahNlk4LH6H1ksJApfnlQ5ZPM3KGhI5i_yqhGD9c4=",
+    "https://media.istockphoto.com/id/1249496812/photo/running-shoes.jpg?s=612x612&w=0&k=20&c=GBn2-CfoMQk-wF5ceNVqJMlTwK4R_kBL3nAoAiQQQ18=",
+    "https://media.istockphoto.com/id/1249496779/photo/running-shoes.jpg?s=612x612&w=0&k=20&c=KUCv3LbcBUiijHc06S7UsK9F8AX3eO6qU4KwX4vo0vs="],
     subcategoryId: 9
   },
   {
     product_name: "Casual Canvas Slip-Ons",
     product_description: "Lightweight, breathable canvas slip-ons, perfect for relaxed weekend wear.",
     product_price: "50",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://media.istockphoto.com/id/524893904/photo/black-slip-on-casual-shoes.jpg?s=612x612&w=0&k=20&c=sYdw2WduUK9R9lM72EId3HzUfefvjdjIFHtla4rBV38=",
+    "https://media.istockphoto.com/id/524893876/photo/black-slip-on-casual-shoes.jpg?s=612x612&w=0&k=20&c=_wOakq9cZeE_znYkhwf4iEEyl-hCm1ymQA3bECTO7GI=",
+    "https://media.istockphoto.com/id/1328903622/photo/new-gray-velor-loafers-isolated-on-white-background-mens-shoes.jpg?s=612x612&w=0&k=20&c=hRBgD76ZFkYG7uRYdod6__aORUwjbuUsLWH8qd1Bljw="],
     subcategoryId: 9
   },
   {
     product_name: "Rugged Hiking Boots",
     product_description: "Durable, waterproof hiking boots built to tackle any terrain and keep your feet protected.",
     product_price: "140",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://media.istockphoto.com/id/134406993/photo/hiking-boots.jpg?s=612x612&w=0&k=20&c=UALsbOnzUgM3yE51R2ESTr4YdTi0C7sQrYomfRv76r8=",
+    "https://media.istockphoto.com/id/1422989430/photo/leather-hiking-boots-walking-on-mountain-trail.jpg?s=612x612&w=0&k=20&c=7g8ZHAaOv7Ggg-dbrgLm4xKVsR8K9UeytuLdNzgG_4A=",
+    "https://media.istockphoto.com/id/177500436/photo/pair-of-hiking-shoes.jpg?s=612x612&w=0&k=20&c=egUji4Y2sCGHDkxoehULf5szrN7Y9vJQo4nfTVKE7eg="],
     subcategoryId: 9
   },
   {
     product_name: "Suede Desert Boots",
     product_description: "Stylish, versatile desert boots in soft suede, ideal for casual outings and smart-casual looks.",
     product_price: "90",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://media.istockphoto.com/id/182404380/photo/military-combat-boots.jpg?s=612x612&w=0&k=20&c=X537rofqDKgupTbTi3eGXW_571nqppvMkQyyPgeq5T8=",
+    "https://media.istockphoto.com/id/517874094/photo/modern-army-boots-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=cXPGREffN4ghkAcgpkcVXS2x8FrDq5MEcq6aD1D12Qo=",
+    "https://media.istockphoto.com/id/1431474481/photo/modern-army-combat-boots-new-desert-beige-shoes-isolate-on-a-white-background.jpg?s=612x612&w=0&k=20&c=UPOXqKzBrGhpgjJGaHXgLYFxahkhJ-ooN0yXv83JjrY="],
     subcategoryId: 9
   },
   {
     product_name: "Urban Sneakers",
     product_description: "Trendy sneakers with a sleek design and comfortable fit, suitable for everyday urban adventures.",
     product_price: "80",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://media.istockphoto.com/id/956501428/photo/sport-shoes-on-isolated-white-background.jpg?s=612x612&w=0&k=20&c=BdklqnfGUvf02-2CxYsw-AnrbE3e-B5zhE9JQILEEW4=",
+    "https://media.istockphoto.com/id/956500894/photo/sport-shoes-on-isolated-white-background.jpg?s=612x612&w=0&k=20&c=QqZOCgfIBVTFnP0NtNTHuCSzTCdInO-InOFREd-IZOo=",
+    "https://media.istockphoto.com/id/938896220/photo/colorful-sport-shoes-in-back-view.jpg?s=612x612&w=0&k=20&c=W_xi4ded9UVnlaA7Vvx4dXMhS4sPq0rk8RwiMcMwyOc="],
     subcategoryId: 9
   },
   {
     product_name: "Leather Loafers",
     product_description: "Elegant loafers crafted from premium leather, offering a blend of comfort and sophistication.",
     product_price: "110",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://media.istockphoto.com/id/1440533051/photo/mens-brown-topsiders-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=gUdgeSAv1Qh9YPQquk0Rp2qdJ1qg5tIXeA2l-srl8kQ=",
+    "https://media.istockphoto.com/id/1440533050/photo/mens-brown-topsiders-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=frhePSraeIWXSuJ-0V-Aa8Of8d9rLA-8sMmYSawuSwE=",
+    "https://media.istockphoto.com/id/1440533043/photo/mens-brown-loafers-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=JjoQxp7CI0eKcpmpKOdtK1Ge8yCPP_8ogkowfolP8mk="],
     subcategoryId: 9
   },
   {
     product_name: "Athletic Training Shoes",
     product_description: "Versatile training shoes engineered for a variety of workouts, providing stability and support.",
     product_price: "85",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://media.istockphoto.com/id/1407127841/photo/white-sneaker-with-colored-accents-on-a-green-gradient-background-mens-fashion-sport-shoe-air.jpg?s=612x612&w=0&k=20&c=h4PYQPT0vzv3QOgAHql4eSdbnfHdmgm5ewURKdzqk6c=", 
+    "https://media.istockphoto.com/id/1407127836/photo/white-sneaker-with-colored-accents-on-a-green-gradient-background-mens-fashion-sport-shoe-air.jpg?s=612x612&w=0&k=20&c=Ao8P5prIsAQsnvt8nSAOx9whjzbioUq9cw9RbkyyGrc=",
+    "https://media.istockphoto.com/id/1479037662/photo/white-sneaker-with-light-blue-accents-on-blue-gradient-background-mens-fashion-sport-shoe-air.jpg?s=612x612&w=0&k=20&c=VdChCZsbIIFxeZLMNPVxwna8PYnxzyhsCDzB_SF4lbo="],
     subcategoryId: 9
   },
   {
     product_name: "Beach Flip-Flops",
     product_description: "Comfortable, durable flip-flops designed for beachwear and relaxed summer days.",
     product_price: "20",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://media.istockphoto.com/id/1178512755/photo/red-flip-flops-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=K8PiY1pfxGkDnDSu5mj_lqHKL5mjBmouI_jYYfZg3zE=", 
+    "https://media.istockphoto.com/id/182753946/photo/thongs.jpg?s=612x612&w=0&k=20&c=XLx9tXqJ_L4PeE9MPHMF8oHpfUkJIoON-s4RujknY_0=", 
+    "https://media.istockphoto.com/id/480070326/photo/red-flip-flops-on-the-sandy-beach.jpg?s=612x612&w=0&k=20&c=_riMyB0SOwhrV5j-b15eB1Cw0TTqZXwx3RgqFq7a7p8="],
     subcategoryId: 9
   },
   {
     product_name: "Formal Dress Shoes",
     product_description: "Sophisticated dress shoes with a glossy finish, perfect for formal events and business settings.",
     product_price: "130",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://media.istockphoto.com/id/172417586/photo/elegant-black-leather-shoes.jpg?s=612x612&w=0&k=20&c=c_tTljwbu2m0AGxwb27NxCgG0Y2Cv-C4v8q6V36RYbw=",
+    "https://media.istockphoto.com/id/687698088/photo/leather-men-shoes.jpg?s=612x612&w=0&k=20&c=X0BGpX4eKH_PWGEGtnfkfmkOeaIHzzXJC9owUP5w23g=",
+    "https://media.istockphoto.com/id/1191156342/photo/men-fashion-black-leather-derby-shoes-isolated-on-a-white-background.jpg?s=612x612&w=0&k=20&c=TVHsp1ziIVYlUKeBqF6khbMbu2PBUnx0EEG0wyusf10="],
     subcategoryId: 9
   },
 
