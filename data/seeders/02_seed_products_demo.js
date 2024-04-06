@@ -1295,70 +1295,90 @@ let data = [
     product_name: "Urban Edge Tee",
     product_description: "A soft, cotton blend T-shirt designed for everyday comfort and style, featuring a minimalist urban design.",
     product_price: "25",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://media.istockphoto.com/id/1041992862/vector/new-york-city-stylish-t-shirt-and-apparel-abstract-design.jpg?s=612x612&w=0&k=20&c=L7Cb35dTsePgsX6twU0IQqibWIVWna-ZYUjJjnXGgvk=",
+    "https://media.istockphoto.com/id/1326575361/vector/california-los-angeles-t-shirt-design-t-shirt-print-design-with-palm-tree-t-shirt-design.jpg?s=612x612&w=0&k=20&c=1mFzM6tk50U184o3JEGJeaoVWXxGwBHcVrnw3Ix3uSk=",
+    "https://media.istockphoto.com/id/1128542158/vector/surf-in-hawaii-stylish-graphic-tee-design-poster-print.jpg?s=612x612&w=0&k=20&c=JAk9cItzr5FjOfCHPw7c2EzBPF5psLA583LBd1Ajj2c="],
     subcategoryId: 7
   },
   {
     product_name: "Classic Denim Jeans",
     product_description: "Premium quality denim tailored for a comfortable fit, perfect for casual outings and versatile styling.",
     product_price: "60",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://media.istockphoto.com/id/1132154377/photo/jeans.jpg?s=612x612&w=0&k=20&c=T3K1_PdlZxXILKFvGkTmPiIf5M2EdIxkqa79AJT_w0Y=",
+    "https://media.istockphoto.com/id/186870715/photo/blue-jeans.jpg?s=612x612&w=0&k=20&c=MInRLnEABmDYzvxjnEiFBu1V20OaB1zHmgzCqUV5hzk=",
+    "https://media.istockphoto.com/id/527236518/photo/mans-legs.jpg?s=612x612&w=0&k=20&c=lczyG0ZkWelpn_o-I_VpjAMo_sA3WpdWHMlgZjCSE-k="],
     subcategoryId: 7
   },
   {
     product_name: "Sleek Chinos",
     product_description: "Slim-fit chinos crafted from lightweight, breathable fabric, ideal for both office and leisure.",
     product_price: "45",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://media.istockphoto.com/id/1322687695/photo/boys-jeans-pant-boys-jeans-pant-jeans-pant-boys-jeans-pant.jpg?s=612x612&w=0&k=20&c=2Fv-GKuBGxM05fkSX6_m4tMKdSn__TD-QjPZWV6csw4=",
+    "https://media.istockphoto.com/id/1322669087/photo/boys-jeans-pant-boys-jeans-pant-jeans-pant-boys-jeans-pant.jpg?s=612x612&w=0&k=20&c=Co_B8HGx7Oq6ir0sm-y0-_Fj_39Y8_BfwZEx4kEuCg8=",
+    "https://media.istockphoto.com/id/1322688782/photo/boys-trouser-comfortable-trousers-boys-trouser-trousers-for-men-sports-trousers-joggers.jpg?s=612x612&w=0&k=20&c=v6RgE4JNJM6kNOoX87xmrH9YIDHknebyrh4saGEM8z8="],
     subcategoryId: 7
   },
   {
     product_name: "Vintage Henley Shirt",
     product_description: "Soft, pre-washed Henley shirt with a vintage feel, bringing classic style to your wardrobe.",
     product_price: "35",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://media.istockphoto.com/id/1319572148/photo/blank-long-sleeve-henley-shirt-mockup.jpg?s=612x612&w=0&k=20&c=gxiMEwHefok6VNPAqvkTVv_6QLB1r-vYACFSIneYtps=",
+    "https://media.istockphoto.com/id/1142212980/photo/front-of-long-sleeve-sweatshirt-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=jxa4no_TWP_Y6PDcwiZuGF5T4XpFpVCbkarC2MbqDb8=",
+    "https://media.istockphoto.com/id/697913656/photo/gray-long-sleeve-t-shirt.jpg?s=612x612&w=0&k=20&c=Dapkfu_EV-F7dzVGbRdJzdmNCUzV_Ny6oFq0jz878aU="],
     subcategoryId: 7
   },
   {
     product_name: "Active Flex Shorts",
     product_description: "Athletic shorts with flexible fabric for maximum movement, equipped with moisture-wicking technology.",
     product_price: "30",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://media.istockphoto.com/id/1332758692/photo/swimming-trunks-on-a-white-background.jpg?s=612x612&w=0&k=20&c=D2_XK7R0mSAe43Moij5jnoD__QS_koqWdmWnVyiP9Js=",
+    "https://media.istockphoto.com/id/994176416/photo/shorts-for-swimming-on-a-white-background-isolated.jpg?s=612x612&w=0&k=20&c=Ii-oSDosMLcVGMlpkmZL5e6iOk0Wi2OxBahBwMKTVZU=",
+    "https://media.istockphoto.com/id/994176438/photo/shorts-for-swimming-on-a-white-background-isolated.jpg?s=612x612&w=0&k=20&c=tZfAXm4yAuUc4lWB7LuB1CLGYHjatLEfJbfRgnJWYJY="],
     subcategoryId: 7
   },
   {
     product_name: "Signature Polo",
     product_description: "Elegant and versatile polo shirt made from premium, breathable pique cotton, suitable for various occasions.",
     product_price: "40",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://media.istockphoto.com/id/825834802/photo/man-in-blank-dark-blue-polo-shirt-from-front-and-rear.jpg?s=612x612&w=0&k=20&c=Q3JsSizoVgomAqrlc4SaP8V6CiK3VbLHTusB9v_6rL4=",
+    "https://media.istockphoto.com/id/825095380/vector/black-polo-shirt-template.jpg?s=612x612&w=0&k=20&c=Qv_oR8D_yqz9iOHL51FM1odSlPfJRNNOz_kzywNkBDM=",
+    "https://media.istockphoto.com/id/1097626470/photo/white-collared-shirt-design-template.jpg?s=612x612&w=0&k=20&c=BY83mBQ1-J9RzzavME8vysFjQ4Nwv-jPKtwkf2U4fKc="],
     subcategoryId: 7
   },
   {
     product_name: "Graphic Sweatshirt",
     product_description: "Comfortable, cotton-blend sweatshirt with a bold graphic design, perfect for a relaxed, stylish look.",
     product_price: "50",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://media.istockphoto.com/id/1407082939/photo/black-sweatshirts-with-hoodie-for-logo-mockup-template.jpg?s=612x612&w=0&k=20&c=He8ZOwDejdZIk3Uqd7bdUbyGNDj-a4icYsGOH3cuEHw=",
+    "https://media.istockphoto.com/id/1347240746/photo/hoodie-set-mock-up-front-and-back-view-black-hoodie-isolated.jpg?s=612x612&w=0&k=20&c=dCaHRpOPuqtJuGHhYMUPoigq2Sxc7x-ihENjF5OX6RY=",
+    "https://media.istockphoto.com/id/1355694185/photo/heather-black-hoodie-on-man-in-jeans-isolated-with-copy-space-mock-up-cropped-image.jpg?s=612x612&w=0&k=20&c=qL-Vuiz4wgsjlbI52O7hVVfCp9Ahy1HjlRpczR6u5R4="],
     subcategoryId: 7
   },
   {
     product_name: "Linen Button-Up Shirt",
     product_description: "Lightweight, airy linen shirt with a relaxed fit, ideal for warm weather and beachside outings.",
     product_price: "55",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://media.istockphoto.com/id/1159334469/photo/white-color-formal-shirt-with-button-down-collar-isolated-on-white.jpg?s=612x612&w=0&k=20&c=Nv59OkJA_OAOsswCEPOzN9G3_TfBbN35OYyg5hCtj7Y=",
+    "https://media.istockphoto.com/id/1097626470/photo/white-collared-shirt-design-template.jpg?s=612x612&w=0&k=20&c=BY83mBQ1-J9RzzavME8vysFjQ4Nwv-jPKtwkf2U4fKc=",
+    "https://media.istockphoto.com/id/1435745704/photo/portrait-of-smiling-mid-adult-businessman-standing-at-corporate-office.jpg?s=612x612&w=0&k=20&c=NtTebZxpAfw964hJJut8WFa__eZEfO07CAKdqeFBrFU="],
     subcategoryId: 7
   },
   {
     product_name: "Cargo Tactical Pants",
     product_description: "Durable, multi-pocket cargo pants designed for functionality and rugged use, with a modern tactical look.",
     product_price: "70",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://media.istockphoto.com/id/181865530/photo/cargo-pants.jpg?s=612x612&w=0&k=20&c=BOrRhLO4sG_8BfuUXIvVYaInT4VX0U9q6TDuv9UCxv0=",
+    "https://media.istockphoto.com/id/1357884956/photo/man-wearing-cargo-pants-with-hand-in-pocket-on-grey-background.jpg?s=612x612&w=0&k=20&c=5WMsQWMoQk7H-TpZ86wz7baTOOBCSECdL2qfw7uZrnQ=",
+    "https://media.istockphoto.com/id/1321307757/photo/man-wearing-cargo-pants-with-hands-in-pockets-on-grey-background.jpg?s=612x612&w=0&k=20&c=NdT5nyw_LKigZ0ui02VrupSG-HLfVWOdmRKRc9Zk4z0="],
     subcategoryId: 7
   },
   {
     product_name: "Performance Joggers",
     product_description: "Soft, stretchy joggers with a tailored fit, designed for both athletic activities and casual wear.",
     product_price: "40",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://media.istockphoto.com/id/1314274760/photo/sport-pants.jpg?s=612x612&w=0&k=20&c=2siBA_21V8CbWXUfQ7ttUqW7ZOzs_d2yjSK8jEtvLw4=",
+    "https://media.istockphoto.com/id/1406303920/photo/womens-sweatpants-sport.jpg?s=612x612&w=0&k=20&c=TxvH1nr7-w_ZtF8hymcDlR_iykcHJtn-enqUx1Kv9a8=",
+    "https://media.istockphoto.com/id/1224545469/photo/close-up-green-sport-pants-sweatpants-jogging-for-men-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=Ku-YPdMdj4vy6OCOC-TBcnvGWyL9p3mnsDMMMgM1blM="],
     subcategoryId: 7
   },
 
