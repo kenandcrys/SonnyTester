@@ -1368,70 +1368,90 @@ let data = [
     product_name: "Urban Commuter Backpack",
     product_description: "Durable, water-resistant backpack with multiple compartments, designed for the urban commuter.",
     product_price: "80",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://media.istockphoto.com/id/995887232/photo/man-surfing-the-net-on-his-laptop.jpg?s=612x612&w=0&k=20&c=yHgb0cpnI8I5fEhqBEl4IClweenEyRsaA7yMYt_nqao=",
+    "https://media.istockphoto.com/id/1018322786/photo/passengers-waiting-for-a-subway-train.jpg?s=612x612&w=0&k=20&c=JqQJnjSp6RA57rTDAjv0C4qbAMqo308Er4IYvFKCQvk=",
+    "https://media.istockphoto.com/id/1196467858/photo/young-asian-woman-traveler-with-backpack-in-the-railway-backpack-and-hat-at-the-train-station.jpg?s=612x612&w=0&k=20&c=gwzbpOQURpDgxZMM-Zl1Y3DX0aes7d4JpswqY5eteYc="],
     subcategoryId: 8
   },
   {
     product_name: "Classic Leather Briefcase",
     product_description: "Elegant, full-grain leather briefcase with spacious compartments, perfect for the professional on the move.",
     product_price: "150",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://media.istockphoto.com/id/182817886/photo/briefcase.jpg?s=612x612&w=0&k=20&c=z8VOALXBa3xGBX6qmO9xMKTM24ph38ssvMTHRd5Owhk=",
+    "https://media.istockphoto.com/id/182795517/photo/briefcase.jpg?s=612x612&w=0&k=20&c=u90WflaSfiaHl265XmdmS1XYPA2toC72OUbb9uAZyFI=",
+    "https://media.istockphoto.com/id/463537187/photo/photograph-of-brown-leather-briefcase.jpg?s=612x612&w=0&k=20&c=IJIzr1dj5Bwuvrd4eJ7TGFi76iHQytHfxfgTBeADUq0="],
     subcategoryId: 8
   },
   {
     product_name: "Travel Duffel Bag",
     product_description: "High-capacity, sturdy duffel bag made for travelers, with dedicated pockets for organized packing.",
     product_price: "90",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://media.istockphoto.com/id/1257455928/photo/duffel-bag-travel-case-leather-holdall-valise-fashion-modern.jpg?s=612x612&w=0&k=20&c=6hFivK6iFG6GTseMy-iUB6XtalxH6QGkIVhakkZe6bw=",
+    "https://media.istockphoto.com/id/1257455876/photo/duffel-bag-travel-case-leather-holdall-valise-fashion-modern.jpg?s=612x612&w=0&k=20&c=0FQIIJE5jvJKrIkV16PIdfmwi4SFz-yHwwI9_Crpwx4=",
+    "https://media.istockphoto.com/id/1257456014/photo/duffel-bag-travel-case-leather-holdall-valise-fashion-modern.jpg?s=612x612&w=0&k=20&c=Js5HsiEQiS0DvwMkEnfAM4xGTtRLP_VgeGL5FvHsenI="],
     subcategoryId: 8
   },
   {
     product_name: "Minimalist Cardholder",
     product_description: "Slim, efficient cardholder crafted from premium leather, designed to hold essentials in a minimal space.",
     product_price: "25",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://media.istockphoto.com/id/1187366466/photo/blue-color-cardholder-full-of-different-plastic-cards.jpg?s=612x612&w=0&k=20&c=JAJo-EqMUoA6ea8J1Sdn5DCat5gf0lAmtH5_bTow4T8=", 
+    "https://media.istockphoto.com/id/1188324576/photo/blue-business-card-holder-with-colorful-plastic-cards-on-a-white-background.jpg?s=612x612&w=0&k=20&c=E3z4RzgAxIBvdyGxCcUAdOuyt9QJvaLSgfftLl0rndA=",
+    "https://media.istockphoto.com/id/1187366471/photo/blue-business-card-holder-with-colorful-plastic-cards-on-a-white-background.jpg?s=612x612&w=0&k=20&c=oa3hNkUSAVMPzAs0MT4OPl5VU2lNZh8kovL1Ssbx9zw="],
     subcategoryId: 8
   },
   {
     product_name: "Adventure Hiking Pack",
     product_description: "Robust backpack with ergonomic design, built to withstand the rigors of hiking and outdoor adventures.",
     product_price: "120",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://media.istockphoto.com/id/925356980/photo/hiking-equipment-backpack-and-boots-on-top-of-mountain.jpg?s=612x612&w=0&k=20&c=ODsrpSyV-hsNHPyJjrUqnhKs8bS_tKu8Hot0pHBOnCs=",
+    "https://media.istockphoto.com/id/925252404/photo/hiking-equipment-backpack-and-boots-on-top-of-mountain.jpg?s=612x612&w=0&k=20&c=Pu0lHHPcFvpnjg7KKWO4Wr9dPmbOMHFnPD-B6nFx4Zc=",
+    "https://media.istockphoto.com/id/1459170871/photo/hiking-equipment-in-sunset-sunlight-and-mountain-silhouettes-backpack-and-boots-in-beautiful.jpg?s=612x612&w=0&k=20&c=xJGCR1NuPc-gtDIVaoI2t-s2eGpANvMAM7qFI7fpuRg="],
     subcategoryId: 8
   },
   {
     product_name: "Tactical Messenger Bag",
     product_description: "Versatile messenger bag with modular compartments, tailored for tactical use and everyday carry.",
     product_price: "75",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://media.istockphoto.com/id/1209514639/photo/light-combat-backpack-coyote-color-front-view-isolated-on-a-white-background.jpg?s=612x612&w=0&k=20&c=JcoTJoD07OkqINbO0vy8HOZFkp_l7C71thAeBsVVyaU=",
+    "https://media.istockphoto.com/id/1208427390/photo/light-combat-backpack-coyote-color-isolated-on-a-white-background.jpg?s=612x612&w=0&k=20&c=2pcO3Qa_BPifNckhWpFHvHJ1jbVzGMCOc1fdvx8l_Jg=",
+    "https://media.istockphoto.com/id/1207111199/photo/tactical-backpack-color-coyote-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=zhhUiWTsA0NiZRw9Af7b9QVRPqGxGa6ZRWeQp2VpfZM="],
     subcategoryId: 8
   },
   {
     product_name: "Vintage Canvas Satchel",
     product_description: "Retro-inspired canvas satchel with leather accents, offering a timeless look and ample storage.",
     product_price: "65",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://media.istockphoto.com/id/1251343075/photo/blank-black-closed-backpack-with-zipper-mockup-dark-background.jpg?s=612x612&w=0&k=20&c=EHG0lDPJnJMwTdaKSTFpOWRDw7uwJ7zBeWW0K_I1WRY=",
+    "https://media.istockphoto.com/id/1268789094/photo/blank-black-backpack-with-zipper-and-strap-mockup-front-back.jpg?s=612x612&w=0&k=20&c=jqYhDP8YoVGcQtsLr4-Hq72u0xZpY9bP47npHCkOWWs=",
+    "https://media.istockphoto.com/id/1257263787/photo/blank-black-backpack-with-zipper-and-strap-mockup-front-back.jpg?s=612x612&w=0&k=20&c=monKk0GC8UgaiIlDWY4XIPmq77bHzqEfYO9R2ZBIxxE="],
     subcategoryId: 8
   },
   {
     product_name: "Compact Travel Kit",
     product_description: "Essential travel kit bag with smart organization features, designed to keep your toiletries in check.",
     product_price: "35",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://media.istockphoto.com/id/510697290/photo/brown-sponge-bag.jpg?s=612x612&w=0&k=20&c=nx7AVvNNt-zbGBMtqNBPmW7QB-IyQuxuNg3hFqcLGVg=",
+    "https://media.istockphoto.com/id/1441186685/photo/mans-brown-leather-personal-cosmetic-bag-or-pouch-for-toiletry-accessory-in-a-mens-hands-in.jpg?s=612x612&w=0&k=20&c=ihIKZbBkkVRXN_n4wnsxCraxq0DvU7H5lLs0S294nsw=",
+    "https://media.istockphoto.com/id/1808128065/photo/leather-handbag-isolated-close-up-of-brown-businessman-luxury-leather-wrist-handbag.jpg?s=612x612&w=0&k=20&c=ra-XIh9b2d1ZriYrWdSuUnx3rL1AW0dLmHMLy0mpTds="],
     subcategoryId: 8
   },
   {
     product_name: "Executive Laptop Sleeve",
     product_description: "Sleek, protective laptop sleeve with a luxurious feel, ensuring your tech is safe in style.",
     product_price: "50",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://media.istockphoto.com/id/1142028093/photo/textile-tablet-computer-case.jpg?s=612x612&w=0&k=20&c=gR0IfMI3G2YhicI3ECUKr90Bz1EIDqw6l4ugIRltgwE=",
+    "https://media.istockphoto.com/id/1429115613/photo/textile-tablet-computer-case.jpg?s=612x612&w=0&k=20&c=1TQyjM6aKV0D-gdeS8Y3k1RnNfR0g1Ty-r_RQDUx6xQ=",
+    "https://media.istockphoto.com/id/1127029890/photo/neck-warmer.jpg?s=612x612&w=0&k=20&c=1xNjoWFD33SAvvotd9EvmWjwdTDJSGGbebOajNjF9pU="],
     subcategoryId: 8
   },
   {
     product_name: "Crossbody Utility Pouch",
     product_description: "Convenient, lightweight pouch for essentials, with an adjustable strap for crossbody wear.",
     product_price: "30",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://media.istockphoto.com/id/1347199443/photo/man-holding-messenger-bag-in-an-autumn-city.jpg?s=612x612&w=0&k=20&c=nZ6_19IbtzlpYgMnJeJbZHPyKUhk1-dMm1cLl-3KIu8=",
+    "https://media.istockphoto.com/id/1347199657/photo/man-walking-in-city-with-black-leather-bag.jpg?s=612x612&w=0&k=20&c=bcPvkKOzI0V1o7szboukow2srGpRonDcHZO7RNlXRs8=",
+    "https://media.istockphoto.com/id/1347197196/photo/man-walking-in-city-with-black-leather-bag.jpg?s=612x612&w=0&k=20&c=CdDxPr7bpg-9IqX4ILqF0Zffva3VbOUmPk_vrWX23U4="],
     subcategoryId: 8
   },
   
