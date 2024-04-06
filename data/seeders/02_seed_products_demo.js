@@ -1584,70 +1584,90 @@ let data = [
     product_name: "Classic Aviator Sunglasses",
     product_description: "Timeless aviator sunglasses with UV protection, combining style with functionality.",
     product_price: "90",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://images.unsplash.com/photo-1567101293231-51d2bd439398?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "https://images.unsplash.com/photo-1567473810954-507d59716c25?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fHw%3D", 
+    "https://images.unsplash.com/photo-1566388448476-0c4249e47be5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHx8"],
     subcategoryId: 11
   },
   {
     product_name: "Leather Belt",
     product_description: "Durable, genuine leather belt with a sleek, modern buckle, essential for any outfit.",
     product_price: "35",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://images.unsplash.com/photo-1664286021284-e921c76ac1a4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D", 
+    "https://images.unsplash.com/photo-1664286022075-8e997e95bd17?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "https://images.unsplash.com/photo-1664285612706-b32633c95820?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D"],
     subcategoryId: 11
   },
   {
     product_name: "Minimalist Watch",
     product_description: "Elegant watch with a minimalist design, featuring a stainless steel case and leather strap.",
     product_price: "120",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://images.unsplash.com/photo-1607298786129-cea6ce0d5788?q=80&w=2562&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "https://images.unsplash.com/photo-1607299008952-7179a3f826f7?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "https://images.unsplash.com/photo-1579174786776-a488cbc8ec5c?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
     subcategoryId: 11
   },
   {
     product_name: "Beanie Hat",
     product_description: "Soft, knit beanie hat for warmth and style during the colder months.",
     product_price: "20",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://images.unsplash.com/photo-1618354691792-d1d42acfd860?q=80&w=2515&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "https://images.unsplash.com/photo-1612887726773-e64e20cf08fe?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
     subcategoryId: 11
   },
   {
     product_name: "Silk Necktie",
     product_description: "Premium silk necktie available in various colors, perfect for formal occasions and office wear.",
     product_price: "50",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://images.unsplash.com/photo-1598032895468-e81825029202?q=80&w=2191&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "https://images.unsplash.com/photo-1592878904946-b3cd8ae243d0?q=80&w=2381&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "https://images.unsplash.com/photo-1593030089683-a9841767a610?q=80&w=2380&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
     subcategoryId: 11
   },
   {
     product_name: "Cufflinks Set",
     product_description: "Elegant cufflinks set, adding a touch of sophistication to any formal shirt.",
     product_price: "40",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://images.unsplash.com/photo-1647574633530-05ecfb3fdb4f?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "https://images.unsplash.com/photo-1647574633297-ff7f1a3f733d?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "https://images.unsplash.com/photo-1647574633357-75c67e723689?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
     subcategoryId: 11
   },
   {
     product_name: "Leather Wallet",
     product_description: "Compact, high-quality leather wallet with multiple card slots and a secure coin pocket.",
     product_price: "55",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://plus.unsplash.com/premium_photo-1681589453747-53fd893fa420?q=80&w=2369&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "https://images.unsplash.com/photo-1637168943285-a8f9ea0dc3f5?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "https://images.unsplash.com/photo-1620109176813-e91290f6c795?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
     subcategoryId: 11
   },
   {
     product_name: "Sports Cap",
     product_description: "Adjustable sports cap made from breathable fabric, ideal for outdoor activities and casual wear.",
     product_price: "25",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://images.unsplash.com/photo-1622445275576-721325763afe?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "https://images.unsplash.com/photo-1702604585541-2246510e8f07?q=80&w=2525&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "https://images.unsplash.com/photo-1702604865155-716b8d0a81b3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D"],
     subcategoryId: 11
   },
   {
     product_name: "Tactical Gloves",
     product_description: "Durable gloves designed for tactical use, offering protection and enhanced grip.",
     product_price: "45",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://images.unsplash.com/photo-1642075211546-7de99d235d21?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "https://images.unsplash.com/photo-1645445490773-3ef25c148450?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "https://images.unsplash.com/photo-1643701188137-b1e3f3135aa2?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
     subcategoryId: 11
   },
   {
     product_name: "Scarf",
     product_description: "Luxurious, soft scarf made from fine materials, providing warmth and elegance.",
     product_price: "35",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://images.unsplash.com/photo-1484688493527-670f98f9b195?q=80&w=2647&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "https://images.unsplash.com/photo-1457545195570-67f207084966?q=80&w=2392&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "https://images.unsplash.com/photo-1641642231157-0849081598a2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHx8"],
     subcategoryId: 11
   },
   
