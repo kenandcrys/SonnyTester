@@ -1512,70 +1512,90 @@ let data = [
     product_name: "Classic Trench Coat",
     product_description: "Iconic, weather-resistant trench coat with a timeless design, providing both style and function.",
     product_price: "200",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://media.istockphoto.com/id/874876866/photo/cool-calm-and-corporate.jpg?s=612x612&w=0&k=20&c=Yn_eFwhcH4Ri6p9lDcNYuH2da4qtWsCNOGEPxLGuB04=", 
+    "https://media.istockphoto.com/id/874876872/photo/the-perfect-blend-of-style-and-success.jpg?s=612x612&w=0&k=20&c=Gz_obC5N6vqwqx-_RzrfMQMAIObfo9NpdWlBdtJdypE=", 
+    "https://media.istockphoto.com/id/874878298/photo/hes-a-trendsetter-in-the-business-world.jpg?s=612x612&w=0&k=20&c=6PW6Za7S1YPoBxzaJXk1mHqbIuklsFgRVFjBWTQyksE="],
     subcategoryId: 10
   },
   {
     product_name: "Leather Biker Jacket",
     product_description: "Edgy, genuine leather biker jacket, featuring durable construction and classic styling.",
     product_price: "250",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://media.istockphoto.com/id/468491142/photo/vintage-leather-biker-jacket-isolated-on-white.jpg?s=612x612&w=0&k=20&c=9hKiXZbr3FBbPzFPPCu83QJUEWV-XX7PF26SV09k4dY=",
+    "https://media.istockphoto.com/id/638571516/photo/black-leather-biker-jackets.jpg?s=612x612&w=0&k=20&c=D11ylLsB0-N31GdTlPznM3RJYp_wp5qYypnXfTIxUkE=",
+    "https://media.istockphoto.com/id/677022004/photo/outfit-of-biker-and-accessories-with-copy-space.jpg?s=612x612&w=0&k=20&c=yV4GrjZeIvsfic7-b8nHzk61mEbaOrjsAluQEEVRjMo="],
     subcategoryId: 10
   },
   {
     product_name: "Utility Field Jacket",
     product_description: "Versatile field jacket with multiple pockets, ideal for outdoor activities and casual wear.",
     product_price: "150",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://media.istockphoto.com/id/1270469508/photo/power-systems-engineer-on-site.jpg?s=612x612&w=0&k=20&c=nHbQahsve1s_vkJqHGe6ox9jjLH0N8v7kYXL4xkoqY8=", 
+    "https://media.istockphoto.com/id/1270474688/photo/power-systems-engineer-on-site.jpg?s=612x612&w=0&k=20&c=4xSkDp1clfWGqqsjavbzlIZ7CwmG_LidHU6_KIw7b6s=", 
+    "https://media.istockphoto.com/id/879814136/photo/industrial-engineer-in-hard-hat-wearing-safety-jacket-uses-touchscreen-tablet-computer-he.jpg?s=612x612&w=0&k=20&c=jp0_attXQHHrclDlny0bFtkdgnPtLKei6MyBxgg6EeE="],
     subcategoryId: 10
   },
   {
     product_name: "Down Puffer Jacket",
     product_description: "Warm, lightweight puffer jacket filled with quality down, designed for cold weather comfort.",
     product_price: "180",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://media.istockphoto.com/id/1438058575/photo/multicolored-winter-down-jackets-hanging-on-hangers-in-the-store-close-up-side-view.jpg?s=612x612&w=0&k=20&c=awTwIWpzSwH4dXoXerPKrgyrUZ_Y3hWWNdbll7PQWRA=", 
+    "https://media.istockphoto.com/id/1329845318/photo/brown-winter-down-jacket-front-and-back-view.jpg?s=612x612&w=0&k=20&c=MBTHhNj2rDOtP5Fe79okbxNjdPhdtSU8thvwNV1PGkk=", 
+    "https://media.istockphoto.com/id/1357323248/photo/man-on-a-gray-background-is-warmly-dressed-in-a-black-down-jacket.jpg?s=612x612&w=0&k=20&c=rVGoyy8uK8jIFjHxSsvMjUp0E-nh6zCP8d8SXzpMxT0="],
     subcategoryId: 10
   },
   {
     product_name: "Wool Peacoat",
     product_description: "Classic double-breasted peacoat in fine wool, offering warmth and sophistication for the winter season.",
     product_price: "220",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://media.istockphoto.com/id/1060425706/photo/beige-formal-peacoat.jpg?s=612x612&w=0&k=20&c=qJP4alTcQv7FPV7qrM5vpVYrcUrELU6nK1EMm5XuUWE=", 
+    "https://media.istockphoto.com/id/474714779/photo/smiling-man-in-light-brown-coat-isolated-on-white.jpg?s=612x612&w=0&k=20&c=qxltw-qgykBZe6a-Em5zYroBr-e8tZz6lw5en3Q9sBk=",
+    "https://media.istockphoto.com/id/470220801/photo/man-dressed-in-light-brown-coat-on-white.jpg?s=612x612&w=0&k=20&c=hlymJWq2BMSLlWhtXHwbW7je-IZoHgSzdlfMHIUsfZM="],
     subcategoryId: 10
   },
   {
     product_name: "Denim Trucker Jacket",
     product_description: "Casual, rugged denim jacket with a vintage wash, a staple piece for any wardrobe.",
     product_price: "90",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://media.istockphoto.com/id/1834790249/photo/top-view-of-blue-truckers-denim-jacket-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=kw-9eCjFeR2u79BcFxucdV6myHFRnFt8Ug0xJMjEVjo=",
+    "https://media.istockphoto.com/id/186865873/photo/leaning-against-a-rig.jpg?s=612x612&w=0&k=20&c=Nf3mWbI0t_DaHjEBivbe6IRtvepS13WIvdq0s2DX3CI=", 
+    "https://media.istockphoto.com/id/523381657/photo/trucker-and-thumbs-up-positivity.jpg?s=612x612&w=0&k=20&c=f3MwMwAwuuiNBxvkLHJPhvY7ri3B1UEdPb5Nhtfqpk8="],
     subcategoryId: 10
   },
   {
     product_name: "Windbreaker Jacket",
     product_description: "Lightweight, water-repellent windbreaker, perfect for transitional weather and outdoor activities.",
     product_price: "70",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://images.unsplash.com/flagged/photo-1578507054195-f96dec3a8b14?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "https://images.unsplash.com/photo-1592860699405-482d621e2bb1?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "https://images.unsplash.com/photo-1532682962418-34a7177c0efe?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
     subcategoryId: 10
   },
   {
     product_name: "Softshell Tactical Jacket",
     product_description: "High-performance softshell jacket designed for tactical use, offering durability and flexibility.",
     product_price: "160",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://www.a3imfashions.com/cdn/shop/products/product-image-218510524_grande.jpg?v=1571439223", 
+    "https://www.a3imfashions.com/cdn/shop/products/product-image-218510526_grande.jpg?v=1571439223", 
+    "https://freesoldier.com/cdn/shop/products/1_4c5c170c-46e1-4aa8-9c83-f43f617554c5.jpg?v=1694427684&width=1200"],
     subcategoryId: 10
   },
   {
     product_name: "Varsity Bomber Jacket",
     product_description: "Stylish bomber jacket with a varsity design, combining comfort with a sporty aesthetic.",
     product_price: "110",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://i.pinimg.com/474x/87/c4/90/87c4909e6efa0acb26420df0350b1b41.jpg", 
+    "https://media.istockphoto.com/id/157526058/photo/letterman-2010.jpg?s=612x612&w=0&k=20&c=Ye7nlBA_kkIp306XI206ogKXGBQIBf6gvsvN0OzaOg8=", 
+    "https://media.istockphoto.com/id/181850121/photo/african-american-high-school-student-in-letterman-jacket.jpg?s=612x612&w=0&k=20&c=U1ZASlDRgeJBXx37Wh9SxqHwu66E_tOPFsLxAGsd3FU="],
     subcategoryId: 10
   },
   {
     product_name: "Quilted Vest",
     product_description: "Sleek, insulated vest with a quilted design, perfect for layering in cooler weather.",
     product_price: "60",
-    product_images: ["put url here", "put url here", "put url here"],
+    product_images: ["https://images.unsplash.com/photo-1532704102644-883111bdf82d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHF1aWx0ZWQlMjBqYWNrZXR8ZW58MHx8MHx8fDA%3D", 
+    "https://images.unsplash.com/photo-1551318181-655e9748c0a6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cXVpbHRlZCUyMGphY2tldHxlbnwwfHwwfHx8MA%3D%3D", 
+    "https://images.unsplash.com/photo-1580047883831-5db03837b0b3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHF1aWx0ZWQlMjBqYWNrZXR8ZW58MHx8MHx8fDA%3D"],
     subcategoryId: 10
   },
 
