@@ -156,7 +156,7 @@ exports.seed = function (knex) {
               { subcategory_name: "Pet Shop", categoryId: 12 },
           ]);
       })
-      .then(function () {
+           .then(function () {
           const chunkSize = 7; // Adjust as needed
           // Create chunks of data to insert
           const chunkedData = [];
