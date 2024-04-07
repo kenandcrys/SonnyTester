@@ -29,9 +29,9 @@ exports.up = function(knex) {
         return knex.schema.createTable("products", (table) => {
           table.increments();
           table.string("product_name", 255).notNullable();
-          table.string("product_description", 1000).notNullable();
+          table.string("product_description", 2048).notNullable();
           table.string("product_price", 255).notNullable();
-          table.string("product_images",1288);
+          table.string("product_images",2048);
           table
             .integer("subcategoryId")
             .nullable()
