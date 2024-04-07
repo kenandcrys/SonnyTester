@@ -5892,7 +5892,7 @@ subcategoryId: 44
 }
 
 ];
-
+/*
  * @param { import("knex").Knex } knex
  * @returns { Promise<void> }
  */
