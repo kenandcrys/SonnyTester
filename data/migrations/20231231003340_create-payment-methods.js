@@ -34,5 +34,7 @@ exports.up = function(knex) {
  * @returns { Promise<void> }
  */
 exports.down = function(knex) {
-  return knex.schema.dropTable('payment_methods');
+  // Drop the 'payment_methods' table
+  return knex.schema.dropTableIfExists('payment_methods');
 };
+

@@ -1,23 +1,25 @@
-const faker = require('faker');
-
-exports.seed = function (knex) {
+exports.seed = async function (knex) {
   // Deletes ALL existing entries
-  return knex('carts').del()
-    .then(async function () {
-      // Inserts seed entries
-      const userIds = await knex.select('id').from('users');
+  await knex('carts').del();
 
-      const seedData = [];
+  // Get all user IDs
+  const userIds = await knex.select('id').from('users');
 
-      for (let i = 0; i < userIds.length; i++) {
-        const seed = {
-          user_id: userIds[i].id,
-          session_id: faker.datatype.number({ min: 10000, max: 9999999 }).toString(),
-        };
+  const seedData = [];
 
-        seedData.push(seed);
-      }
+  for (const userId of userIds) {
+    const seed = {
+      user_id: userId.id,
+      session_id: generateSessionId(),
+    };
 
-      return knex('carts').insert(seedData);
-    });
+    seedData.push(seed);
+  }
+
+  return knex('carts').insert(seedData);
 };
+
+// Helper function to generate a random session ID
+function generateSessionId() {
+  return Math.floor(Math.random() * (9999999 - 10000) + 10000).toString();
+}

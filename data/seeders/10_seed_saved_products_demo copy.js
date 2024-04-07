@@ -14,21 +14,30 @@ exports.seed = async function (knex) {
 
     const seedData = [];
 
-    for (let i = 0; i < userIds.length; i++) {
+    for (const userId of userIds) {
         // Simulate a random count between 1 and productChunks.length
         const count = Math.floor(Math.random() * productChunks.length) + 1;
-        const shuffledProductChunks = shuffleArray(productChunks);
 
         for (let j = 0; j < count; j++) {
-            const chunk = shuffledProductChunks[j];
+            const chunk = shuffleArray(productChunks)[0];
             const products = chunk.map((product) => ({
-                buyer_id: userIds[i].id,
+                buyer_id: userId.id,
                 product_id: product.id,
                 seller_id: getRandomUserId(userIds),
                 date_saved: new Date(), // Use current date for simplicity
             }));
 
-            seedData.push(...products);
+            // Check if the combination already exists
+            for (const product of products) {
+                const existing = seedData.find(
+                    (item) =>
+                        item.buyer_id === product.buyer_id &&
+                        item.product_id === product.product_id
+                );
+                if (!existing) {
+                    seedData.push(product);
+                }
+            }
         }
     }
 

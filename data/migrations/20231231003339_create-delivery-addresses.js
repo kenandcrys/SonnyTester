@@ -27,5 +27,6 @@ exports.up = function(knex) {
  * @returns { Promise<void> }
  */
 exports.down = function(knex) {
-  return knex.schema.dropTable('delivery_addresses');
+  // Drop the 'delivery_addresses' table
+  return knex.schema.dropTableIfExists('delivery_addresses');
 };

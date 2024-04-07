@@ -1,42 +1,37 @@
-const faker = require("faker");
-
-exports.seed = function (knex) {
+exports.seed = async function (knex) {
   // Deletes ALL existing entries
-  return knex("returned_products")
-    .del()
-    .then(async function () {
-      // Insert seed entries
-      const orders = await knex.select("id").from("orders");
-      const products = await knex.select("id").from("products");
+  await knex("returned_products").del();
 
-      const returnedProducts = [];
+  const orders = await knex.select("id").from("orders");
+  const products = await knex.select("id").from("products");
 
-      const uniqueOrderProductPairs = new Set();
+  const returnedProducts = [];
 
-      outerLoop: for (let i = 0; i < 10; i++) {
-        let order, product;
+  const uniqueOrderProductPairs = new Set();
 
-        do {
-          order = faker.random.arrayElement(orders);
-          product = faker.random.arrayElement(products);
+  outerLoop: for (let i = 0; i < 10; i++) {
+    let order, product;
 
-          if (i >= orders.length * products.length) break outerLoop;
-        } while (uniqueOrderProductPairs.has(`${order.id}-${product.id}`));
-        
-        uniqueOrderProductPairs.add(`${order.id}-${product.id}`);
+    do {
+      order = orders[Math.floor(Math.random() * orders.length)];
+      product = products[Math.floor(Math.random() * products.length)];
 
-        const returnedProduct = {
-          order_id: order.id,
-          product_id: product.id,
-          quantity: faker.datatype.number({ min: 1, max: 10 }),
-          date_received: faker.date.past(),
-          return_condition: faker.lorem.sentence(),
-          is_eligible_for_resale: faker.datatype.boolean(),
-        };
+      if (i >= orders.length * products.length) break outerLoop;
+    } while (uniqueOrderProductPairs.has(`${order.id}-${product.id}`));
 
-        returnedProducts.push(returnedProduct);
-      }
+    uniqueOrderProductPairs.add(`${order.id}-${product.id}`);
 
-      return knex("returned_products").insert(returnedProducts);
-    });
+    const returnedProduct = {
+      order_id: order.id,
+      product_id: product.id,
+      quantity: Math.floor(Math.random() * 10) + 1, // Random quantity between 1 and 10
+      date_received: new Date(new Date().getTime() - Math.random() * 10000000000), // Random date in the past 10000000000 milliseconds (about 115 days)
+      return_condition: "Sample return condition", // Adjust as needed
+      is_eligible_for_resale: Math.random() < 0.5, // 50% chance of being eligible for resale
+    };
+
+    returnedProducts.push(returnedProduct);
+  }
+
+  await knex("returned_products").insert(returnedProducts);
 };
