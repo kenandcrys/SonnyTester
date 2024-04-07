@@ -185,66 +185,235 @@ exports.seed = function (knex) {
 };
 
 let data = [
-{
-  product_name: "UltraBook Pro",
-  product_description: "Sleek design with a 15-inch 4K display and 16GB RAM for professional use",
-  product_price: "1200",
-  subcategoryId: 21
-},
-{
-  product_name: "GamerXtreme Laptop",
-  product_description: "High-performance gaming laptop with RTX 3080 and 32GB RAM",
-  product_price: "2500",
-  subcategoryId: 21
-},
-{
-  product_name: "PortaLight",
-  product_description: "Ultra-portable 13-inch laptop with 10-hour battery life, perfect for on-the-go professionals",
-  product_price: "900",
-  subcategoryId: 21
-},
-{
-  product_name: "CreatorZ Canvas",
-  product_description: "Laptop designed for creators with a touchscreen, stylus support, and powerful graphics",
-  product_price: "1800",
-  subcategoryId: 21
-},
-{
-  product_name: "StudyMate Laptop",
-  product_description: "Affordable and durable laptop designed for students, with all essential software pre-installed",
-  product_price: "500",
-  subcategoryId: 21
-},
-{
-  product_name: "BusinessElite Pro",
-  product_description: "Enterprise-level laptop with secure biometric access and enhanced data protection features",
-  product_price: "1500",
-  subcategoryId: 21
-},
-{
-  product_name: "FlexiFold 2-in-1",
-  product_description: "Convertible laptop with a flexible hinge, can be used as a tablet, comes with a detachable keyboard",
-  product_price: "1100",
-  subcategoryId: 21
-},
-{
-  product_name: "EcoFriendly Notebook",
-  product_description: "Environmentally friendly laptop made from recycled materials, energy-efficient with a solar charging option",
-  product_price: "800",
-  subcategoryId: 21
-},
-{
-  product_name: "UltraSecure Laptop",
-  product_description: "Laptop with advanced security features including hardware encryption and a privacy screen",
-  product_price: "1700",
-  subcategoryId: 21
-},
-{
-  product_name: "TechieTab Laptop",
-  product_description: "Laptop with dual screens for multitasking, AI-powered performance optimization",
-  product_price: "2200",
-  subcategoryId: 21
-},
+    // Bluetooth Speakers
+  {
+    product_name: "SoundWave Mini",
+    product_description: "Compact Bluetooth speaker offering vibrant sound and deep bass.",
+    product_price: "45",
+    subcategoryId: 1
+  },
+  {
+    product_name: "AquaTunes Waterproof Speaker",
+    product_description: "Waterproof Bluetooth speaker for all your adventures, rain or shine.",
+    product_price: "60",
+    subcategoryId: 1
+  },
+  {
+    product_name: "BoomBox Retro",
+    product_description: "Retro-style Bluetooth speaker with modern sound quality.",
+    product_price: "75",
+    subcategoryId: 1
+  },
+  {
+    product_name: "PocketBlast Ultra",
+    product_description: "Ultra-portable speaker with powerful sound and a durable exterior.",
+    product_price: "50",
+    subcategoryId: 1
+  },
+  {
+    product_name: "BassKing LX",
+    product_description: "Bluetooth speaker with exceptional bass and 24-hour battery life.",
+    product_price: "85",
+    subcategoryId: 1
+  },
+  {
+    product_name: "EchoSphere 360",
+    product_description: "360-degree sound experience in a sleek, sophisticated design.",
+    product_price: "120",
+    subcategoryId: 1
+  },
+  {
+    product_name: "NightBeat LED",
+    product_description: "Bluetooth speaker with LED lights that sync to your music.",
+    product_price: "65",
+    subcategoryId: 1
+  },
+  {
+    product_name: "HarmonyHub Mini",
+    product_description: "Compact speaker with smart hub capabilities and premium sound.",
+    product_price: "80",
+    subcategoryId: 1
+  },
+  {
+    product_name: "SonicPulse Gen2",
+    product_description: "Next-gen Bluetooth speaker with touch controls and immersive sound.",
+    product_price: "70",
+    subcategoryId: 1
+  },
+
+  // Wireless Earphones
+  {
+    product_name: "AirTunes Pro",
+    product_description: "High-fidelity wireless earphones with noise cancellation.",
+    product_price: "150",
+    subcategoryId: 1
+  },
+  {
+    product_name: "BeatSync Sport",
+    product_description: "Sweatproof wireless earphones designed for athletes.",
+    product_price: "130",
+    subcategoryId: 1
+  },
+  {
+    product_name: "ClearSound Air",
+    product_description: "Wireless earphones with crystal-clear sound and comfortable fit.",
+    product_price: "110",
+    subcategoryId: 1
+  },
+  {
+    product_name: "EchoBuds Lite",
+    product_description: "Lightweight earphones with dynamic sound and voice assistant support.",
+    product_price: "99",
+    subcategoryId: 1
+  },
+  {
+    product_name: "SonicSeal Active",
+    product_description: "Wireless earphones with secure fit and waterproof design.",
+    product_price: "140",
+    subcategoryId: 1
+  },
+  {
+    product_name: "VibeTones Studio",
+    product_description: "Studio-quality sound in wireless earphones with long battery life.",
+    product_price: "165",
+    subcategoryId: 1
+  },
+  {
+    product_name: "RhythmX Plus",
+    product_description: "Enhanced bass and clarity with these premium wireless earphones.",
+    product_price: "175",
+    subcategoryId: 1
+  },
+  {
+    product_name: "MelodyMate TrueWireless",
+    product_description: "True wireless earphones offering seamless connectivity and rich audio.",
+    product_price: "200",
+    subcategoryId: 1
+  },
+  {
+    product_name: "HarmonyAir X2",
+    product_description: "Ergonomic wireless earphones with adaptive sound technology.",
+    product_price: "160",
+    subcategoryId: 1
+  },
+
+  // Phone Case
+  {
+    product_name: "UltraArmor Case",
+    product_description: "Heavy-duty protection in a slim profile for your smartphone.",
+    product_price: "40",
+    subcategoryId: 1
+  },
+  {
+    product_name: "CrystalClear Shell",
+    product_description: "Show off your phone's design with this transparent, protective case.",
+    product_price: "25",
+    subcategoryId: 1
+  },
+  {
+    product_name: "EcoGuard Bamboo Case",
+    product_description: "Eco-friendly phone case made from sustainable bamboo.",
+    product_price: "50",
+    subcategoryId: 1
+  },
+  {
+    product_name: "PocketShield Pro",
+    product_description: "Premium phone case with built-in wallet features for convenience.",
+    product_price: "55",
+    subcategoryId: 1
+  },
+  {
+    product_name: "FlexFit Gel Case",
+    product_description: "Soft, flexible case for shock absorption and easy grip.",
+    product_price: "20",
+    subcategoryId: 1
+  },
+  {
+    product_name: "ArtSeries Decor Case",
+    product_description: "Turn your phone into a masterpiece with these artistically designed cases.",
+    product_price: "30",
+    subcategoryId: 1
+  },
+  {
+    product_name: "StealthCover Privacy Case",
+    product_description: "Phone case with a built-in privacy screen protector.",
+    product_price: "45",
+    subcategoryId: 1
+  },
+  {
+    product_name: "CoolTech Thermal Case",
+    product_description: "Regulate your phone's temperature with this innovative case design.",
+    product_price: "60",
+    subcategoryId: 1
+  },
+  {
+    product_name: "GlamShell Sparkle Case",
+    product_description: "Add some sparkle and protection to your phone with this glamorous case.",
+    product_price: "35",
+    subcategoryId: 1
+  },
+
+  //Laptops
+  {
+    product_name: "UltraBook Pro",
+    product_description: "Sleek design with a 15-inch 4K display and 16GB RAM for professional use",
+    product_price: "1200",
+    subcategoryId: 21
+  },
+  {
+    product_name: "GamerXtreme Laptop",
+    product_description: "High-performance gaming laptop with RTX 3080 and 32GB RAM",
+    product_price: "2500",
+    subcategoryId: 21
+  },
+  {
+    product_name: "PortaLight",
+    product_description: "Ultra-portable 13-inch laptop with 10-hour battery life, perfect for on-the-go professionals",
+    product_price: "900",
+    subcategoryId: 21
+  },
+  {
+    product_name: "CreatorZ Canvas",
+    product_description: "Laptop designed for creators with a touchscreen, stylus support, and powerful graphics",
+    product_price: "1800",
+    subcategoryId: 21
+  },
+  {
+    product_name: "StudyMate Laptop",
+    product_description: "Affordable and durable laptop designed for students, with all essential software pre-installed",
+    product_price: "500",
+    subcategoryId: 21
+  },
+  {
+    product_name: "BusinessElite Pro",
+    product_description: "Enterprise-level laptop with secure biometric access and enhanced data protection features",
+    product_price: "1500",
+    subcategoryId: 21
+  },
+  {
+    product_name: "FlexiFold 2-in-1",
+    product_description: "Convertible laptop with a flexible hinge, can be used as a tablet, comes with a detachable keyboard",
+    product_price: "1100",
+    subcategoryId: 21
+  },
+  {
+    product_name: "EcoFriendly Notebook",
+    product_description: "Environmentally friendly laptop made from recycled materials, energy-efficient with a solar charging option",
+    product_price: "800",
+    subcategoryId: 21
+  },
+  {
+    product_name: "UltraSecure Laptop",
+    product_description: "Laptop with advanced security features including hardware encryption and a privacy screen",
+    product_price: "1700",
+    subcategoryId: 21
+  },
+  {
+    product_name: "TechieTab Laptop",
+    product_description: "Laptop with dual screens for multitasking, AI-powered performance optimization",
+    product_price: "2200",
+    subcategoryId: 21
+  },
 
 // Desktops
 {
@@ -747,378 +916,841 @@ let data = [
   subcategoryId: 29
 },
 
-// Phones and Accessories SubcategoryId: 1, Name: Bluetooth Speakers
-{
-  product_name: "TuneWave",
-  product_description: "Portable Bluetooth speaker with deep bass and 360-degree sound",
-  product_price: "120",
-  subcategoryId: 1
-},
-{
-  product_name: "AquaBeat",
-  product_description: "Waterproof Bluetooth speaker for outdoor adventures",
-  product_price: "150",
-  subcategoryId: 1
-},
-{
-  product_name: "PocketBoom",
-  product_description: "Compact and lightweight Bluetooth speaker with powerful sound",
-  product_price: "80",
-  subcategoryId: 1
-},
-{
-  product_name: "BassPulse",
-  product_description: "High-fidelity Bluetooth speaker with dynamic bass technology",
-  product_price: "200",
-  subcategoryId: 1
-},
-{
-  product_name: "SoundSphere",
-  product_description: "Elegant Bluetooth speaker with surround sound and multi-room capabilities",
-  product_price: "250",
-  subcategoryId: 1
-},
-{
-  product_name: "HarmonyLink",
-  product_description: "Bluetooth speaker with voice assistant integration and smart home control",
-  product_price: "220",
-  subcategoryId: 1
-},
-{
-  product_name: "RhythmX",
-  product_description: "Stylish Bluetooth speaker with customizable LED lighting and touch controls",
-  product_price: "180",
-  subcategoryId: 1
-},
-{
-  product_name: "VibeTrek",
-  product_description: "Rugged Bluetooth speaker designed for extreme outdoor use",
-  product_price: "160",
-  subcategoryId: 1
-},
-{
-  product_name: "EchoStream",
-  product_description: "Smart Bluetooth speaker with integrated streaming services",
-  product_price: "210",
-  subcategoryId: 1
-},
-{
-  product_name: "SonicCloud",
-  product_description: "Bluetooth speaker with cloud-based music storage and playback",
-  product_price: "190",
-  subcategoryId: 1
-},
-// S, Name: Chargers and Cables
-{
-  product_name: "PowerPort",
-  product_description: "Fast-charging portable charger with dual USB ports",
-  product_price: "30",
-  subcategoryId: 2
-},
-{
-  product_name: "CableFlex",
-  product_description: "Durable, tangle-free charging cable with lifetime warranty",
-  product_price: "15",
-  subcategoryId: 2
-},
-{
-  product_name: "ChargeMate",
-  product_description: "Compact wireless charging pad with quick-charge capabilities",
-  product_price: "40",
-  subcategoryId: 2
-},
-{
-  product_name: "VoltStream",
-  product_description: "Universal charger kit with multiple adapters for all your devices",
-  product_price: "50",
-  subcategoryId: 2
-},
-{
-  product_name: "CablePro",
-  product_description: "High-speed USB-C cable for fast data transfer and charging",
-  product_price: "20",
-  subcategoryId: 2
-},
-{
-  product_name: "EnergyHub",
-  product_description: "6-port USB charging station for simultaneous device charging",
-  product_price: "60",
-  subcategoryId: 2
-},
-{
-  product_name: "TravelCharge",
-  product_description: "Travel-friendly charger with built-in adapters for international use",
-  product_price: "35",
-  subcategoryId: 2
-},
-{
-  product_name: "MagneticWire",
-  product_description: "Magnetic charging cable with interchangeable connectors",
-  product_price: "25",
-  subcategoryId: 2
-},
-{
-  product_name: "SolarJuice",
-  product_description: "Eco-friendly solar-powered charger for outdoor enthusiasts",
-  product_price: "45",
-  subcategoryId: 2
-},
-{
-  product_name: "FlexiCharge",
-  product_description: "Flexible charging cable with 360-degree rotation for easy use",
-  product_price: "18",
-  subcategoryId: 2
-},
-// SubcategoryId: 3, Name: Earphones
-{
-  product_name: "SoundBuds",
-  product_description: "Wireless earphones with crystal clear sound and noise cancellation",
-  product_price: "70",
-  subcategoryId: 3
-},
-{
-  product_name: "AudioFit",
-  product_description: "Sports earphones with secure fit and water resistance for active users",
-  product_price: "80",
-  subcategoryId: 3
-},
-{
-  product_name: "MelodyPro",
-  product_description: "Professional-grade in-ear monitors for musicians and audiophiles",
-  product_price: "250",
-  subcategoryId: 3
-},
-{
-  product_name: "BassTunes",
-  product_description: "Earphones with enhanced bass for an immersive listening experience",
-  product_price: "90",
-  subcategoryId: 3
-},
-{
-  product_name: "EcoSounds",
-  product_description: "Eco-friendly earphones made from sustainable materials",
-  product_price: "60",
-  subcategoryId: 3
-},
-{
-  product_name: "ClearVoice",
-  product_description: "Earphones with built-in microphone for crystal clear phone calls",
-  product_price: "50",
-  subcategoryId: 3
-},
-{
-  product_name: "AudioLink",
-  product_description: "Bluetooth earphones with seamless device switching",
-  product_price: "85",
-  subcategoryId: 3
-},
-{
-  product_name: "TunePods",
-  product_description: "True wireless earphones with intuitive touch controls",
-  product_price: "100",
-  subcategoryId: 3
-},
-{
-  product_name: "BeatX",
-  product_description: "Stylish earphones with customizable sound profiles",
-  product_price: "95",
-  subcategoryId: 3
-},
-{
-  product_name: "VoiceClarity",
-  product_description: "Earphones with advanced noise reduction for calls in noisy environments",
-  product_price: "110",
-  subcategoryId: 3
-},
-// SubcategoryId: 4, Name: Phone Cases
-{
-  product_name: "FlexiCase",
-  product_description: "Durable and flexible phone case with shock absorption",
-  product_price: "25",
-  subcategoryId: 4
-},
-{
-  product_name: "ArmorShell",
-  product_description: "Heavy-duty phone case for maximum protection against drops and scratches",
-  product_price: "35",
-  subcategoryId: 4
-},
-{
-  product_name: "ClearView",
-  product_description: "Transparent phone case with scratch-resistant coating for minimalistic style",
-  product_price: "20",
-  subcategoryId: 4
-},
-{
-  product_name: "EcoGuard",
-  product_description: "Eco-friendly phone case made from biodegradable materials",
-  product_price: "30",
-  subcategoryId: 4
-},
-{
-  product_name: "SlimFit",
-  product_description: "Ultra-thin phone case for a sleek profile without sacrificing protection",
-  product_price: "22",
-  subcategoryId: 4
-},
-{
-  product_name: "GripCase",
-  product_description: "Ergonomic phone case with enhanced grip for comfortable handling",
-  product_price: "28",
-  subcategoryId: 4
-},
-{
-  product_name: "ArtCover",
-  product_description: "Designer phone cases with unique artwork from various artists",
-  product_price: "40",
-  subcategoryId: 4
-},
-{
-  product_name: "WalletCase",
-  product_description: "Convenient phone case with built-in wallet for cards and cash",
-  product_price: "32",
-  subcategoryId: 4
-},
-{
-  product_name: "MirrorCase",
-  product_description: "Phone case with a built-in mirror for quick touch-ups on the go",
-  product_price: "27",
-  subcategoryId: 4
-},
-{
-  product_name: "CoolTech",
-  product_description: "Phone case with built-in cooling technology for gaming phones",
-  product_price: "45",
-  subcategoryId: 4
-},
-{
-  product_name: "AquaShield",
-  product_description: "Waterproof phone case for underwater photography and protection",
-  product_price: "50",
-  subcategoryId: 4
-},
-// SubcategoryId: 5, Name: Smart Phones
-{
-  product_name: "GalaxyS21",
-  product_description: "Flagship smartphone with advanced camera system and immersive display",
-  product_price: "999",
-  subcategoryId: 5
-},
-{
-  product_name: "Pixel 6",
-  product_description: "Innovative smartphone with AI-powered photography and clean software",
-  product_price: "899",
-  subcategoryId: 5
-},
-{
-  product_name: "iPhone 13",
-  product_description: "The latest iPhone with A15 Bionic chip for lightning-fast performance",
-  product_price: "1099",
-  subcategoryId: 5
-},
-{
-  product_name: "OnePlus 9",
-  product_description: "High-performance smartphone with fast charging and smooth display",
-  product_price: "729",
-  subcategoryId: 5
-},
-{
-  product_name: "Xiaomi Mi 11",
-  product_description: "High-spec smartphone offering exceptional value with top-tier hardware",
-  product_price: "749",
-  subcategoryId: 5
-},
-{
-  product_name: "Oppo Find X3",
-  product_description: "Innovative smartphone with billion-color display and powerful processing",
-  product_price: "999",
-  subcategoryId: 5
-},
-{
-  product_name: "Moto G100",
-  product_description: "Budget-friendly smartphone with desktop mode for productivity",
-  product_price: "599",
-  subcategoryId: 5
-},
-{
-  product_name: "Sony Xperia 1 III",
-  product_description: "Smartphone with professional-grade photography and 4K HDR OLED display",
-  product_price: "1299",
-  subcategoryId: 5
-},
-{
-  product_name: "Nokia 8.3",
-  product_description: "Solid mid-range smartphone with Zeiss optics and 5G capability",
-  product_price: "699",
-  subcategoryId: 5
-},
-{
-  product_name: "LG Velvet",
-  product_description: "Stylish smartphone with Dual Screen accessory for multitasking",
-  product_price: "649",
-  subcategoryId: 5
-},
-// Sub Name: Smart Watches
-{
-  product_name: "Apple Watch Series 7",
-  product_description: "The latest smartwatch with larger display and enhanced durability",
-  product_price: "399",
-  subcategoryId: 6
-},
-{
-  product_name: "Samsung Galaxy Watch 4",
-  product_description: "Next-generation smartwatch with comprehensive health tracking",
-  product_price: "249",
-  subcategoryId: 6
-},
-{
-  product_name: "Fitbit Versa 3",
-  product_description: "Health & fitness smartwatch with GPS and heart rate monitoring",
-  product_price: "229",
-  subcategoryId: 6
-},
-{
-  product_name: "Garmin Fenix 6",
-  product_description: "Rugged smartwatch for outdoor adventures with multisport tracking",
-  product_price: "599",
-  subcategoryId: 6
-},
-{
-  product_name: "TicWatch Pro 3",
-  product_description: "Smartwatch with dual-layer display technology for extended battery life",
-  product_price: "299",
-  subcategoryId: 6
-},
-{
-  product_name: "Fossil Gen 5",
-  product_description: "Fashion-forward smartwatch with Wear OS and customizable dials",
-  product_price: "295",
-  subcategoryId: 6
-},
-{
-  product_name: "Amazfit GTR 3",
-  product_description: "Stylish smartwatch with comprehensive health and fitness features",
-  product_price: "179",
-  subcategoryId: 6
-},
-{
-  product_name: "Huawei Watch GT 2",
-  product_description: "Long-lasting smartwatch with professional workout modes",
-  product_price: "210",
-  subcategoryId: 6
-},
-{
-  product_name: "Suunto 7",
-  product_description: "Sports-centric smartwatch with Google Wear OS and offline maps",
-  product_price: "499",
-  subcategoryId: 6
-},
-{
-  product_name: "Mobvoi TicWatch E3",
-  product_description: "Cost-effective smartwatch with powerful performance and health tracking",
-  product_price: "199",
-  subcategoryId: 6
-},
+  // Phones and Accessories SubcategoryId: 1, Name: Bluetooth Speakers
+  {
+    product_name: "TuneWave",
+    product_description: "Portable Bluetooth speaker with deep bass and 360-degree sound",
+    product_price: "120",
+    subcategoryId: 1
+  },
+  {
+    product_name: "AquaBeat",
+    product_description: "Waterproof Bluetooth speaker for outdoor adventures",
+    product_price: "150",
+    subcategoryId: 1
+  },
+  {
+    product_name: "PocketBoom",
+    product_description: "Compact and lightweight Bluetooth speaker with powerful sound",
+    product_price: "80",
+    subcategoryId: 1
+  },
+  {
+    product_name: "BassPulse",
+    product_description: "High-fidelity Bluetooth speaker with dynamic bass technology",
+    product_price: "200",
+    subcategoryId: 1
+  },
+  {
+    product_name: "SoundSphere",
+    product_description: "Elegant Bluetooth speaker with surround sound and multi-room capabilities",
+    product_price: "250",
+    subcategoryId: 1
+  },
+  {
+    product_name: "HarmonyLink",
+    product_description: "Bluetooth speaker with voice assistant integration and smart home control",
+    product_price: "220",
+    subcategoryId: 1
+  },
+  {
+    product_name: "RhythmX",
+    product_description: "Stylish Bluetooth speaker with customizable LED lighting and touch controls",
+    product_price: "180",
+    subcategoryId: 1
+  },
+  {
+    product_name: "VibeTrek",
+    product_description: "Rugged Bluetooth speaker designed for extreme outdoor use",
+    product_price: "160",
+    subcategoryId: 1
+  },
+  {
+    product_name: "EchoStream",
+    product_description: "Smart Bluetooth speaker with integrated streaming services",
+    product_price: "210",
+    subcategoryId: 1
+  },
+  {
+    product_name: "SonicCloud",
+    product_description: "Bluetooth speaker with cloud-based music storage and playback",
+    product_price: "190",
+    subcategoryId: 1
+  },
+  // S, Name: Chargers and Cables
+  {
+    product_name: "PowerPort",
+    product_description: "Fast-charging portable charger with dual USB ports",
+    product_price: "30",
+    subcategoryId: 2
+  },
+  {
+    product_name: "CableFlex",
+    product_description: "Durable, tangle-free charging cable with lifetime warranty",
+    product_price: "15",
+    subcategoryId: 2
+  },
+  {
+    product_name: "ChargeMate",
+    product_description: "Compact wireless charging pad with quick-charge capabilities",
+    product_price: "40",
+    subcategoryId: 2
+  },
+  {
+    product_name: "VoltStream",
+    product_description: "Universal charger kit with multiple adapters for all your devices",
+    product_price: "50",
+    subcategoryId: 2
+  },
+  {
+    product_name: "CablePro",
+    product_description: "High-speed USB-C cable for fast data transfer and charging",
+    product_price: "20",
+    subcategoryId: 2
+  },
+  {
+    product_name: "EnergyHub",
+    product_description: "6-port USB charging station for simultaneous device charging",
+    product_price: "60",
+    subcategoryId: 2
+  },
+  {
+    product_name: "TravelCharge",
+    product_description: "Travel-friendly charger with built-in adapters for international use",
+    product_price: "35",
+    subcategoryId: 2
+  },
+  {
+    product_name: "MagneticWire",
+    product_description: "Magnetic charging cable with interchangeable connectors",
+    product_price: "25",
+    subcategoryId: 2
+  },
+  {
+    product_name: "SolarJuice",
+    product_description: "Eco-friendly solar-powered charger for outdoor enthusiasts",
+    product_price: "45",
+    subcategoryId: 2
+  },
+  {
+    product_name: "FlexiCharge",
+    product_description: "Flexible charging cable with 360-degree rotation for easy use",
+    product_price: "18",
+    subcategoryId: 2
+  },
+  // SubcategoryId: 3, Name: Earphones
+  {
+    product_name: "SoundBuds",
+    product_description: "Wireless earphones with crystal clear sound and noise cancellation",
+    product_price: "70",
+    subcategoryId: 3
+  },
+  {
+    product_name: "AudioFit",
+    product_description: "Sports earphones with secure fit and water resistance for active users",
+    product_price: "80",
+    subcategoryId: 3
+  },
+  {
+    product_name: "MelodyPro",
+    product_description: "Professional-grade in-ear monitors for musicians and audiophiles",
+    product_price: "250",
+    subcategoryId: 3
+  },
+  {
+    product_name: "BassTunes",
+    product_description: "Earphones with enhanced bass for an immersive listening experience",
+    product_price: "90",
+    subcategoryId: 3
+  },
+  {
+    product_name: "EcoSounds",
+    product_description: "Eco-friendly earphones made from sustainable materials",
+    product_price: "60",
+    subcategoryId: 3
+  },
+  {
+    product_name: "ClearVoice",
+    product_description: "Earphones with built-in microphone for crystal clear phone calls",
+    product_price: "50",
+    subcategoryId: 3
+  },
+  {
+    product_name: "AudioLink",
+    product_description: "Bluetooth earphones with seamless device switching",
+    product_price: "85",
+    subcategoryId: 3
+  },
+  {
+    product_name: "TunePods",
+    product_description: "True wireless earphones with intuitive touch controls",
+    product_price: "100",
+    subcategoryId: 3
+  },
+  {
+    product_name: "BeatX",
+    product_description: "Stylish earphones with customizable sound profiles",
+    product_price: "95",
+    subcategoryId: 3
+  },
+  {
+    product_name: "VoiceClarity",
+    product_description: "Earphones with advanced noise reduction for calls in noisy environments",
+    product_price: "110",
+    subcategoryId: 3
+  },
+  // SubcategoryId: 4, Name: Phone Cases
+  {
+    product_name: "FlexiCase",
+    product_description: "Durable and flexible phone case with shock absorption",
+    product_price: "25",
+    subcategoryId: 4
+  },
+  {
+    product_name: "ArmorShell",
+    product_description: "Heavy-duty phone case for maximum protection against drops and scratches",
+    product_price: "35",
+    subcategoryId: 4
+  },
+  {
+    product_name: "ClearView",
+    product_description: "Transparent phone case with scratch-resistant coating for minimalistic style",
+    product_price: "20",
+    subcategoryId: 4
+  },
+  {
+    product_name: "EcoGuard",
+    product_description: "Eco-friendly phone case made from biodegradable materials",
+    product_price: "30",
+    subcategoryId: 4
+  },
+  {
+    product_name: "SlimFit",
+    product_description: "Ultra-thin phone case for a sleek profile without sacrificing protection",
+    product_price: "22",
+    subcategoryId: 4
+  },
+  {
+    product_name: "GripCase",
+    product_description: "Ergonomic phone case with enhanced grip for comfortable handling",
+    product_price: "28",
+    subcategoryId: 4
+  },
+  {
+    product_name: "ArtCover",
+    product_description: "Designer phone cases with unique artwork from various artists",
+    product_price: "40",
+    subcategoryId: 4
+  },
+  {
+    product_name: "WalletCase",
+    product_description: "Convenient phone case with built-in wallet for cards and cash",
+    product_price: "32",
+    subcategoryId: 4
+  },
+  {
+    product_name: "MirrorCase",
+    product_description: "Phone case with a built-in mirror for quick touch-ups on the go",
+    product_price: "27",
+    subcategoryId: 4
+  },
+  {
+    product_name: "CoolTech",
+    product_description: "Phone case with built-in cooling technology for gaming phones",
+    product_price: "45",
+    subcategoryId: 4
+  },
+  {
+    product_name: "AquaShield",
+    product_description: "Waterproof phone case for underwater photography and protection",
+    product_price: "50",
+    subcategoryId: 4
+  },
+  // SubcategoryId: 5, Name: Smart Phones
+  {
+    product_name: "GalaxyS21",
+    product_description: "Flagship smartphone with advanced camera system and immersive display",
+    product_price: "999",
+    subcategoryId: 5
+  },
+  {
+    product_name: "Pixel 6",
+    product_description: "Innovative smartphone with AI-powered photography and clean software",
+    product_price: "899",
+    subcategoryId: 5
+  },
+  {
+    product_name: "iPhone 13",
+    product_description: "The latest iPhone with A15 Bionic chip for lightning-fast performance",
+    product_price: "1099",
+    subcategoryId: 5
+  },
+  {
+    product_name: "OnePlus 9",
+    product_description: "High-performance smartphone with fast charging and smooth display",
+    product_price: "729",
+    subcategoryId: 5
+  },
+  {
+    product_name: "Xiaomi Mi 11",
+    product_description: "High-spec smartphone offering exceptional value with top-tier hardware",
+    product_price: "749",
+    subcategoryId: 5
+  },
+  {
+    product_name: "Oppo Find X3",
+    product_description: "Innovative smartphone with billion-color display and powerful processing",
+    product_price: "999",
+    subcategoryId: 5
+  },
+  {
+    product_name: "Moto G100",
+    product_description: "Budget-friendly smartphone with desktop mode for productivity",
+    product_price: "599",
+    subcategoryId: 5
+  },
+  {
+    product_name: "Sony Xperia 1 III",
+    product_description: "Smartphone with professional-grade photography and 4K HDR OLED display",
+    product_price: "1299",
+    subcategoryId: 5
+  },
+  {
+    product_name: "Nokia 8.3",
+    product_description: "Solid mid-range smartphone with Zeiss optics and 5G capability",
+    product_price: "699",
+    subcategoryId: 5
+  },
+  {
+    product_name: "LG Velvet",
+    product_description: "Stylish smartphone with Dual Screen accessory for multitasking",
+    product_price: "649",
+    subcategoryId: 5
+  },
+  // Sub Name: Smart Watches
+  {
+    product_name: "Apple Watch Series 7",
+    product_description: "The latest smartwatch with larger display and enhanced durability",
+    product_price: "399",
+    subcategoryId: 6
+  },
+  {
+    product_name: "Samsung Galaxy Watch 4",
+    product_description: "Next-generation smartwatch with comprehensive health tracking",
+    product_price: "249",
+    subcategoryId: 6
+  },
+  {
+    product_name: "Fitbit Versa 3",
+    product_description: "Health & fitness smartwatch with GPS and heart rate monitoring",
+    product_price: "229",
+    subcategoryId: 6
+  },
+  {
+    product_name: "Garmin Fenix 6",
+    product_description: "Rugged smartwatch for outdoor adventures with multisport tracking",
+    product_price: "599",
+    subcategoryId: 6
+  },
+  {
+    product_name: "TicWatch Pro 3",
+    product_description: "Smartwatch with dual-layer display technology for extended battery life",
+    product_price: "299",
+    subcategoryId: 6
+  },
+  {
+    product_name: "Fossil Gen 5",
+    product_description: "Fashion-forward smartwatch with Wear OS and customizable dials",
+    product_price: "295",
+    subcategoryId: 6
+  },
+  {
+    product_name: "Amazfit GTR 3",
+    product_description: "Stylish smartwatch with comprehensive health and fitness features",
+    product_price: "179",
+    subcategoryId: 6
+  },
+  {
+    product_name: "Huawei Watch GT 2",
+    product_description: "Long-lasting smartwatch with professional workout modes",
+    product_price: "210",
+    subcategoryId: 6
+  },
+  {
+    product_name: "Suunto 7",
+    product_description: "Sports-centric smartwatch with Google Wear OS and offline maps",
+    product_price: "499",
+    subcategoryId: 6
+  },
+  {
+    product_name: "Mobvoi TicWatch E3",
+    product_description: "Cost-effective smartwatch with powerful performance and health tracking",
+    product_price: "199",
+    subcategoryId: 6
+  },
+
+  // Men's Fashion
+  // Subcategory 7 - Men's Shirts
+  {
+    product_name: "Urban Edge Tee",
+    product_description: "A soft, cotton blend T-shirt designed for everyday comfort and style, featuring a minimalist urban design.",
+    product_price: "25",
+    product_images: ["https://media.istockphoto.com/id/1041992862/vector/new-york-city-stylish-t-shirt-and-apparel-abstract-design.jpg?s=612x612&w=0&k=20&c=L7Cb35dTsePgsX6twU0IQqibWIVWna-ZYUjJjnXGgvk=",
+    "https://media.istockphoto.com/id/1326575361/vector/california-los-angeles-t-shirt-design-t-shirt-print-design-with-palm-tree-t-shirt-design.jpg?s=612x612&w=0&k=20&c=1mFzM6tk50U184o3JEGJeaoVWXxGwBHcVrnw3Ix3uSk=",
+    "https://media.istockphoto.com/id/1128542158/vector/surf-in-hawaii-stylish-graphic-tee-design-poster-print.jpg?s=612x612&w=0&k=20&c=JAk9cItzr5FjOfCHPw7c2EzBPF5psLA583LBd1Ajj2c="],
+    subcategoryId: 7
+  },
+  {
+    product_name: "Classic Denim Jeans",
+    product_description: "Premium quality denim tailored for a comfortable fit, perfect for casual outings and versatile styling.",
+    product_price: "60",
+    product_images: ["https://media.istockphoto.com/id/1132154377/photo/jeans.jpg?s=612x612&w=0&k=20&c=T3K1_PdlZxXILKFvGkTmPiIf5M2EdIxkqa79AJT_w0Y=",
+    "https://media.istockphoto.com/id/186870715/photo/blue-jeans.jpg?s=612x612&w=0&k=20&c=MInRLnEABmDYzvxjnEiFBu1V20OaB1zHmgzCqUV5hzk=",
+    "https://media.istockphoto.com/id/527236518/photo/mans-legs.jpg?s=612x612&w=0&k=20&c=lczyG0ZkWelpn_o-I_VpjAMo_sA3WpdWHMlgZjCSE-k="],
+    subcategoryId: 7
+  },
+  {
+    product_name: "Sleek Chinos",
+    product_description: "Slim-fit chinos crafted from lightweight, breathable fabric, ideal for both office and leisure.",
+    product_price: "45",
+    product_images: ["https://media.istockphoto.com/id/1322687695/photo/boys-jeans-pant-boys-jeans-pant-jeans-pant-boys-jeans-pant.jpg?s=612x612&w=0&k=20&c=2Fv-GKuBGxM05fkSX6_m4tMKdSn__TD-QjPZWV6csw4=",
+    "https://media.istockphoto.com/id/1322669087/photo/boys-jeans-pant-boys-jeans-pant-jeans-pant-boys-jeans-pant.jpg?s=612x612&w=0&k=20&c=Co_B8HGx7Oq6ir0sm-y0-_Fj_39Y8_BfwZEx4kEuCg8=",
+    "https://media.istockphoto.com/id/1322688782/photo/boys-trouser-comfortable-trousers-boys-trouser-trousers-for-men-sports-trousers-joggers.jpg?s=612x612&w=0&k=20&c=v6RgE4JNJM6kNOoX87xmrH9YIDHknebyrh4saGEM8z8="],
+    subcategoryId: 7
+  },
+  {
+    product_name: "Vintage Henley Shirt",
+    product_description: "Soft, pre-washed Henley shirt with a vintage feel, bringing classic style to your wardrobe.",
+    product_price: "35",
+    product_images: ["https://media.istockphoto.com/id/1319572148/photo/blank-long-sleeve-henley-shirt-mockup.jpg?s=612x612&w=0&k=20&c=gxiMEwHefok6VNPAqvkTVv_6QLB1r-vYACFSIneYtps=",
+    "https://media.istockphoto.com/id/1142212980/photo/front-of-long-sleeve-sweatshirt-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=jxa4no_TWP_Y6PDcwiZuGF5T4XpFpVCbkarC2MbqDb8=",
+    "https://media.istockphoto.com/id/697913656/photo/gray-long-sleeve-t-shirt.jpg?s=612x612&w=0&k=20&c=Dapkfu_EV-F7dzVGbRdJzdmNCUzV_Ny6oFq0jz878aU="],
+    subcategoryId: 7
+  },
+  {
+    product_name: "Active Flex Shorts",
+    product_description: "Athletic shorts with flexible fabric for maximum movement, equipped with moisture-wicking technology.",
+    product_price: "30",
+    product_images: ["https://media.istockphoto.com/id/1332758692/photo/swimming-trunks-on-a-white-background.jpg?s=612x612&w=0&k=20&c=D2_XK7R0mSAe43Moij5jnoD__QS_koqWdmWnVyiP9Js=",
+    "https://media.istockphoto.com/id/994176416/photo/shorts-for-swimming-on-a-white-background-isolated.jpg?s=612x612&w=0&k=20&c=Ii-oSDosMLcVGMlpkmZL5e6iOk0Wi2OxBahBwMKTVZU=",
+    "https://media.istockphoto.com/id/994176438/photo/shorts-for-swimming-on-a-white-background-isolated.jpg?s=612x612&w=0&k=20&c=tZfAXm4yAuUc4lWB7LuB1CLGYHjatLEfJbfRgnJWYJY="],
+    subcategoryId: 7
+  },
+  {
+    product_name: "Signature Polo",
+    product_description: "Elegant and versatile polo shirt made from premium, breathable pique cotton, suitable for various occasions.",
+    product_price: "40",
+    product_images: ["https://media.istockphoto.com/id/825834802/photo/man-in-blank-dark-blue-polo-shirt-from-front-and-rear.jpg?s=612x612&w=0&k=20&c=Q3JsSizoVgomAqrlc4SaP8V6CiK3VbLHTusB9v_6rL4=",
+    "https://media.istockphoto.com/id/825095380/vector/black-polo-shirt-template.jpg?s=612x612&w=0&k=20&c=Qv_oR8D_yqz9iOHL51FM1odSlPfJRNNOz_kzywNkBDM=",
+    "https://media.istockphoto.com/id/1097626470/photo/white-collared-shirt-design-template.jpg?s=612x612&w=0&k=20&c=BY83mBQ1-J9RzzavME8vysFjQ4Nwv-jPKtwkf2U4fKc="],
+    subcategoryId: 7
+  },
+  {
+    product_name: "Graphic Sweatshirt",
+    product_description: "Comfortable, cotton-blend sweatshirt with a bold graphic design, perfect for a relaxed, stylish look.",
+    product_price: "50",
+    product_images: ["https://media.istockphoto.com/id/1407082939/photo/black-sweatshirts-with-hoodie-for-logo-mockup-template.jpg?s=612x612&w=0&k=20&c=He8ZOwDejdZIk3Uqd7bdUbyGNDj-a4icYsGOH3cuEHw=",
+    "https://media.istockphoto.com/id/1347240746/photo/hoodie-set-mock-up-front-and-back-view-black-hoodie-isolated.jpg?s=612x612&w=0&k=20&c=dCaHRpOPuqtJuGHhYMUPoigq2Sxc7x-ihENjF5OX6RY=",
+    "https://media.istockphoto.com/id/1355694185/photo/heather-black-hoodie-on-man-in-jeans-isolated-with-copy-space-mock-up-cropped-image.jpg?s=612x612&w=0&k=20&c=qL-Vuiz4wgsjlbI52O7hVVfCp9Ahy1HjlRpczR6u5R4="],
+    subcategoryId: 7
+  },
+  {
+    product_name: "Linen Button-Up Shirt",
+    product_description: "Lightweight, airy linen shirt with a relaxed fit, ideal for warm weather and beachside outings.",
+    product_price: "55",
+    product_images: ["https://media.istockphoto.com/id/1159334469/photo/white-color-formal-shirt-with-button-down-collar-isolated-on-white.jpg?s=612x612&w=0&k=20&c=Nv59OkJA_OAOsswCEPOzN9G3_TfBbN35OYyg5hCtj7Y=",
+    "https://media.istockphoto.com/id/1097626470/photo/white-collared-shirt-design-template.jpg?s=612x612&w=0&k=20&c=BY83mBQ1-J9RzzavME8vysFjQ4Nwv-jPKtwkf2U4fKc=",
+    "https://media.istockphoto.com/id/1435745704/photo/portrait-of-smiling-mid-adult-businessman-standing-at-corporate-office.jpg?s=612x612&w=0&k=20&c=NtTebZxpAfw964hJJut8WFa__eZEfO07CAKdqeFBrFU="],
+    subcategoryId: 7
+  },
+  {
+    product_name: "Cargo Tactical Pants",
+    product_description: "Durable, multi-pocket cargo pants designed for functionality and rugged use, with a modern tactical look.",
+    product_price: "70",
+    product_images: ["https://media.istockphoto.com/id/181865530/photo/cargo-pants.jpg?s=612x612&w=0&k=20&c=BOrRhLO4sG_8BfuUXIvVYaInT4VX0U9q6TDuv9UCxv0=",
+    "https://media.istockphoto.com/id/1357884956/photo/man-wearing-cargo-pants-with-hand-in-pocket-on-grey-background.jpg?s=612x612&w=0&k=20&c=5WMsQWMoQk7H-TpZ86wz7baTOOBCSECdL2qfw7uZrnQ=",
+    "https://media.istockphoto.com/id/1321307757/photo/man-wearing-cargo-pants-with-hands-in-pockets-on-grey-background.jpg?s=612x612&w=0&k=20&c=NdT5nyw_LKigZ0ui02VrupSG-HLfVWOdmRKRc9Zk4z0="],
+    subcategoryId: 7
+  },
+  {
+    product_name: "Performance Joggers",
+    product_description: "Soft, stretchy joggers with a tailored fit, designed for both athletic activities and casual wear.",
+    product_price: "40",
+    product_images: ["https://media.istockphoto.com/id/1314274760/photo/sport-pants.jpg?s=612x612&w=0&k=20&c=2siBA_21V8CbWXUfQ7ttUqW7ZOzs_d2yjSK8jEtvLw4=",
+    "https://media.istockphoto.com/id/1406303920/photo/womens-sweatpants-sport.jpg?s=612x612&w=0&k=20&c=TxvH1nr7-w_ZtF8hymcDlR_iykcHJtn-enqUx1Kv9a8=",
+    "https://media.istockphoto.com/id/1224545469/photo/close-up-green-sport-pants-sweatpants-jogging-for-men-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=Ku-YPdMdj4vy6OCOC-TBcnvGWyL9p3mnsDMMMgM1blM="],
+    subcategoryId: 7
+  },
+
+  //Subcategory 8 - Men's Bags
+
+  {
+    product_name: "Urban Commuter Backpack",
+    product_description: "Durable, water-resistant backpack with multiple compartments, designed for the urban commuter.",
+    product_price: "80",
+    product_images: ["https://media.istockphoto.com/id/995887232/photo/man-surfing-the-net-on-his-laptop.jpg?s=612x612&w=0&k=20&c=yHgb0cpnI8I5fEhqBEl4IClweenEyRsaA7yMYt_nqao=",
+    "https://media.istockphoto.com/id/1018322786/photo/passengers-waiting-for-a-subway-train.jpg?s=612x612&w=0&k=20&c=JqQJnjSp6RA57rTDAjv0C4qbAMqo308Er4IYvFKCQvk=",
+    "https://media.istockphoto.com/id/1196467858/photo/young-asian-woman-traveler-with-backpack-in-the-railway-backpack-and-hat-at-the-train-station.jpg?s=612x612&w=0&k=20&c=gwzbpOQURpDgxZMM-Zl1Y3DX0aes7d4JpswqY5eteYc="],
+    subcategoryId: 8
+  },
+  {
+    product_name: "Classic Leather Briefcase",
+    product_description: "Elegant, full-grain leather briefcase with spacious compartments, perfect for the professional on the move.",
+    product_price: "150",
+    product_images: ["https://media.istockphoto.com/id/182817886/photo/briefcase.jpg?s=612x612&w=0&k=20&c=z8VOALXBa3xGBX6qmO9xMKTM24ph38ssvMTHRd5Owhk=",
+    "https://media.istockphoto.com/id/182795517/photo/briefcase.jpg?s=612x612&w=0&k=20&c=u90WflaSfiaHl265XmdmS1XYPA2toC72OUbb9uAZyFI=",
+    "https://media.istockphoto.com/id/463537187/photo/photograph-of-brown-leather-briefcase.jpg?s=612x612&w=0&k=20&c=IJIzr1dj5Bwuvrd4eJ7TGFi76iHQytHfxfgTBeADUq0="],
+    subcategoryId: 8
+  },
+  {
+    product_name: "Travel Duffel Bag",
+    product_description: "High-capacity, sturdy duffel bag made for travelers, with dedicated pockets for organized packing.",
+    product_price: "90",
+    product_images: ["https://media.istockphoto.com/id/1257455928/photo/duffel-bag-travel-case-leather-holdall-valise-fashion-modern.jpg?s=612x612&w=0&k=20&c=6hFivK6iFG6GTseMy-iUB6XtalxH6QGkIVhakkZe6bw=",
+    "https://media.istockphoto.com/id/1257455876/photo/duffel-bag-travel-case-leather-holdall-valise-fashion-modern.jpg?s=612x612&w=0&k=20&c=0FQIIJE5jvJKrIkV16PIdfmwi4SFz-yHwwI9_Crpwx4=",
+    "https://media.istockphoto.com/id/1257456014/photo/duffel-bag-travel-case-leather-holdall-valise-fashion-modern.jpg?s=612x612&w=0&k=20&c=Js5HsiEQiS0DvwMkEnfAM4xGTtRLP_VgeGL5FvHsenI="],
+    subcategoryId: 8
+  },
+  {
+    product_name: "Minimalist Cardholder",
+    product_description: "Slim, efficient cardholder crafted from premium leather, designed to hold essentials in a minimal space.",
+    product_price: "25",
+    product_images: ["https://media.istockphoto.com/id/1187366466/photo/blue-color-cardholder-full-of-different-plastic-cards.jpg?s=612x612&w=0&k=20&c=JAJo-EqMUoA6ea8J1Sdn5DCat5gf0lAmtH5_bTow4T8=", 
+    "https://media.istockphoto.com/id/1188324576/photo/blue-business-card-holder-with-colorful-plastic-cards-on-a-white-background.jpg?s=612x612&w=0&k=20&c=E3z4RzgAxIBvdyGxCcUAdOuyt9QJvaLSgfftLl0rndA=",
+    "https://media.istockphoto.com/id/1187366471/photo/blue-business-card-holder-with-colorful-plastic-cards-on-a-white-background.jpg?s=612x612&w=0&k=20&c=oa3hNkUSAVMPzAs0MT4OPl5VU2lNZh8kovL1Ssbx9zw="],
+    subcategoryId: 8
+  },
+  {
+    product_name: "Adventure Hiking Pack",
+    product_description: "Robust backpack with ergonomic design, built to withstand the rigors of hiking and outdoor adventures.",
+    product_price: "120",
+    product_images: ["https://media.istockphoto.com/id/925356980/photo/hiking-equipment-backpack-and-boots-on-top-of-mountain.jpg?s=612x612&w=0&k=20&c=ODsrpSyV-hsNHPyJjrUqnhKs8bS_tKu8Hot0pHBOnCs=",
+    "https://media.istockphoto.com/id/925252404/photo/hiking-equipment-backpack-and-boots-on-top-of-mountain.jpg?s=612x612&w=0&k=20&c=Pu0lHHPcFvpnjg7KKWO4Wr9dPmbOMHFnPD-B6nFx4Zc=",
+    "https://media.istockphoto.com/id/1459170871/photo/hiking-equipment-in-sunset-sunlight-and-mountain-silhouettes-backpack-and-boots-in-beautiful.jpg?s=612x612&w=0&k=20&c=xJGCR1NuPc-gtDIVaoI2t-s2eGpANvMAM7qFI7fpuRg="],
+    subcategoryId: 8
+  },
+  {
+    product_name: "Tactical Messenger Bag",
+    product_description: "Versatile messenger bag with modular compartments, tailored for tactical use and everyday carry.",
+    product_price: "75",
+    product_images: ["https://media.istockphoto.com/id/1209514639/photo/light-combat-backpack-coyote-color-front-view-isolated-on-a-white-background.jpg?s=612x612&w=0&k=20&c=JcoTJoD07OkqINbO0vy8HOZFkp_l7C71thAeBsVVyaU=",
+    "https://media.istockphoto.com/id/1208427390/photo/light-combat-backpack-coyote-color-isolated-on-a-white-background.jpg?s=612x612&w=0&k=20&c=2pcO3Qa_BPifNckhWpFHvHJ1jbVzGMCOc1fdvx8l_Jg=",
+    "https://media.istockphoto.com/id/1207111199/photo/tactical-backpack-color-coyote-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=zhhUiWTsA0NiZRw9Af7b9QVRPqGxGa6ZRWeQp2VpfZM="],
+    subcategoryId: 8
+  },
+  {
+    product_name: "Vintage Canvas Satchel",
+    product_description: "Retro-inspired canvas satchel with leather accents, offering a timeless look and ample storage.",
+    product_price: "65",
+    product_images: ["https://media.istockphoto.com/id/1251343075/photo/blank-black-closed-backpack-with-zipper-mockup-dark-background.jpg?s=612x612&w=0&k=20&c=EHG0lDPJnJMwTdaKSTFpOWRDw7uwJ7zBeWW0K_I1WRY=",
+    "https://media.istockphoto.com/id/1268789094/photo/blank-black-backpack-with-zipper-and-strap-mockup-front-back.jpg?s=612x612&w=0&k=20&c=jqYhDP8YoVGcQtsLr4-Hq72u0xZpY9bP47npHCkOWWs=",
+    "https://media.istockphoto.com/id/1257263787/photo/blank-black-backpack-with-zipper-and-strap-mockup-front-back.jpg?s=612x612&w=0&k=20&c=monKk0GC8UgaiIlDWY4XIPmq77bHzqEfYO9R2ZBIxxE="],
+    subcategoryId: 8
+  },
+  {
+    product_name: "Compact Travel Kit",
+    product_description: "Essential travel kit bag with smart organization features, designed to keep your toiletries in check.",
+    product_price: "35",
+    product_images: ["https://media.istockphoto.com/id/510697290/photo/brown-sponge-bag.jpg?s=612x612&w=0&k=20&c=nx7AVvNNt-zbGBMtqNBPmW7QB-IyQuxuNg3hFqcLGVg=",
+    "https://media.istockphoto.com/id/1441186685/photo/mans-brown-leather-personal-cosmetic-bag-or-pouch-for-toiletry-accessory-in-a-mens-hands-in.jpg?s=612x612&w=0&k=20&c=ihIKZbBkkVRXN_n4wnsxCraxq0DvU7H5lLs0S294nsw=",
+    "https://media.istockphoto.com/id/1808128065/photo/leather-handbag-isolated-close-up-of-brown-businessman-luxury-leather-wrist-handbag.jpg?s=612x612&w=0&k=20&c=ra-XIh9b2d1ZriYrWdSuUnx3rL1AW0dLmHMLy0mpTds="],
+    subcategoryId: 8
+  },
+  {
+    product_name: "Executive Laptop Sleeve",
+    product_description: "Sleek, protective laptop sleeve with a luxurious feel, ensuring your tech is safe in style.",
+    product_price: "50",
+    product_images: ["https://media.istockphoto.com/id/1142028093/photo/textile-tablet-computer-case.jpg?s=612x612&w=0&k=20&c=gR0IfMI3G2YhicI3ECUKr90Bz1EIDqw6l4ugIRltgwE=",
+    "https://media.istockphoto.com/id/1429115613/photo/textile-tablet-computer-case.jpg?s=612x612&w=0&k=20&c=1TQyjM6aKV0D-gdeS8Y3k1RnNfR0g1Ty-r_RQDUx6xQ=",
+    "https://media.istockphoto.com/id/1127029890/photo/neck-warmer.jpg?s=612x612&w=0&k=20&c=1xNjoWFD33SAvvotd9EvmWjwdTDJSGGbebOajNjF9pU="],
+    subcategoryId: 8
+  },
+  {
+    product_name: "Crossbody Utility Pouch",
+    product_description: "Convenient, lightweight pouch for essentials, with an adjustable strap for crossbody wear.",
+    product_price: "30",
+    product_images: ["https://media.istockphoto.com/id/1347199443/photo/man-holding-messenger-bag-in-an-autumn-city.jpg?s=612x612&w=0&k=20&c=nZ6_19IbtzlpYgMnJeJbZHPyKUhk1-dMm1cLl-3KIu8=",
+    "https://media.istockphoto.com/id/1347199657/photo/man-walking-in-city-with-black-leather-bag.jpg?s=612x612&w=0&k=20&c=bcPvkKOzI0V1o7szboukow2srGpRonDcHZO7RNlXRs8=",
+    "https://media.istockphoto.com/id/1347197196/photo/man-walking-in-city-with-black-leather-bag.jpg?s=612x612&w=0&k=20&c=CdDxPr7bpg-9IqX4ILqF0Zffva3VbOUmPk_vrWX23U4="],
+    subcategoryId: 8
+  },
+  
+  //Subcategory 9 - Men's Shoes
+  {
+    product_name: "Classic Leather Oxfords",
+    product_description: "Timelessly styled leather Oxfords, handcrafted for elegance and durability.",
+    product_price: "120",
+    product_images: ["https://media.istockphoto.com/id/1358047344/photo/a-oxford-black-shoe-isolated-on-a-white-background-in-a-lateral-view.jpg?s=612x612&w=0&k=20&c=9f9QM0D3Bs4J44RuPZOUjcvN8SnYy0WGqQfc-LAE8ug=",
+    "https://media.istockphoto.com/id/688233968/photo/classy-shoes.jpg?s=612x612&w=0&k=20&c=RBR4mNcSTBdP5omaN-t-tvCzwh0kpfF50r3ZQ4tu1PY=",
+    "https://media.istockphoto.com/id/1573561512/photo/businessman-black-leather-shoes.jpg?s=612x612&w=0&k=20&c=bHS86SCGBVRk47ErZXoX0mMxzI9DJJVOBAAhuCfL7VM="],
+    subcategoryId: 9
+  },
+  {
+    product_name: "Performance Running Sneakers",
+    product_description: "High-tech running shoes with advanced cushioning and support, designed for peak athletic performance.",
+    product_price: "100",
+    product_images: ["https://media.istockphoto.com/id/1249496770/photo/running-shoes.jpg?s=612x612&w=0&k=20&c=b4MahNlk4LH6H1ksJApfnlQ5ZPM3KGhI5i_yqhGD9c4=",
+    "https://media.istockphoto.com/id/1249496812/photo/running-shoes.jpg?s=612x612&w=0&k=20&c=GBn2-CfoMQk-wF5ceNVqJMlTwK4R_kBL3nAoAiQQQ18=",
+    "https://media.istockphoto.com/id/1249496779/photo/running-shoes.jpg?s=612x612&w=0&k=20&c=KUCv3LbcBUiijHc06S7UsK9F8AX3eO6qU4KwX4vo0vs="],
+    subcategoryId: 9
+  },
+  {
+    product_name: "Casual Canvas Slip-Ons",
+    product_description: "Lightweight, breathable canvas slip-ons, perfect for relaxed weekend wear.",
+    product_price: "50",
+    product_images: ["https://media.istockphoto.com/id/524893904/photo/black-slip-on-casual-shoes.jpg?s=612x612&w=0&k=20&c=sYdw2WduUK9R9lM72EId3HzUfefvjdjIFHtla4rBV38=",
+    "https://media.istockphoto.com/id/524893876/photo/black-slip-on-casual-shoes.jpg?s=612x612&w=0&k=20&c=_wOakq9cZeE_znYkhwf4iEEyl-hCm1ymQA3bECTO7GI=",
+    "https://media.istockphoto.com/id/1328903622/photo/new-gray-velor-loafers-isolated-on-white-background-mens-shoes.jpg?s=612x612&w=0&k=20&c=hRBgD76ZFkYG7uRYdod6__aORUwjbuUsLWH8qd1Bljw="],
+    subcategoryId: 9
+  },
+  {
+    product_name: "Rugged Hiking Boots",
+    product_description: "Durable, waterproof hiking boots built to tackle any terrain and keep your feet protected.",
+    product_price: "140",
+    product_images: ["https://media.istockphoto.com/id/134406993/photo/hiking-boots.jpg?s=612x612&w=0&k=20&c=UALsbOnzUgM3yE51R2ESTr4YdTi0C7sQrYomfRv76r8=",
+    "https://media.istockphoto.com/id/1422989430/photo/leather-hiking-boots-walking-on-mountain-trail.jpg?s=612x612&w=0&k=20&c=7g8ZHAaOv7Ggg-dbrgLm4xKVsR8K9UeytuLdNzgG_4A=",
+    "https://media.istockphoto.com/id/177500436/photo/pair-of-hiking-shoes.jpg?s=612x612&w=0&k=20&c=egUji4Y2sCGHDkxoehULf5szrN7Y9vJQo4nfTVKE7eg="],
+    subcategoryId: 9
+  },
+  {
+    product_name: "Suede Desert Boots",
+    product_description: "Stylish, versatile desert boots in soft suede, ideal for casual outings and smart-casual looks.",
+    product_price: "90",
+    product_images: ["https://media.istockphoto.com/id/182404380/photo/military-combat-boots.jpg?s=612x612&w=0&k=20&c=X537rofqDKgupTbTi3eGXW_571nqppvMkQyyPgeq5T8=",
+    "https://media.istockphoto.com/id/517874094/photo/modern-army-boots-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=cXPGREffN4ghkAcgpkcVXS2x8FrDq5MEcq6aD1D12Qo=",
+    "https://media.istockphoto.com/id/1431474481/photo/modern-army-combat-boots-new-desert-beige-shoes-isolate-on-a-white-background.jpg?s=612x612&w=0&k=20&c=UPOXqKzBrGhpgjJGaHXgLYFxahkhJ-ooN0yXv83JjrY="],
+    subcategoryId: 9
+  },
+  {
+    product_name: "Urban Sneakers",
+    product_description: "Trendy sneakers with a sleek design and comfortable fit, suitable for everyday urban adventures.",
+    product_price: "80",
+    product_images: ["https://media.istockphoto.com/id/956501428/photo/sport-shoes-on-isolated-white-background.jpg?s=612x612&w=0&k=20&c=BdklqnfGUvf02-2CxYsw-AnrbE3e-B5zhE9JQILEEW4=",
+    "https://media.istockphoto.com/id/956500894/photo/sport-shoes-on-isolated-white-background.jpg?s=612x612&w=0&k=20&c=QqZOCgfIBVTFnP0NtNTHuCSzTCdInO-InOFREd-IZOo=",
+    "https://media.istockphoto.com/id/938896220/photo/colorful-sport-shoes-in-back-view.jpg?s=612x612&w=0&k=20&c=W_xi4ded9UVnlaA7Vvx4dXMhS4sPq0rk8RwiMcMwyOc="],
+    subcategoryId: 9
+  },
+  {
+    product_name: "Leather Loafers",
+    product_description: "Elegant loafers crafted from premium leather, offering a blend of comfort and sophistication.",
+    product_price: "110",
+    product_images: ["https://media.istockphoto.com/id/1440533051/photo/mens-brown-topsiders-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=gUdgeSAv1Qh9YPQquk0Rp2qdJ1qg5tIXeA2l-srl8kQ=",
+    "https://media.istockphoto.com/id/1440533050/photo/mens-brown-topsiders-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=frhePSraeIWXSuJ-0V-Aa8Of8d9rLA-8sMmYSawuSwE=",
+    "https://media.istockphoto.com/id/1440533043/photo/mens-brown-loafers-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=JjoQxp7CI0eKcpmpKOdtK1Ge8yCPP_8ogkowfolP8mk="],
+    subcategoryId: 9
+  },
+  {
+    product_name: "Athletic Training Shoes",
+    product_description: "Versatile training shoes engineered for a variety of workouts, providing stability and support.",
+    product_price: "85",
+    product_images: ["https://media.istockphoto.com/id/1407127841/photo/white-sneaker-with-colored-accents-on-a-green-gradient-background-mens-fashion-sport-shoe-air.jpg?s=612x612&w=0&k=20&c=h4PYQPT0vzv3QOgAHql4eSdbnfHdmgm5ewURKdzqk6c=", 
+    "https://media.istockphoto.com/id/1407127836/photo/white-sneaker-with-colored-accents-on-a-green-gradient-background-mens-fashion-sport-shoe-air.jpg?s=612x612&w=0&k=20&c=Ao8P5prIsAQsnvt8nSAOx9whjzbioUq9cw9RbkyyGrc=",
+    "https://media.istockphoto.com/id/1479037662/photo/white-sneaker-with-light-blue-accents-on-blue-gradient-background-mens-fashion-sport-shoe-air.jpg?s=612x612&w=0&k=20&c=VdChCZsbIIFxeZLMNPVxwna8PYnxzyhsCDzB_SF4lbo="],
+    subcategoryId: 9
+  },
+  {
+    product_name: "Beach Flip-Flops",
+    product_description: "Comfortable, durable flip-flops designed for beachwear and relaxed summer days.",
+    product_price: "20",
+    product_images: ["https://media.istockphoto.com/id/1178512755/photo/red-flip-flops-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=K8PiY1pfxGkDnDSu5mj_lqHKL5mjBmouI_jYYfZg3zE=", 
+    "https://media.istockphoto.com/id/182753946/photo/thongs.jpg?s=612x612&w=0&k=20&c=XLx9tXqJ_L4PeE9MPHMF8oHpfUkJIoON-s4RujknY_0=", 
+    "https://media.istockphoto.com/id/480070326/photo/red-flip-flops-on-the-sandy-beach.jpg?s=612x612&w=0&k=20&c=_riMyB0SOwhrV5j-b15eB1Cw0TTqZXwx3RgqFq7a7p8="],
+    subcategoryId: 9
+  },
+  {
+    product_name: "Formal Dress Shoes",
+    product_description: "Sophisticated dress shoes with a glossy finish, perfect for formal events and business settings.",
+    product_price: "130",
+    product_images: ["https://media.istockphoto.com/id/172417586/photo/elegant-black-leather-shoes.jpg?s=612x612&w=0&k=20&c=c_tTljwbu2m0AGxwb27NxCgG0Y2Cv-C4v8q6V36RYbw=",
+    "https://media.istockphoto.com/id/687698088/photo/leather-men-shoes.jpg?s=612x612&w=0&k=20&c=X0BGpX4eKH_PWGEGtnfkfmkOeaIHzzXJC9owUP5w23g=",
+    "https://media.istockphoto.com/id/1191156342/photo/men-fashion-black-leather-derby-shoes-isolated-on-a-white-background.jpg?s=612x612&w=0&k=20&c=TVHsp1ziIVYlUKeBqF6khbMbu2PBUnx0EEG0wyusf10="],
+    subcategoryId: 9
+  },
+
+  //Subcategory 10 - Men's Jackets and Coats
+  {
+    product_name: "Classic Trench Coat",
+    product_description: "Iconic, weather-resistant trench coat with a timeless design, providing both style and function.",
+    product_price: "200",
+    product_images: ["https://media.istockphoto.com/id/874876866/photo/cool-calm-and-corporate.jpg?s=612x612&w=0&k=20&c=Yn_eFwhcH4Ri6p9lDcNYuH2da4qtWsCNOGEPxLGuB04=", 
+    "https://media.istockphoto.com/id/874876872/photo/the-perfect-blend-of-style-and-success.jpg?s=612x612&w=0&k=20&c=Gz_obC5N6vqwqx-_RzrfMQMAIObfo9NpdWlBdtJdypE=", 
+    "https://media.istockphoto.com/id/874878298/photo/hes-a-trendsetter-in-the-business-world.jpg?s=612x612&w=0&k=20&c=6PW6Za7S1YPoBxzaJXk1mHqbIuklsFgRVFjBWTQyksE="],
+    subcategoryId: 10
+  },
+  {
+    product_name: "Leather Biker Jacket",
+    product_description: "Edgy, genuine leather biker jacket, featuring durable construction and classic styling.",
+    product_price: "250",
+    product_images: ["https://media.istockphoto.com/id/468491142/photo/vintage-leather-biker-jacket-isolated-on-white.jpg?s=612x612&w=0&k=20&c=9hKiXZbr3FBbPzFPPCu83QJUEWV-XX7PF26SV09k4dY=",
+    "https://media.istockphoto.com/id/638571516/photo/black-leather-biker-jackets.jpg?s=612x612&w=0&k=20&c=D11ylLsB0-N31GdTlPznM3RJYp_wp5qYypnXfTIxUkE=",
+    "https://media.istockphoto.com/id/677022004/photo/outfit-of-biker-and-accessories-with-copy-space.jpg?s=612x612&w=0&k=20&c=yV4GrjZeIvsfic7-b8nHzk61mEbaOrjsAluQEEVRjMo="],
+    subcategoryId: 10
+  },
+  {
+    product_name: "Utility Field Jacket",
+    product_description: "Versatile field jacket with multiple pockets, ideal for outdoor activities and casual wear.",
+    product_price: "150",
+    product_images: ["https://media.istockphoto.com/id/1270469508/photo/power-systems-engineer-on-site.jpg?s=612x612&w=0&k=20&c=nHbQahsve1s_vkJqHGe6ox9jjLH0N8v7kYXL4xkoqY8=", 
+    "https://media.istockphoto.com/id/1270474688/photo/power-systems-engineer-on-site.jpg?s=612x612&w=0&k=20&c=4xSkDp1clfWGqqsjavbzlIZ7CwmG_LidHU6_KIw7b6s=", 
+    "https://media.istockphoto.com/id/879814136/photo/industrial-engineer-in-hard-hat-wearing-safety-jacket-uses-touchscreen-tablet-computer-he.jpg?s=612x612&w=0&k=20&c=jp0_attXQHHrclDlny0bFtkdgnPtLKei6MyBxgg6EeE="],
+    subcategoryId: 10
+  },
+  {
+    product_name: "Down Puffer Jacket",
+    product_description: "Warm, lightweight puffer jacket filled with quality down, designed for cold weather comfort.",
+    product_price: "180",
+    product_images: ["https://media.istockphoto.com/id/1438058575/photo/multicolored-winter-down-jackets-hanging-on-hangers-in-the-store-close-up-side-view.jpg?s=612x612&w=0&k=20&c=awTwIWpzSwH4dXoXerPKrgyrUZ_Y3hWWNdbll7PQWRA=", 
+    "https://media.istockphoto.com/id/1329845318/photo/brown-winter-down-jacket-front-and-back-view.jpg?s=612x612&w=0&k=20&c=MBTHhNj2rDOtP5Fe79okbxNjdPhdtSU8thvwNV1PGkk=", 
+    "https://media.istockphoto.com/id/1357323248/photo/man-on-a-gray-background-is-warmly-dressed-in-a-black-down-jacket.jpg?s=612x612&w=0&k=20&c=rVGoyy8uK8jIFjHxSsvMjUp0E-nh6zCP8d8SXzpMxT0="],
+    subcategoryId: 10
+  },
+  {
+    product_name: "Wool Peacoat",
+    product_description: "Classic double-breasted peacoat in fine wool, offering warmth and sophistication for the winter season.",
+    product_price: "220",
+    product_images: ["https://media.istockphoto.com/id/1060425706/photo/beige-formal-peacoat.jpg?s=612x612&w=0&k=20&c=qJP4alTcQv7FPV7qrM5vpVYrcUrELU6nK1EMm5XuUWE=", 
+    "https://media.istockphoto.com/id/474714779/photo/smiling-man-in-light-brown-coat-isolated-on-white.jpg?s=612x612&w=0&k=20&c=qxltw-qgykBZe6a-Em5zYroBr-e8tZz6lw5en3Q9sBk=",
+    "https://media.istockphoto.com/id/470220801/photo/man-dressed-in-light-brown-coat-on-white.jpg?s=612x612&w=0&k=20&c=hlymJWq2BMSLlWhtXHwbW7je-IZoHgSzdlfMHIUsfZM="],
+    subcategoryId: 10
+  },
+  {
+    product_name: "Denim Trucker Jacket",
+    product_description: "Casual, rugged denim jacket with a vintage wash, a staple piece for any wardrobe.",
+    product_price: "90",
+    product_images: ["https://media.istockphoto.com/id/1834790249/photo/top-view-of-blue-truckers-denim-jacket-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=kw-9eCjFeR2u79BcFxucdV6myHFRnFt8Ug0xJMjEVjo=",
+    "https://media.istockphoto.com/id/186865873/photo/leaning-against-a-rig.jpg?s=612x612&w=0&k=20&c=Nf3mWbI0t_DaHjEBivbe6IRtvepS13WIvdq0s2DX3CI=", 
+    "https://media.istockphoto.com/id/523381657/photo/trucker-and-thumbs-up-positivity.jpg?s=612x612&w=0&k=20&c=f3MwMwAwuuiNBxvkLHJPhvY7ri3B1UEdPb5Nhtfqpk8="],
+    subcategoryId: 10
+  },
+  {
+    product_name: "Windbreaker Jacket",
+    product_description: "Lightweight, water-repellent windbreaker, perfect for transitional weather and outdoor activities.",
+    product_price: "70",
+    product_images: ["https://images.unsplash.com/flagged/photo-1578507054195-f96dec3a8b14?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "https://images.unsplash.com/photo-1592860699405-482d621e2bb1?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "https://images.unsplash.com/photo-1532682962418-34a7177c0efe?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+    subcategoryId: 10
+  },
+  {
+    product_name: "Softshell Tactical Jacket",
+    product_description: "High-performance softshell jacket designed for tactical use, offering durability and flexibility.",
+    product_price: "160",
+    product_images: ["https://www.a3imfashions.com/cdn/shop/products/product-image-218510524_grande.jpg?v=1571439223", 
+    "https://www.a3imfashions.com/cdn/shop/products/product-image-218510526_grande.jpg?v=1571439223", 
+    "https://freesoldier.com/cdn/shop/products/1_4c5c170c-46e1-4aa8-9c83-f43f617554c5.jpg?v=1694427684&width=1200"],
+    subcategoryId: 10
+  },
+  {
+    product_name: "Varsity Bomber Jacket",
+    product_description: "Stylish bomber jacket with a varsity design, combining comfort with a sporty aesthetic.",
+    product_price: "110",
+    product_images: ["https://i.pinimg.com/474x/87/c4/90/87c4909e6efa0acb26420df0350b1b41.jpg", 
+    "https://media.istockphoto.com/id/157526058/photo/letterman-2010.jpg?s=612x612&w=0&k=20&c=Ye7nlBA_kkIp306XI206ogKXGBQIBf6gvsvN0OzaOg8=", 
+    "https://media.istockphoto.com/id/181850121/photo/african-american-high-school-student-in-letterman-jacket.jpg?s=612x612&w=0&k=20&c=U1ZASlDRgeJBXx37Wh9SxqHwu66E_tOPFsLxAGsd3FU="],
+    subcategoryId: 10
+  },
+  {
+    product_name: "Quilted Vest",
+    product_description: "Sleek, insulated vest with a quilted design, perfect for layering in cooler weather.",
+    product_price: "60",
+    product_images: ["https://images.unsplash.com/photo-1532704102644-883111bdf82d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHF1aWx0ZWQlMjBqYWNrZXR8ZW58MHx8MHx8fDA%3D", 
+    "https://images.unsplash.com/photo-1551318181-655e9748c0a6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cXVpbHRlZCUyMGphY2tldHxlbnwwfHwwfHx8MA%3D%3D", 
+    "https://images.unsplash.com/photo-1580047883831-5db03837b0b3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHF1aWx0ZWQlMjBqYWNrZXR8ZW58MHx8MHx8fDA%3D"],
+    subcategoryId: 10
+  },
+
+  //Subcategory 11 - Men's Accessories
+  {
+    product_name: "Classic Aviator Sunglasses",
+    product_description: "Timeless aviator sunglasses with UV protection, combining style with functionality.",
+    product_price: "90",
+    product_images: ["https://images.unsplash.com/photo-1567101293231-51d2bd439398?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "https://images.unsplash.com/photo-1567473810954-507d59716c25?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fHw%3D", 
+    "https://images.unsplash.com/photo-1566388448476-0c4249e47be5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHx8"],
+    subcategoryId: 11
+  },
+  {
+    product_name: "Leather Belt",
+    product_description: "Durable, genuine leather belt with a sleek, modern buckle, essential for any outfit.",
+    product_price: "35",
+    product_images: ["https://images.unsplash.com/photo-1664286021284-e921c76ac1a4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D", 
+    "https://images.unsplash.com/photo-1664286022075-8e997e95bd17?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "https://images.unsplash.com/photo-1664285612706-b32633c95820?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D"],
+    subcategoryId: 11
+  },
+  {
+    product_name: "Minimalist Watch",
+    product_description: "Elegant watch with a minimalist design, featuring a stainless steel case and leather strap.",
+    product_price: "120",
+    product_images: ["https://images.unsplash.com/photo-1607298786129-cea6ce0d5788?q=80&w=2562&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "https://images.unsplash.com/photo-1607299008952-7179a3f826f7?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "https://images.unsplash.com/photo-1579174786776-a488cbc8ec5c?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+    subcategoryId: 11
+  },
+  {
+    product_name: "Beanie Hat",
+    product_description: "Soft, knit beanie hat for warmth and style during the colder months.",
+    product_price: "20",
+    product_images: ["https://images.unsplash.com/photo-1618354691792-d1d42acfd860?q=80&w=2515&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "https://images.unsplash.com/photo-1612887726773-e64e20cf08fe?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+    subcategoryId: 11
+  },
+  {
+    product_name: "Silk Necktie",
+    product_description: "Premium silk necktie available in various colors, perfect for formal occasions and office wear.",
+    product_price: "50",
+    product_images: ["https://images.unsplash.com/photo-1598032895468-e81825029202?q=80&w=2191&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "https://images.unsplash.com/photo-1592878904946-b3cd8ae243d0?q=80&w=2381&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "https://images.unsplash.com/photo-1593030089683-a9841767a610?q=80&w=2380&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+    subcategoryId: 11
+  },
+  {
+    product_name: "Cufflinks Set",
+    product_description: "Elegant cufflinks set, adding a touch of sophistication to any formal shirt.",
+    product_price: "40",
+    product_images: ["https://images.unsplash.com/photo-1647574633530-05ecfb3fdb4f?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "https://images.unsplash.com/photo-1647574633297-ff7f1a3f733d?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "https://images.unsplash.com/photo-1647574633357-75c67e723689?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+    subcategoryId: 11
+  },
+  {
+    product_name: "Leather Wallet",
+    product_description: "Compact, high-quality leather wallet with multiple card slots and a secure coin pocket.",
+    product_price: "55",
+    product_images: ["https://plus.unsplash.com/premium_photo-1681589453747-53fd893fa420?q=80&w=2369&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "https://images.unsplash.com/photo-1637168943285-a8f9ea0dc3f5?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "https://images.unsplash.com/photo-1620109176813-e91290f6c795?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+    subcategoryId: 11
+  },
+  {
+    product_name: "Sports Cap",
+    product_description: "Adjustable sports cap made from breathable fabric, ideal for outdoor activities and casual wear.",
+    product_price: "25",
+    product_images: ["https://images.unsplash.com/photo-1622445275576-721325763afe?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "https://images.unsplash.com/photo-1702604585541-2246510e8f07?q=80&w=2525&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "https://images.unsplash.com/photo-1702604865155-716b8d0a81b3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D"],
+    subcategoryId: 11
+  },
+  {
+    product_name: "Tactical Gloves",
+    product_description: "Durable gloves designed for tactical use, offering protection and enhanced grip.",
+    product_price: "45",
+    product_images: ["https://images.unsplash.com/photo-1642075211546-7de99d235d21?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "https://images.unsplash.com/photo-1645445490773-3ef25c148450?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "https://images.unsplash.com/photo-1643701188137-b1e3f3135aa2?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+    subcategoryId: 11
+  },
+  {
+    product_name: "Scarf",
+    product_description: "Luxurious, soft scarf made from fine materials, providing warmth and elegance.",
+    product_price: "35",
+    product_images: ["https://images.unsplash.com/photo-1484688493527-670f98f9b195?q=80&w=2647&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "https://images.unsplash.com/photo-1457545195570-67f207084966?q=80&w=2392&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "https://images.unsplash.com/photo-1641642231157-0849081598a2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHx8"],
+    subcategoryId: 11
+  },
+  
 
 // Women's Fashion Women's Tops - Subcategory ID: 12
 {

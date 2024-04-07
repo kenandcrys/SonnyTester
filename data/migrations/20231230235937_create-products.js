@@ -31,6 +31,7 @@ exports.up = function(knex) {
           table.string("product_name", 255).notNullable();
           table.string("product_description", 1000).notNullable();
           table.string("product_price", 255).notNullable();
+          table.string("product_images",128);
           table
             .integer("subcategoryId")
             .nullable()
