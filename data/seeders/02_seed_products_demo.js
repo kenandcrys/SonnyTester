@@ -13,29 +13,23 @@ exports.seed = function (knex) {
           return knex("category").insert([
               {
                   category_name: "Phones & Accessories",
-                
               },
               {
-                  category_name: "Women",
-                  
+                  category_name: "Women", 
               },
               { category_name: "Men", },
               {
-                  category_name: "Computer, Office & Security",
-                  
+                  category_name: "Computer, Office & Security", 
               },
               {
                   category_name: "Electronics",
-        
               },
               { category_name: "Jewelry", },
               {
                   category_name: "Kids & Toys",
-                  
               },
               {
                   category_name: "Tools & Home Improvement",
-                  
               },
               {
                   category_name: "Automotive",
@@ -43,15 +37,12 @@ exports.seed = function (knex) {
               },
               {
                   category_name: "Digital Media",
-                 
               },
               {
                   category_name: "Outdoor, Fun & Sports",
-                 
               },
               {
                   category_name: "Home, Pets & Appliances",
-                  
               },
           ]);
       })
